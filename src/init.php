@@ -13,6 +13,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+/* Add SWO Blocks Category */
+
+function swo_blocks_category( $categories, $post ) {
+	return array_merge(
+		$categories,
+		array(
+			array(
+				'slug' => 'swo-blocks',
+				'title' => 'SWO Blocks',
+                'icon'  => 'awards',
+			),
+		)
+	);
+}
+add_filter( 'block_categories', 'swo_blocks_category', 10, 2);
+
 /**
  * Enqueue Gutenberg block assets for both frontend + backend.
  *
