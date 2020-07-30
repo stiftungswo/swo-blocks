@@ -28,11 +28,36 @@ registerBlockType( 'swo-blocks/card-block', {
 			attribute: 'alt',
 			selector: 'img'
 		},
-		content: {
-			type: 'array',
-			source: 'children',
-			selector: '.content',
+		employeeName: {
+			type: 'string',
+			source: 'html',
+			selector: 'h1',
 		},
+		employeeFunct: {
+			type: 'string',
+			source: 'html',
+			selector: 'h7',
+		},
+		employeeDescr: {
+			type: 'string',
+			source: 'html',
+			selector: 'p',
+		},
+		employeeFPhone: {
+			type: 'string',
+			source: 'html',
+			selector: '.selectorFPhone',
+		},
+		employeeMPhone: {
+			type: 'string',
+			source: 'html',
+			selector: '.selectorMPhone',
+		},
+		employeeMail: {
+			type: 'string',
+			source: 'html',
+			selector: '.selectorMail',
+		}
 	},
 
 	edit: function( props ) {
@@ -87,11 +112,46 @@ registerBlockType( 'swo-blocks/card-block', {
 					}
 				</div>
 				<div className="imageDiv bottomDiv classic-text bottomDivteam">
-					<RichText
-						onChange={ newContent => { props.setAttributes({content: newContent})} }
-						value={props.attributes.content}
-						placeholder="Hier Inhalt einfüllen"
-					/>
+					<h1>
+						<RichText
+							onChange={ newContent => { props.setAttributes({employeeName: newContent})} }
+							value={props.attributes.employeeName}
+							placeholder="Vorname Nachname"
+						/>
+					</h1>
+					<h7>
+						<RichText
+							onChange={ newContent => { props.setAttributes({employeeFunct: newContent})} }
+							value={props.attributes.employeeFunct}
+							placeholder="Funktion"
+						/>
+					</h7>
+					<p>
+						<RichText
+							onChange={ newContent => { props.setAttributes({employeeDescr: newContent})} }
+							value={props.attributes.employeeDescr}
+							placeholder="Beschreibung"
+						/>
+					</p>
+					<p><strong>Telefon Festnetz: </strong>
+							<RichText
+								onChange={ newContent => { props.setAttributes({employeeFPhone: newContent})} }
+								value={props.attributes.employeeFPhone}
+								placeholder="012 345 67 89"
+							/>{"\n"}
+						<strong>Telefon Mobil: </strong>
+							<RichText
+								onChange={ newContent => { props.setAttributes({employeeMPhone: newContent})} }
+								value={props.attributes.employeeMPhone}
+								placeholder="012 345 67 89"
+							/>{"\n"}
+						<strong>E-Mail: </strong>
+							<RichText
+								onChange={ newContent => { props.setAttributes({employeeMail: newContent})} }
+								value={props.attributes.employeeMail}
+								placeholder="x@stiftungswo.ch"
+							/>
+					</p>
 				</div>
 			</div>
 		);
@@ -108,7 +168,13 @@ registerBlockType( 'swo-blocks/card-block', {
 					/>
 				</div>
 				<div className="imageDiv bottomDiv classic-text bottomDivteam">
-					<h1>{props.attributes.content}</h1>
+					<h1>{props.attributes.employeeName}</h1>
+					<h7>{props.attributes.employeeFunct}</h7>
+					<p>{props.attributes.employeeDescr}</p>
+					<p><strong>Telefon Festnetz: </strong><span className="selectorFPhone">{props.attributes.employeeFPhone}</span><br></br>
+						<strong>Telefon Mobil: </strong><span className="selectorMPhone">{props.attributes.employeeMPhone}</span><br></br>
+						<strong>E-Mail: </strong><span className="selectorMail">{props.attributes.employeeMail}</span><br></br>
+					</p>
 				</div>
 			</div>
 		);
