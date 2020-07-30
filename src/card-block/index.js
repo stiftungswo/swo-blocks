@@ -6,8 +6,8 @@ const { registerBlockType } = wp.blocks;
 const { RichText, PlainText, MediaUpload } = wp.editor;
 const { Button } = wp.components;
 
-registerBlockType( 'swo-blocks/employee-block', {
-	title: 'Angestellte(r)',
+registerBlockType( 'swo-blocks/card-block', {
+	title: 'Karte Test',
 	description: 'Hiermit kann ein(e) Angestellte(r) eingefügt werden.',
 	icon: 'businessman',
 	category: 'swo-blocks',

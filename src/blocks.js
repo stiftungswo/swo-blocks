@@ -10,3 +10,5 @@
  */
 
 import './employee-block';
+import './weird-formating';
+import './card-block';
