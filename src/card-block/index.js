@@ -27,153 +27,88 @@ registerBlockType( 'swo-blocks/card-block', {
 			source: 'attribute',
 			attribute: 'alt',
 			selector: 'img'
-		}
+		},
+		content: {
+			type: 'array',
+			source: 'children',
+			selector: '.content',
+		},
 	},
 
-	edit: function( {className, attributes, setAttributes} ) {
+	edit: function( props ) {
 
-		const { employeeName } = attributes;
-		const { employeeFunct } = attributes;
-		const { employeeDescr } = attributes;
-		const { employeeFPhone } = attributes;
-		const { employeeMPhone } = attributes;
-		const { employeeMail } = attributes;
-
-
-		function onChangeName( newContent ) {
-			setAttributes( {employeeName: newContent});
+		const onFileSelect = (img) => {
+			props.setAttributes({
+				imgURL: img.url,
+				imgID: img.id,
+				imgAlt: img.alt
+			});
 		}
-
-		function onChangeFunct( newContent ) {
-			setAttributes( {employeeFunct: newContent});
-		}
-
-		function onChangeDescr( newContent ) {
-			setAttributes( {employeeDescr: newContent});
-		}
-
-		function onChangeFPhone( newContent ) {
-			setAttributes( {employeeFPhone: newContent});
-		}
-
-		function onChangeMPhone( newContent ) {
-			setAttributes( {employeeMPhone: newContent});
-		}
-
-		function onChangeMail( newContent ) {
-			setAttributes( {employeeMail: newContent});
+		const onRemoveImg = () => {
+			props.setAttributes({
+				imgURL: null,
+				imgID: null,
+				imgAlt: null
+			});
 		}
 
 		return (
 			<div className="wrap-boxes">
-				<div className="imageDiv img-background imageDivteam"></div>
+				<div className="imageDiv img-background imageDivteam">
+					{
+						(props.attributes.imgURL) ? (
+							<div className="wrapimgselect">
+								<img 
+									src={props.attributes.imgURL}
+									alt={props.attributes.imgAlt}
+								/>
+								{ (props.isSelected) ? (
+									<Button
+									onClick={onRemoveImg}
+									className="button"
+								>Bild löschen
+								</Button>
+								) : null }
+							</div>
+						) : (
+							<MediaUpload
+								onSelect={onFileSelect}
+								value={props.attributes.imgID}
+								allowedTypes={['image']}
+								render= {({open}) =>
+									<Button
+										onClick={open}
+										className="button"
+									>Bild wählen
+									</Button>
+								}
+							/>
+						)
+					}
+				</div>
 				<div className="imageDiv bottomDiv classic-text bottomDivteam">
-					<RichText 
-						tagName="h1"
-						className= {className}
-						onChange= {onChangeName}
-						value= {employeeName}
-						placeholder= "Vorname Nachname"
-						keepPlaceholderOnFocus={true}
-						allowedFormats={'core/bold'}
-					/>
-					<RichText 
-						tagName="h7"
-						className= {className}
-						onChange= {onChangeFunct}
-						value= {employeeFunct}
-						placeholder= "Funktion"
-						keepPlaceholderOnFocus={true}
-						allowedFormats={'none'}
-					/>
-					<RichText 
-						tagName="p"
-						className= {className}
-						onChange= {onChangeDescr}
-						value= {employeeDescr}
-						placeholder= "Beschreibung"
-						keepPlaceholderOnFocus={true}
-						allowedFormats={'none'}
-					/>
-					<RichText 
-						tagName="a"
-						className= {className}
-						onChange= {onChangeFPhone}
-						value= {employeeFPhone}
-						placeholder= "Telefon Festnetz"
-						keepPlaceholderOnFocus={true}
-						allowedFormats={'none'}
-					/>
-					<RichText 
-						tagName="a"
-						className= {className}
-						onChange= {onChangeMPhone}
-						value= {employeeMPhone}
-						placeholder= "Telefon Mobil"
-						keepPlaceholderOnFocus={true}
-						allowedFormats={'none'}
-					/>
-					<RichText 
-						tagName="a"
-						className= {className}
-						onChange= {onChangeMail}
-						value= {employeeMail}
-						placeholder= "E-Mail"
-						keepPlaceholderOnFocus={true}
-						allowedFormats={'none'}
+					<RichText
+						onChange={ newContent => { props.setAttributes({content: newContent})} }
+						value={props.attributes.content}
+						placeholder="Hier Inhalt einfüllen"
 					/>
 				</div>
 			</div>
 		);
 	},
 
-	save: function( {className, attributes} ) {
-
-		const { employeeName } = attributes;
-		const { employeeFunct } = attributes;
-		const { employeeDescr } = attributes;
-		const { employeeFPhone } = attributes;
-		const { employeeMPhone } = attributes;
-		const { employeeMail } = attributes;
+	save: function( props ) {
 
 		return (
 			<div className="wrap-boxes">
-				<div className="imageDiv img-background imageDivteam"></div>
+				<div className="imageDiv img-background imageDivteam">
+					<img 
+						src={props.attributes.imgURL}
+						alt={props.attributes.imgAlt}
+					/>
+				</div>
 				<div className="imageDiv bottomDiv classic-text bottomDivteam">
-					<RichText.Content
-						tagName="h1"
-						className= "text-content"
-						value= {employeeName}
-					/>
-					<RichText.Content
-						tagName="h7"
-						className= "text-content"
-						value= {employeeFunct}
-					/>
-					<RichText.Content
-						tagName="p"
-						className= "text-content"
-						value= {employeeDescr}
-					/>
-					<p><strong>Telefon Festnetz: </strong>
-						<RichText.Content
-							tagName="a"
-							className= "text-content"
-							value= {employeeFPhone}
-						/>
-						<strong>Telefon Mobil: </strong>
-						<RichText.Content
-							tagName="a"
-							className= "text-content"
-							value= {employeeMPhone}
-						/>
-						<strong>E-Mail: </strong>
-						<RichText.Content
-							tagName="a"
-							className= "text-content"
-							value= {employeeMail}
-						/>
-					</p>
+					<h1>{props.attributes.content}</h1>
 				</div>
 			</div>
 		);
