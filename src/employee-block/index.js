@@ -3,9 +3,7 @@ import './style.scss';
 
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
-const { RichText } = wp.editor;
-const { PlainText } = wp.editor;
-const { MediaUpload } = wp.editor;
+const { RichText, PlainText, MediaUpload } = wp.editor;
 const { Button } = wp.components;
 
 registerBlockType( 'swo-blocks/employee-block', {
@@ -29,10 +27,15 @@ registerBlockType( 'swo-blocks/employee-block', {
 			source: 'attribute',
 			attribute: 'alt',
 			selector: 'img'
+		},
+		test: {
+			type: 'string',
+			source: 'text',
+			selector: '.test-content'
 		}
 	},
 
-	edit: function( {className, attributes, setAttributes} ) {
+	edit: function( {className, attributes, setAttributes, props} ) {
 
 		const { employeeName } = attributes;
 		const { employeeFunct } = attributes;
@@ -69,6 +72,12 @@ registerBlockType( 'swo-blocks/employee-block', {
 			<div className="wrap-boxes">
 				<div className="imageDiv img-background imageDivteam"></div>
 				<div className="imageDiv bottomDiv classic-text bottomDivteam">
+					<PlainText
+						onChange={ newTest => {props.setAttributes({test: newTest})}}
+						value={props.attributes.test}
+						className= {className}
+						placeholder="This is a test"
+					/>
 					<RichText 
 						tagName="h1"
 						className= {className}
@@ -76,7 +85,7 @@ registerBlockType( 'swo-blocks/employee-block', {
 						value= {employeeName}
 						placeholder= "Vorname Nachname"
 						keepPlaceholderOnFocus={true}
-						allowedFormats={'none'}
+						allowedFormats={'core/bold'}
 					/>
 					<RichText 
 						tagName="h7"
@@ -128,7 +137,7 @@ registerBlockType( 'swo-blocks/employee-block', {
 		);
 	},
 
-	save: function( {className, attributes} ) {
+	save: function( {className, attributes, props} ) {
 
 		const { employeeName } = attributes;
 		const { employeeFunct } = attributes;
