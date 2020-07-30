@@ -1,12 +1,4 @@
 <?php
-/**
- * Blocks Initializer
- *
- * Enqueue CSS/JS of all the blocks.
- *
- * @since   1.0.0
- * @package CGB
- */
 
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
@@ -29,20 +21,6 @@ function swo_blocks_category( $categories, $post ) {
 }
 add_filter( 'block_categories', 'swo_blocks_category', 10, 2);
 
-/**
- * Enqueue Gutenberg block assets for both frontend + backend.
- *
- * Assets enqueued:
- * 1. blocks.style.build.css - Frontend + Backend.
- * 2. blocks.build.js - Backend.
- * 3. blocks.editor.build.css - Backend.
- *
- * @uses {wp-blocks} for block type registration & related functions.
- * @uses {wp-element} for WP Element abstraction — structure of blocks.
- * @uses {wp-i18n} to internationalize the block's text.
- * @uses {wp-editor} for WP editor styles.
- * @since 1.0.0
- */
 function swo_blocks_cgb_block_assets() { // phpcs:ignore
 	// Register block styles for both frontend + backend.
 	wp_register_style(
