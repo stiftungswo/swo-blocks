@@ -27,15 +27,10 @@ registerBlockType( 'swo-blocks/employee-block', {
 			source: 'attribute',
 			attribute: 'alt',
 			selector: 'img'
-		},
-		test: {
-			type: 'string',
-			source: 'text',
-			selector: '.test-content'
 		}
 	},
 
-	edit: function( {className, attributes, setAttributes, props} ) {
+	edit: function( {className, attributes, setAttributes} ) {
 
 		const { employeeName } = attributes;
 		const { employeeFunct } = attributes;
@@ -72,12 +67,6 @@ registerBlockType( 'swo-blocks/employee-block', {
 			<div className="wrap-boxes">
 				<div className="imageDiv img-background imageDivteam"></div>
 				<div className="imageDiv bottomDiv classic-text bottomDivteam">
-					<PlainText
-						onChange={ newTest => {props.setAttributes({test: newTest})}}
-						value={props.attributes.test}
-						className= {className}
-						placeholder="This is a test"
-					/>
 					<RichText 
 						tagName="h1"
 						className= {className}
@@ -137,7 +126,7 @@ registerBlockType( 'swo-blocks/employee-block', {
 		);
 	},
 
-	save: function( {className, attributes, props} ) {
+	save: function( {className, attributes} ) {
 
 		const { employeeName } = attributes;
 		const { employeeFunct } = attributes;
