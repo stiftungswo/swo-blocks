@@ -4,4 +4,80 @@
  * CSS for just Backend enqueued after style.scss
  * which makes it higher in priority.
  */
+
+ .wp-block {
+     max-width: 100%;
+ }
+
+ .wrap-project {
+    display: flex;
+ }
   
+.wp-block-columns.alignfull{
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+.wp-block-column.main-info{
+	flex-basis:66.66%;
+	flex-grow: 0;
+}
+
+.wp-block-column.side-info{
+	border: 3px solid #77787B;
+	box-sizing: border-box;
+	border-radius: 8px;
+	height: max-content;
+	margin-top: 40px;
+	padding-right: 5px;
+	padding-left: 5px;
+	flex-basis:33.33%;
+	flex-grow: 0;
+}
+
+.wp-block-column.side-info h1, .wp-block-column.side-info h2, .wp-block-column.side-info h3, .wp-block-column.side-info h4, .wp-block-column.side-info h5, .wp-block-column.side-info h6 { 
+	font-size: 19px;
+	margin: 10px 5px 0px 5px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.6px;
+	padding-left: 5px;
+}
+
+
+.wp-block-column.side-info p, .side-contact{ 
+	padding-left: 5px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #77787B;
+	text-transform: uppercase;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.wp-block-separator{
+	border-width: 1px;
+	border-radius: 1px ;
+	color: solid black;
+}
+
+.hashtags p{
+	background: cornflowerblue;
+	border-radius: 5px;
+	color: white !important;
+	font-weight: bold !important;
+	font-size: 13px !important;
+	line-height: 15px !important;
+	padding-right: 5px;
+}
+
+.wp-block-image img{
+	border-radius: 1.5% !important;
+}
+
+.wp-block-column.side-info img{	
+	width: 60%;
+	margin: 0 auto;
+}

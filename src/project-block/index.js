@@ -3,7 +3,7 @@ import './style.scss';
 
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
-const { RichText, PlainText, MediaUpload } = wp.editor;
+const { RichText, PlainText, MediaUpload, InnerBlocks } = wp.editor;
 const { Button } = wp.components;
 
 registerBlockType( 'swo-blocks/project-block', {
@@ -28,35 +28,35 @@ registerBlockType( 'swo-blocks/project-block', {
 			attribute: 'alt',
 			selector: 'img'
 		},
-		employeeName: {
+		projInhalt1: {
 			type: 'string',
 			source: 'html',
-			selector: 'h1',
+			selector: 'h6',
 		},
-		employeeFunct: {
+		projTitel1: {
 			type: 'string',
 			source: 'html',
-			selector: 'h7',
+			selector: '.side-content-p',
 		},
-		employeeDescr: {
+		projHeading1: {
 			type: 'string',
 			source: 'html',
-			selector: 'p',
+			selector: 'h4',
 		},
-		employeeFPhone: {
+		projContent1: {
 			type: 'string',
 			source: 'html',
-			selector: '.selectorFPhone',
+			selector: '.main-content-p',
 		},
-		employeeMPhone: {
+		projHashtags: {
 			type: 'string',
 			source: 'html',
-			selector: '.selectorMPhone',
+			selector: '.hashtags',
 		},
-		employeeMail: {
+		projContact: {
 			type: 'string',
 			source: 'html',
-			selector: '.selectorMail',
+			selector: '.side-contact',
 		}
 	},
 
@@ -78,11 +78,11 @@ registerBlockType( 'swo-blocks/project-block', {
 		}
 
 		return (
-			<div className="wrap-employee">
-				<div className="imageDiv img-background imageDivteam">
+			<div className="wrap-project wp-block-columns alignfull">
+				<div className="wp-block-column main-info">
 					{
 						(props.attributes.imgURL) ? (
-							<div className="wrapimgselect">
+							<figure className="wp-block-image size-large">
 								<img 
 									src={props.attributes.imgURL}
 									alt={props.attributes.imgAlt}
@@ -94,7 +94,7 @@ registerBlockType( 'swo-blocks/project-block', {
 								>Bild löschen
 								</Button>
 								) : null }
-							</div>
+							</figure>
 						) : (
 							<MediaUpload
 								onSelect={onFileSelect}
@@ -110,60 +110,62 @@ registerBlockType( 'swo-blocks/project-block', {
 							/>
 						)
 					}
+					<h4>
+						<RichText
+							onChange={ newContent => { props.setAttributes({projHeading1: newContent})} }
+							value={props.attributes.projHeading1}
+							placeholder="Überschrift"
+							keepPlaceholderOnFocus={true}
+							allowedFormats={'none'}
+						/>
+					</h4>
+					<RichText
+						onChange={ newContent => { props.setAttributes({projContent1: newContent})} }
+						value={props.attributes.projContent1}
+						placeholder="Hier den Inhalt zu diesem Projekt einfüllen. (Hier kann auch Text formatiert werden, so können nach belieben mehrere Zeilen und Untertitel erstellt werden.)"
+						keepPlaceholderOnFocus={true}
+						className="main-content-p"
+					/>
 				</div>
-				<div className="imageDiv bottomDiv classic-text bottomDivteam">
-					<h1>
+				<div className="wp-block-column side-info">
+					<h6>
 						<RichText
-							onChange={ newContent => { props.setAttributes({employeeName: newContent})} }
-							value={props.attributes.employeeName}
-							placeholder="Vorname Nachname"
+							onChange={ newContent => { props.setAttributes({projInhalt1: newContent})} }
+							value={props.attributes.projInhalt1}
+							placeholder="Inhalt 1"
 							keepPlaceholderOnFocus={true}
 							allowedFormats={'none'}
 						/>
-					</h1>
-					<h7>
+					</h6>
+					<p className="side-content-p">
 						<RichText
-							onChange={ newContent => { props.setAttributes({employeeFunct: newContent})} }
-							value={props.attributes.employeeFunct}
-							placeholder="Funktion"
-							keepPlaceholderOnFocus={true}
-							allowedFormats={'none'}
-						/>
-					</h7>
-					<p>
-						<RichText
-							onChange={ newContent => { props.setAttributes({employeeDescr: newContent})} }
-							value={props.attributes.employeeDescr}
-							placeholder="Beschreibung"
+							onChange={ newContent => { props.setAttributes({projTitel1: newContent})} }
+							value={props.attributes.projTitel1}
+							placeholder="Titel 1"
 							keepPlaceholderOnFocus={true}
 							allowedFormats={'none'}
 						/>
 					</p>
-					<p><strong>Telefon Festnetz: </strong>
-							<RichText
-								onChange={ newContent => { props.setAttributes({employeeFPhone: newContent})} }
-								value={props.attributes.employeeFPhone}
-								placeholder="012 345 67 89"
-								keepPlaceholderOnFocus={true}
-								allowedFormats={'none'}
-							/>{"\n"}
-						<strong>Telefon Mobil: </strong>
-							<RichText
-								onChange={ newContent => { props.setAttributes({employeeMPhone: newContent})} }
-								value={props.attributes.employeeMPhone}
-								placeholder="012 345 67 89"
-								keepPlaceholderOnFocus={true}
-								allowedFormats={'none'}
-							/>{"\n"}
-						<strong>E-Mail: </strong>
-							<RichText
-								onChange={ newContent => { props.setAttributes({employeeMail: newContent})} }
-								value={props.attributes.employeeMail}
-								placeholder="x@stiftungswo.ch"
-								keepPlaceholderOnFocus={true}
-								allowedFormats={'none'}
-							/>
+					<InnerBlocks allowedBlocks={ [ 'core/image', 'core/paragraph', 'core/heading' ] } />
+					<p className="hashtags">
+						<RichText
+							onChange={ newContent => { props.setAttributes({projHashtags: newContent})} }
+							value={props.attributes.projHashtags}
+							placeholder='#Hashtag (Um mehrere Hashtags zu erstellen, drücken Sie "Enter")'
+							keepPlaceholderOnFocus={true}
+							allowedFormats={'none'}
+							multiline="p"
+						/>
 					</p>
+					<h6>Kontakt</h6>
+					<RichText
+						onChange={ newContent => { props.setAttributes({projContact: newContent})} }
+						value={props.attributes.projContact}
+						placeholder="Max Muster (Hier können Zeilenumbrüche genutzt werden)"
+						keepPlaceholderOnFocus={true}
+						allowedFormats={'none'}
+						className="side-contact"
+					/>
 				</div>
 			</div>
 		);
@@ -172,21 +174,37 @@ registerBlockType( 'swo-blocks/project-block', {
 	save: function( props ) {
 
 		return (
-			<div className="wrap-employee">
-				<div className="imageDiv img-background imageDivteam">
-					<img 
-						src={props.attributes.imgURL}
-						alt={props.attributes.imgAlt}
+			<div className="wrap-project wp-block-columns alignfull">
+				<div className="wp-block-column main-info">
+					<figure className="wp-block-image size-large">
+						<img 
+							src={props.attributes.imgURL}
+							alt={props.attributes.imgAlt}
+						/>
+					</figure>
+					<h4>{props.attributes.projHeading1}</h4>
+					<RichText.Content
+						className="main-content-p"
+						tagName="p"
+						value={ props.attributes.projContent1 } 
 					/>
 				</div>
-				<div className="imageDiv bottomDiv classic-text bottomDivteam">
-					<h1>{props.attributes.employeeName}</h1>
-					<h7>{props.attributes.employeeFunct}</h7>
-					<p>{props.attributes.employeeDescr}</p>
-					<p><strong>Telefon Festnetz: </strong><span className="selectorFPhone">{props.attributes.employeeFPhone}</span><br></br>
-						<strong>Telefon Mobil: </strong><span className="selectorMPhone">{props.attributes.employeeMPhone}</span><br></br>
-						<strong>E-Mail: </strong><span className="selectorMail">{props.attributes.employeeMail}</span><br></br>
-					</p>
+				<div className="wp-block-column side-info">
+					<h6>{props.attributes.projInhalt1}</h6>
+					<p className="side-content-p">{props.attributes.projTitel1}</p>
+					<InnerBlocks.Content />
+					<RichText.Content
+						className="hashtags"
+						tagName="div"
+						multiline="p"
+						value={ props.attributes.projHashtags } 
+					/>
+					<h6>Kontakt</h6>
+					<RichText.Content
+						className="side-contact"
+						tagName="p"
+						value={ props.attributes.projContact } 
+					/>
 				</div>
 			</div>
 		);
