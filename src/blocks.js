@@ -10,3 +10,4 @@
  */
 
 import './employee-block';
+import './project-block';

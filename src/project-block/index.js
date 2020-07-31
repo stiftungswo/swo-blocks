@@ -6,12 +6,12 @@ const { registerBlockType } = wp.blocks;
 const { RichText, PlainText, MediaUpload } = wp.editor;
 const { Button } = wp.components;
 
-registerBlockType( 'swo-blocks/employee-block', {
-	title: 'Angestellte(r)',
-	description: 'Hiermit kann ein(e) Angestellte(r) eingefügt werden.',
-	icon: 'businessman',
+registerBlockType( 'swo-blocks/project-block', {
+	title: 'Projekt',
+	description: 'Hiermit kann ein neues Projekt mit Bild und Inhalten erstellt werden.',
+	icon: 'media-spreadsheet',
 	category: 'swo-blocks',
-	keywords: ['Mitarbeiter', 'Angestellte', 'SWO'],
+	keywords: ['Projekt', 'Inhaltsseite', 'SWO'],
 	attributes: {
 		imgURL: {
 			type: 'string',
