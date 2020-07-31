@@ -78,7 +78,7 @@ registerBlockType( 'swo-blocks/employee-block', {
 		}
 
 		return (
-			<div className="wrap-boxes">
+			<div>
 				<div className="imageDiv img-background imageDivteam">
 					{
 						(props.attributes.imgURL) ? (
@@ -117,6 +117,8 @@ registerBlockType( 'swo-blocks/employee-block', {
 							onChange={ newContent => { props.setAttributes({employeeName: newContent})} }
 							value={props.attributes.employeeName}
 							placeholder="Vorname Nachname"
+							keepPlaceholderOnFocus={true}
+							allowedFormats={'none'}
 						/>
 					</h1>
 					<h7>
@@ -124,6 +126,8 @@ registerBlockType( 'swo-blocks/employee-block', {
 							onChange={ newContent => { props.setAttributes({employeeFunct: newContent})} }
 							value={props.attributes.employeeFunct}
 							placeholder="Funktion"
+							keepPlaceholderOnFocus={true}
+							allowedFormats={'none'}
 						/>
 					</h7>
 					<p>
@@ -131,6 +135,8 @@ registerBlockType( 'swo-blocks/employee-block', {
 							onChange={ newContent => { props.setAttributes({employeeDescr: newContent})} }
 							value={props.attributes.employeeDescr}
 							placeholder="Beschreibung"
+							keepPlaceholderOnFocus={true}
+							allowedFormats={'none'}
 						/>
 					</p>
 					<p><strong>Telefon Festnetz: </strong>
@@ -138,18 +144,24 @@ registerBlockType( 'swo-blocks/employee-block', {
 								onChange={ newContent => { props.setAttributes({employeeFPhone: newContent})} }
 								value={props.attributes.employeeFPhone}
 								placeholder="012 345 67 89"
+								keepPlaceholderOnFocus={true}
+								allowedFormats={'none'}
 							/>{"\n"}
 						<strong>Telefon Mobil: </strong>
 							<RichText
 								onChange={ newContent => { props.setAttributes({employeeMPhone: newContent})} }
 								value={props.attributes.employeeMPhone}
 								placeholder="012 345 67 89"
+								keepPlaceholderOnFocus={true}
+								allowedFormats={'none'}
 							/>{"\n"}
 						<strong>E-Mail: </strong>
 							<RichText
 								onChange={ newContent => { props.setAttributes({employeeMail: newContent})} }
 								value={props.attributes.employeeMail}
 								placeholder="x@stiftungswo.ch"
+								keepPlaceholderOnFocus={true}
+								allowedFormats={'none'}
 							/>
 					</p>
 				</div>
@@ -160,7 +172,7 @@ registerBlockType( 'swo-blocks/employee-block', {
 	save: function( props ) {
 
 		return (
-			<div className="wrap-boxes">
+			<div>
 				<div className="imageDiv img-background imageDivteam">
 					<img 
 						src={props.attributes.imgURL}
