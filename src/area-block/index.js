@@ -110,7 +110,7 @@ registerBlockType( 'swo-blocks/area-block', {
 							allowedFormats={'none'}
 						/>
 					</p>
-					<InnerBlocks allowedBlocks={ [ 'swo-blocks/swo-button', 'core/paragraph', 'core/heading' ] } />
+					<InnerBlocks allowedBlocks={ [ 'swo-blocks/swo-button', 'swo-blocks/swo-list' ] } />
 				</div>
 			</div>
 		);
@@ -129,13 +129,6 @@ registerBlockType( 'swo-blocks/area-block', {
 				<div className="bereich-text classic-text">
 					<h5 className="no-serif-heading">{props.attributes.areaSubtit}</h5>
 					<p>{props.attributes.areaSubtxt}</p>
-					<ul className="feature-list">
-						<li><span>✓</span>   Revitalisierung von Fliess- und Stillgewässern</li>
-						<li><span>✓</span>	Begleitung von Schulklassen bei Umwelteinsätzen</li>
-						<li><span>✓</span>	Heckenpflege</li>
-						<li><span>✓</span>	Revitalisierung von Fliess- und Stillgewässern</li>
-					</ul>
-					<br></br>
 					<InnerBlocks.Content />
 				</div>
 			</div>

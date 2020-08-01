@@ -13,3 +13,4 @@ import './employee-block';
 import './project-block';
 import './area-block';
 import './swo-button';
+import './swo-list';
