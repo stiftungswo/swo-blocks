@@ -43,7 +43,7 @@ registerBlockType( 'swo-blocks/swo-button', {
 						<RichText
 							onChange={ newContent => { props.setAttributes({buttonLink: newContent})} }
 							value={props.attributes.buttonLink}
-							placeholder='Beispiel "about/zivildienst"'
+							placeholder='Hier bearbeiten. Beispiel "about/zivildienst"'
 							keepPlaceholderOnFocus={true}
 							allowedFormats={'none'}
 							className="selector-button"
