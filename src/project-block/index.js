@@ -7,8 +7,8 @@ const { RichText, PlainText, MediaUpload, InnerBlocks } = wp.editor;
 const { Button } = wp.components;
 
 registerBlockType( 'swo-blocks/project-block', {
-	title: 'Projekt',
-	description: 'Hiermit kann ein neues Projekt mit Bild und Inhalten erstellt werden.',
+	title: 'Projekt Inhaltsseite',
+	description: 'Hiermit kann eine Projekt-Inhaltsseite mit einem Bild und Inhalten erstellt werden.',
 	icon: 'media-spreadsheet',
 	category: 'swo-blocks',
 	keywords: ['Projekt', 'Inhaltsseite', 'SWO'],
