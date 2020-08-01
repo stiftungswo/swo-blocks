@@ -94,3 +94,15 @@
 .wp-block-column.side-info img {
   width: 60%;
   margin: 0 auto; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
