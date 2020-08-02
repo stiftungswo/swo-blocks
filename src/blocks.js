@@ -11,6 +11,7 @@
 
 import './employee-block';
 import './project-block';
-import './area-block';
+import './area-block-lr';
+import './area-block-rl';
 import './swo-button';
 import './swo-list';

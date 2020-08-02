@@ -1,0 +1,56 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+ .left-right {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1px 1px;
+	grid-template-areas: ". .";
+	margin-bottom: 60px;
+}
+
+.no-serif-heading {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.classic-text p {
+	font-size: 14px;
+    font-weight: normal;
+}
+
+ .bereich-text {
+	margin-left: 10px;
+	padding: 10px 0;
+}
+
+.bereich-text h5 {
+	margin: 0 0 1em;
+}
+
+.feature-list {
+	list-style: none;
+	margin: 0;
+}
+
+.feature-list li {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 600;
+	font-style: italic;
+}
+
+.feature-list li span{
+	color: #61330E;
+	font-weight: 1000;
+	text-decoration: none;
+}
+
+.feature-list li:not(:last-child){
+	margin-bottom: 10px;
+}
