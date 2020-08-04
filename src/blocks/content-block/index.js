@@ -147,16 +147,15 @@ registerBlockType( 'swo-blocks/content-block', {
 						/>
 					</p>
 					<InnerBlocks allowedBlocks={ [ 'core/image', 'core/paragraph', 'core/heading' ] } />
-					<p className="hashtags">
-						<RichText
-							onChange={ newContent => { props.setAttributes({projHashtags: newContent})} }
-							value={props.attributes.projHashtags}
-							placeholder='#Hashtag (Um mehrere Hashtags zu erstellen, drücken Sie "Enter")'
-							keepPlaceholderOnFocus={true}
-							allowedFormats={'none'}
-							multiline="p"
-						/>
-					</p>
+					<RichText
+						onChange={ newContent => { props.setAttributes({projHashtags: newContent})} }
+						value={props.attributes.projHashtags}
+						placeholder='#Hashtag (Um mehrere Hashtags zu erstellen, drücken Sie "Enter")'
+						keepPlaceholderOnFocus={true}
+						allowedFormats={'none'}
+						tagName="div"
+						multiline="p"
+					/>
 					<h6>Kontakt</h6>
 					<RichText
 						onChange={ newContent => { props.setAttributes({projContact: newContent})} }
