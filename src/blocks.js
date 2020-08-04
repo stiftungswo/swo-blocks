@@ -24,6 +24,8 @@ import './blocks/content-block';
 import './blocks/area-lr-block';
 import './blocks/area-rl-block';
 import './blocks/employee-block';
+import './blocks/all-projects-block'; /* TODO */
+import './blocks/all-pages-block'; /* TODO */
 
 /** ELEMENTS --> Category Name: 'swo-elements' */
 
