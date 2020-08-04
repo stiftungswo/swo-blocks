@@ -11,14 +11,22 @@
 
 /** PAGES --> Category Name: 'swo-pages' */
 
+import './pages/start-page'; /* TODO */
+import './pages/menu-page'; /* TODO */
+import './pages/content-page'; /* TODO */
+import './pages/area-page'; /* TODO */
+import './pages/area-sub-page'; /* TODO */
+
 /** BLOCKS --> Category Name: 'swo-blocks' */
 
-import './blocks/project-block'; /* ALLOWED INNER BLOCKS:  */
-import './blocks/area-block-lr';
-import './blocks/area-block-rl';
+import './blocks/start-slide-block'; /* TODO */
+import './blocks/content-block';
+import './blocks/area-lr-block';
+import './blocks/area-rl-block';
 import './blocks/employee-block';
 
 /** ELEMENTS --> Category Name: 'swo-elements' */
 
-import './elements/swo-button';
-import './elements/swo-list';
+import './elements/button-element';
+import './elements/list-element';
+import './elements/button-back-element'; /* TODO */

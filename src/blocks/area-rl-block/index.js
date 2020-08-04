@@ -6,9 +6,9 @@ const { registerBlockType } = wp.blocks;
 const { RichText, PlainText, MediaUpload, InnerBlocks } = wp.editor;
 const { Button } = wp.components;
 
-registerBlockType( 'swo-blocks/area-block-lr', {
-	title: 'Bereichsblock (Bild links)',
-	description: 'Dies ist ein Baustein für die Bereichsseiten mit einem Bild links und Inhalt rechts.',
+registerBlockType( 'swo-blocks/area-block-rl', {
+	title: 'Bereich Inhalt (Bild rechts)',
+	description: 'Dies ist ein Baustein für die Bereichsseiten mit einem Bild rechts und Inhalt links.',
 	icon: 'image-flip-horizontal',
 	category: 'swo-blocks',
 	keywords: ['Breiche', 'Inhalt', 'SWO'],
@@ -59,6 +59,27 @@ registerBlockType( 'swo-blocks/area-block-lr', {
 
 		return (
 			<div className="left-right">
+				<div className="bereich-text classic-text">
+					<h5 className="no-serif-heading">
+						<RichText
+							onChange={ newContent => { props.setAttributes({areaSubtit: newContent})} }
+							value={props.attributes.areaSubtit}
+							placeholder="Untertitel"
+							keepPlaceholderOnFocus={true}
+							allowedFormats={'none'}
+						/>
+					</h5>
+					<p>
+						<RichText
+							onChange={ newContent => { props.setAttributes({areaSubtxt: newContent})} }
+							value={props.attributes.areaSubtxt}
+							placeholder="Text zu diesem Untertitel"
+							keepPlaceholderOnFocus={true}
+							allowedFormats={'none'}
+						/>
+					</p>
+					<InnerBlocks allowedBlocks={ [ 'swo-elements/swo-button', 'swo-elements/swo-list' ] } />
+				</div>
 				<div className="bereich-image">
 					{
 						(props.attributes.imgURL) ? (
@@ -91,27 +112,6 @@ registerBlockType( 'swo-blocks/area-block-lr', {
 						)
 					}
 				</div>
-				<div className="bereich-text classic-text">
-					<h5 className="no-serif-heading">
-						<RichText
-							onChange={ newContent => { props.setAttributes({areaSubtit: newContent})} }
-							value={props.attributes.areaSubtit}
-							placeholder="Untertitel"
-							keepPlaceholderOnFocus={true}
-							allowedFormats={'none'}
-						/>
-					</h5>
-					<p>
-						<RichText
-							onChange={ newContent => { props.setAttributes({areaSubtxt: newContent})} }
-							value={props.attributes.areaSubtxt}
-							placeholder="Text zu diesem Untertitel"
-							keepPlaceholderOnFocus={true}
-							allowedFormats={'none'}
-						/>
-					</p>
-					<InnerBlocks allowedBlocks={ [ 'swo-elements/swo-button', 'swo-elements/swo-list' ] } />
-				</div>
 			</div>
 		);
 	},
@@ -120,16 +120,16 @@ registerBlockType( 'swo-blocks/area-block-lr', {
 
 		return (
 			<div className="left-right">
+				<div className="bereich-text classic-text">
+					<h5 className="no-serif-heading">{props.attributes.areaSubtit}</h5>
+					<p>{props.attributes.areaSubtxt}</p>
+					<InnerBlocks.Content />
+				</div>
 				<div className="bereich-image">
 					<img 
 						src={props.attributes.imgURL}
 						alt={props.attributes.imgAlt}
 					/>
-				</div>
-				<div className="bereich-text classic-text">
-					<h5 className="no-serif-heading">{props.attributes.areaSubtit}</h5>
-					<p>{props.attributes.areaSubtxt}</p>
-					<InnerBlocks.Content />
 				</div>
 			</div>
 		);
