@@ -6,7 +6,7 @@ const { registerBlockType } = wp.blocks;
 const { RichText, PlainText, MediaUpload, InnerBlocks } = wp.editor;
 const { Button } = wp.components;
 
-registerBlockType( 'swo-blocks/area-block-rl', {
+registerBlockType( 'swo-blocks/area-rl-block', {
 	title: 'Bereich Inhalt (Bild rechts)',
 	description: 'Dies ist ein Baustein für die Bereichsseiten mit einem Bild rechts und Inhalt links.',
 	icon: 'image-flip-horizontal',
@@ -78,7 +78,7 @@ registerBlockType( 'swo-blocks/area-block-rl', {
 							allowedFormats={'none'}
 						/>
 					</p>
-					<InnerBlocks allowedBlocks={ [ 'swo-elements/swo-button', 'swo-elements/swo-list' ] } />
+					<InnerBlocks allowedBlocks={ [ 'swo-elements/button-element', 'swo-elements/list-element' ] } />
 				</div>
 				<div className="bereich-image">
 					{

@@ -5,7 +5,7 @@ const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
 const { RichText } = wp.editor;
 
-registerBlockType( 'swo-elements/swo-list', {
+registerBlockType( 'swo-elements/list-element', {
 	title: 'SWO Liste',
 	description: 'Hiermit kann eine Liste eingefügt werden.',
 	icon: 'editor-ul',
