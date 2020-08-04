@@ -5,11 +5,11 @@ const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
 const { RichText } = wp.editor;
 
-registerBlockType( 'swo-blocks/swo-button', {
+registerBlockType( 'swo-elements/swo-button', {
 	title: 'SWO Button',
 	description: 'Hiermit kann ein Button eingefügt werden.',
 	icon: 'editor-removeformatting',
-	category: 'swo-blocks',
+	category: 'swo-elements',
 	keywords: ['Button', 'Knopf', 'SWO'],
 	attributes: {
 		buttonContent: {

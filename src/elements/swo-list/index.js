@@ -5,11 +5,11 @@ const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
 const { RichText } = wp.editor;
 
-registerBlockType( 'swo-blocks/swo-list', {
+registerBlockType( 'swo-elements/swo-list', {
 	title: 'SWO Liste',
 	description: 'Hiermit kann eine Liste eingefügt werden.',
 	icon: 'editor-ul',
-	category: 'swo-blocks',
+	category: 'swo-elements',
 	keywords: ['Liste', 'Punkte', 'SWO'],
 	attributes: {
 		listContent: {

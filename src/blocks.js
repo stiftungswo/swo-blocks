@@ -9,9 +9,16 @@
  * Webpack is compiling as the input file.
  */
 
-import './employee-block';
-import './project-block';
-import './area-block-lr';
-import './area-block-rl';
-import './swo-button';
-import './swo-list';
+/** PAGES --> Category Name: 'swo-pages' */
+
+/** BLOCKS --> Category Name: 'swo-blocks' */
+
+import './blocks/project-block'; /* ALLOWED INNER BLOCKS:  */
+import './blocks/area-block-lr';
+import './blocks/area-block-rl';
+import './blocks/employee-block';
+
+/** ELEMENTS --> Category Name: 'swo-elements' */
+
+import './elements/swo-button';
+import './elements/swo-list';

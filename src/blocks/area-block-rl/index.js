@@ -78,7 +78,7 @@ registerBlockType( 'swo-blocks/area-block-rl', {
 							allowedFormats={'none'}
 						/>
 					</p>
-					<InnerBlocks allowedBlocks={ [ 'swo-blocks/swo-button', 'swo-blocks/swo-list' ] } />
+					<InnerBlocks allowedBlocks={ [ 'swo-elements/swo-button', 'swo-elements/swo-list' ] } />
 				</div>
 				<div className="bereich-image">
 					{
