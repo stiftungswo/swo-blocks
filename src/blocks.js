@@ -9,15 +9,6 @@
  * Webpack is compiling as the input file.
  */
 
-<<<<<<< HEAD
-import './employee-block';
-import './project-block';
-import './area-block-lr';
-import './area-block-rl';
-import './swo-button';
-import './back-button';
-import './swo-list';
-=======
 /** PAGES --> Category Name: 'swo-pages' */
 
 import './pages/start-page'; /* TODO */
@@ -41,4 +32,3 @@ import './blocks/all-pages-block'; /* TODO */
 import './elements/button-element';
 import './elements/list-element';
 import './elements/button-back-element'; /* TODO */
->>>>>>> a662352327d35f935aefad862ce24be29d3aa929

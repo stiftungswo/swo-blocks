@@ -647,8 +647,22 @@
  * that are used across the project.
 */
 /* General styling -------------------------- */
-button {
-  outline: none; }
+.editorOnly {
+  background: #ffcece;
+  color: red;
+  padding: 10px;
+  border: 1px solid red; }
+
+.editor-post-title {
+  background: #f2f2f2; }
+
+.button-selectimg {
+  outline: none;
+  z-index: 999;
+  position: relative;
+  background: #ffcece !important;
+  color: red !important;
+  border-color: red !important; }
 
 .back-button {
   font-size: 14px;
