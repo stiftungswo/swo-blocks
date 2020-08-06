@@ -14,4 +14,5 @@ import './project-block';
 import './area-block-lr';
 import './area-block-rl';
 import './swo-button';
+import './back-button';
 import './swo-list';

@@ -11,6 +11,28 @@ button {
 	outline: none;
 }
 
+.back-button {
+	font-size: 14px;
+	background: #fff;
+	border: 2px solid #000;
+	color: #000;
+	border-radius: 4px;
+	text-transform: uppercase;
+	font-weight: bold !important;
+	padding: 4px 8px 4px 4px;
+	text-decoration: none !important;
+}
+
+.back-button::before {
+	display: inline-block;
+	content: ' ';
+	background: url('http://localhost:8080/wp-content/uploads/2020/06/small-arw.png') no-repeat;
+	background-size: 18px 18px;
+	height: 18px;
+	width: 18px;
+	vertical-align: middle;
+}
+
 .swo-button {
 	font-size: 14px;
 	background: #fff;
