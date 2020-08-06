@@ -3,10 +3,11 @@ import './style.scss';
 
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
+const { useSelect, useEntityProp } = wp.data;
 const { RichText, PlainText, MediaUpload, InnerBlocks } = wp.editor;
 const { Button } = wp.components;
 
-registerBlockType( 'swo-blocks/project-block', {
+registerBlockType( 'swo-blocks/content-block', {
 	title: 'Projekt Inhaltsseite',
 	description: 'Hiermit kann eine Projekt-Inhaltsseite mit einem Bild und Inhalten erstellt werden.',
 	icon: 'media-spreadsheet',
@@ -76,6 +77,34 @@ registerBlockType( 'swo-blocks/project-block', {
 				imgAlt: null
 			});
 		}
+ 
+		var postType = useSelect(
+			function( select ) {
+				return select( 'core/editor' ).getCurrentPostType();
+			},
+			[]
+		);
+		var entityProp = useEntityProp(
+			'postType',
+			postType,
+			'meta'
+		);
+		var meta = entityProp[ 0 ];
+		var setMeta = entityProp[ 1 ];
+
+		var metaFieldValue = meta['swo_meta_field'];
+		function updateMetaValue( newValue ) {
+			setMeta(
+				Object.assign(
+					{},
+					meta,
+					{
+						'swo_meta_field': newValue,
+					}
+				)
+			);
+		}
+		
 
 		return (
 			<div className="wrap-project wp-block-columns alignfull">
@@ -110,6 +139,13 @@ registerBlockType( 'swo-blocks/project-block', {
 							/>
 						)
 					}
+					<h4>
+						<RichText
+							onChange={ updateMetaValue }
+							value={metaFieldValue}
+						/>
+					</h4>
+					<h4>{metaFieldValue}</h4>
 					<h4>
 						<RichText
 							onChange={ newContent => { props.setAttributes({projHeading1: newContent})} }
@@ -147,16 +183,15 @@ registerBlockType( 'swo-blocks/project-block', {
 						/>
 					</p>
 					<InnerBlocks allowedBlocks={ [ 'core/image', 'core/paragraph', 'core/heading' ] } />
-					<p className="hashtags">
-						<RichText
-							onChange={ newContent => { props.setAttributes({projHashtags: newContent})} }
-							value={props.attributes.projHashtags}
-							placeholder='#Hashtag (Um mehrere Hashtags zu erstellen, drücken Sie "Enter")'
-							keepPlaceholderOnFocus={true}
-							allowedFormats={'none'}
-							multiline="p"
-						/>
-					</p>
+					<RichText
+						onChange={ newContent => { props.setAttributes({projHashtags: newContent})} }
+						value={props.attributes.projHashtags}
+						placeholder='#Hashtag (Um mehrere Hashtags zu erstellen, drücken Sie "Enter")'
+						keepPlaceholderOnFocus={true}
+						allowedFormats={'none'}
+						tagName="div"
+						multiline="p"
+					/>
 					<h6>Kontakt</h6>
 					<RichText
 						onChange={ newContent => { props.setAttributes({projContact: newContent})} }

@@ -5,7 +5,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-/* Add SWO Blocks Category */
+/** ----------------------- Add SWO Categories - PAGES */
+
+function swo_pages_category( $categories, $post ) {
+	return array_merge(
+		$categories,
+		array(
+			array(
+				'slug' => 'swo-pages',
+				'title' => 'Seiten SWO',
+                'icon'  => 'awards',
+			),
+		)
+	);
+}
+add_filter( 'block_categories', 'swo_pages_category', 10, 2);
+
+/** ----------------------- Add SWO Categories - BLOCKS */
 
 function swo_blocks_category( $categories, $post ) {
 	return array_merge(
@@ -13,13 +29,29 @@ function swo_blocks_category( $categories, $post ) {
 		array(
 			array(
 				'slug' => 'swo-blocks',
-				'title' => 'SWO Blocks',
+				'title' => 'Blöcke SWO',
                 'icon'  => 'awards',
 			),
 		)
 	);
 }
 add_filter( 'block_categories', 'swo_blocks_category', 10, 2);
+
+/** ----------------------- Add SWO Categories - ELEMENTS */
+
+function swo_elements_category( $categories, $post ) {
+	return array_merge(
+		$categories,
+		array(
+			array(
+				'slug' => 'swo-elements',
+				'title' => 'Elemente SWO',
+                'icon'  => 'awards',
+			),
+		)
+	);
+}
+add_filter( 'block_categories', 'swo_elements_category', 10, 2);
 
 function swo_blocks_cgb_block_assets() { // phpcs:ignore
 	// Register block styles for both frontend + backend.

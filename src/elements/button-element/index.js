@@ -5,11 +5,11 @@ const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
 const { RichText } = wp.editor;
 
-registerBlockType( 'swo-blocks/swo-button', {
+registerBlockType( 'swo-elements/button-element', {
 	title: 'SWO Button',
 	description: 'Hiermit kann ein Button eingefügt werden.',
 	icon: 'editor-removeformatting',
-	category: 'swo-blocks',
+	category: 'swo-elements',
 	keywords: ['Button', 'Knopf', 'SWO'],
 	attributes: {
 		buttonContent: {
@@ -38,7 +38,7 @@ registerBlockType( 'swo-blocks/swo-button', {
 						tagName="a"
 					/>
 				</a>
-				<p><strong>Link des Buttons (wird nicht angezeigt): </strong>
+				<p className="editorOnly"><strong>Link des Buttons (wird nicht angezeigt): </strong>
 					<span>
 						<RichText
 							onChange={ newContent => { props.setAttributes({buttonLink: newContent})} }

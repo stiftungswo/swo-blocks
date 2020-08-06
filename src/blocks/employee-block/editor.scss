@@ -1,0 +1,12 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+  
+ .button-selectimg {
+    outline: none;
+    z-index: 999;
+    position: relative;
+}

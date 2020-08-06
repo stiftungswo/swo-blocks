@@ -6,8 +6,8 @@ const { registerBlockType } = wp.blocks;
 const { RichText, PlainText, MediaUpload, InnerBlocks } = wp.editor;
 const { Button } = wp.components;
 
-registerBlockType( 'swo-blocks/area-block-lr', {
-	title: 'Bereichsblock (Bild links)',
+registerBlockType( 'swo-blocks/area-lr-block', {
+	title: 'Bereich Inhalt (Bild links)',
 	description: 'Dies ist ein Baustein für die Bereichsseiten mit einem Bild links und Inhalt rechts.',
 	icon: 'image-flip-horizontal',
 	category: 'swo-blocks',
@@ -70,7 +70,7 @@ registerBlockType( 'swo-blocks/area-block-lr', {
 								{ (props.isSelected) ? (
 									<Button
 									onClick={onRemoveImg}
-									className="button"
+									className="button button-selectimg"
 								>Bild löschen
 								</Button>
 								) : null }
@@ -83,7 +83,7 @@ registerBlockType( 'swo-blocks/area-block-lr', {
 								render= {({open}) =>
 									<Button
 										onClick={open}
-										className="button"
+										className="button button-selectimg"
 									>Bild wählen
 									</Button>
 								}
@@ -110,7 +110,7 @@ registerBlockType( 'swo-blocks/area-block-lr', {
 							allowedFormats={'none'}
 						/>
 					</p>
-					<InnerBlocks allowedBlocks={ [ 'swo-blocks/swo-button', 'swo-blocks/swo-list' ] } />
+					<InnerBlocks allowedBlocks={ [ 'swo-elements/button-element', 'swo-elements/list-element' ] } />
 				</div>
 			</div>
 		);
