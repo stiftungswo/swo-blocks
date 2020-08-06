@@ -57,6 +57,13 @@ registerBlockType( 'swo-blocks/area-rl-block', {
 			});
 		}
 
+		const blockHasParent = ( clientId ) => clientId !== wp.data.select( 'core/editor' ).getBlockHierarchyRootClientId( clientId );
+
+		if ( !blockHasParent( props.clientId ) ) {
+			alert('ACHTUNG. Bitte einen Inhalt Block nur in einer Inhaltsseite benutzen.');
+			throw new Error("ACHTUNG. Bitte einen Inhalt Block nur in einer Inhaltsseite benutzen.");
+		}
+
 		return (
 			<div className="left-right">
 				<div className="bereich-text classic-text">
