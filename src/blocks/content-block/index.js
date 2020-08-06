@@ -77,8 +77,15 @@ registerBlockType( 'swo-blocks/content-block', {
 			});
 		}
 
+		const blockHasParent = ( clientId ) => clientId !== wp.data.select( 'core/editor' ).getBlockHierarchyRootClientId( clientId );
+
+		if ( !blockHasParent( props.clientId ) ) {
+			alert('ACHTUNG. Bitte einen Inhalt Block nur in einer Inhaltsseite benutzen.');
+			throw new Error("ACHTUNG. Bitte einen Inhalt Block nur in einer Inhaltsseite benutzen.");
+		}
+
 		return (
-			<div className="wrap-project wp-block-columns alignfull">
+			<div className="wrap-project wp-block-columns alignfull">	
 				<div className="wp-block-column main-info">
 					{
 						(props.attributes.imgURL) ? (
