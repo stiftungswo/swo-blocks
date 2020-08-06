@@ -3,7 +3,7 @@ import './style.scss';
 
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
-const { RichText } = wp.editor;
+const { RichText } = wp.blockEditor;
 
 registerBlockType( 'swo-elements/button-back-element', {
 	title: 'Back Button',

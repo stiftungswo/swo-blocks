@@ -3,7 +3,7 @@ import './style.scss';
 
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
-const { RichText, PlainText, MediaUpload, InnerBlocks } = wp.editor;
+const { RichText, PlainText, MediaUpload, InnerBlocks } = wp.blockEditor;
 const { Button } = wp.components;
 
 registerBlockType( 'swo-blocks/area-lr-block', {
