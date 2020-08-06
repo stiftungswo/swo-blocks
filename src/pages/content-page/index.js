@@ -8,16 +8,13 @@ const { Button } = wp.components;
 
 registerBlockType( 'swo-pages/content-page', {
 	title: 'Inhaltsseite Standard & Projekte',
-	description: 'Dies ist ein die Seite um normale Inhalte anzuzeigen.',
+	description: 'Dies ist eine Seite um normale Inhalte anzuzeigen.',
 	icon: 'media-default',
 	category: 'swo-pages',
 	keywords: ['Inhalt', 'Inhalt', 'SWO'],
 	attributes: {
 		imgURL: {
-			type: 'string',
-			source: 'attribute',
-			attribute: 'src',
-			selector: 'img'
+			type: 'string'
 		},
 		imgID: {
 			type: 'number'
@@ -28,16 +25,7 @@ registerBlockType( 'swo-pages/content-page', {
 			attribute: 'alt',
 			selector: 'img'
 		},
-		areaSubtit: {
-			type: 'string',
-			source: 'html',
-			selector: '.bereich-text h5',
-		},
-		areaSubtxt: {
-			type: 'string',
-			source: 'html',
-			selector: '.bereich-text p',
-		}
+		
 	},
 
 	edit: function( props ) {
@@ -101,7 +89,9 @@ registerBlockType( 'swo-pages/content-page', {
 
 		return (
 			<div>
-				<header class="entry-header has-text-align-center header-footer-group">
+				<header className="entry-header has-text-align-center header-footer-group" style={{
+						backgroundImage: `url(${props.attributes.imgURL})`
+					}}>
 
 					<div class="entry-header-inner section-inner medium">
 
