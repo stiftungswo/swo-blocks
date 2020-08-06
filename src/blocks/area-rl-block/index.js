@@ -91,7 +91,7 @@ registerBlockType( 'swo-blocks/area-rl-block', {
 								{ (props.isSelected) ? (
 									<Button
 									onClick={onRemoveImg}
-									className="button"
+									className="button button-selectimg"
 								>Bild löschen
 								</Button>
 								) : null }
@@ -104,7 +104,7 @@ registerBlockType( 'swo-blocks/area-rl-block', {
 								render= {({open}) =>
 									<Button
 										onClick={open}
-										className="button"
+										className="button button-selectimg"
 									>Bild wählen
 									</Button>
 								}

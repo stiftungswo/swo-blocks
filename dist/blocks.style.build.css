@@ -6,7 +6,7 @@
 */
 /* General styling -------------------------- */
 .editorOnly {
-  background: #ffb4b4;
+  background: #ffcece;
   color: red;
   padding: 10px;
   border: 1px solid red; }
@@ -14,8 +14,12 @@
 .editor-post-title {
   background: #f2f2f2; }
 
-button {
-  outline: none; }
+.button-selectimg {
+  outline: none;
+  z-index: 999;
+  position: relative;
+  background: #ffcece !important;
+  color: red !important; }
 
 .swo-button {
   font-size: 14px;
@@ -623,7 +627,7 @@ button {
 */
 /* General styling -------------------------- */
 .editorOnly {
-  background: #ffb4b4;
+  background: #ffcece;
   color: red;
   padding: 10px;
   border: 1px solid red; }
@@ -631,8 +635,12 @@ button {
 .editor-post-title {
   background: #f2f2f2; }
 
-button {
-  outline: none; }
+.button-selectimg {
+  outline: none;
+  z-index: 999;
+  position: relative;
+  background: #ffcece !important;
+  color: red !important; }
 
 .swo-button {
   font-size: 14px;
@@ -1240,7 +1248,7 @@ button {
 */
 /* General styling -------------------------- */
 .editorOnly {
-  background: #ffb4b4;
+  background: #ffcece;
   color: red;
   padding: 10px;
   border: 1px solid red; }
@@ -1248,8 +1256,12 @@ button {
 .editor-post-title {
   background: #f2f2f2; }
 
-button {
-  outline: none; }
+.button-selectimg {
+  outline: none;
+  z-index: 999;
+  position: relative;
+  background: #ffcece !important;
+  color: red !important; }
 
 .swo-button {
   font-size: 14px;
@@ -1857,7 +1869,7 @@ button {
 */
 /* General styling -------------------------- */
 .editorOnly {
-  background: #ffb4b4;
+  background: #ffcece;
   color: red;
   padding: 10px;
   border: 1px solid red; }
@@ -1865,8 +1877,12 @@ button {
 .editor-post-title {
   background: #f2f2f2; }
 
-button {
-  outline: none; }
+.button-selectimg {
+  outline: none;
+  z-index: 999;
+  position: relative;
+  background: #ffcece !important;
+  color: red !important; }
 
 .swo-button {
   font-size: 14px;
@@ -2474,7 +2490,7 @@ button {
 */
 /* General styling -------------------------- */
 .editorOnly {
-  background: #ffb4b4;
+  background: #ffcece;
   color: red;
   padding: 10px;
   border: 1px solid red; }
@@ -2482,8 +2498,12 @@ button {
 .editor-post-title {
   background: #f2f2f2; }
 
-button {
-  outline: none; }
+.button-selectimg {
+  outline: none;
+  z-index: 999;
+  position: relative;
+  background: #ffcece !important;
+  color: red !important; }
 
 .swo-button {
   font-size: 14px;
@@ -3091,7 +3111,7 @@ button {
 */
 /* General styling -------------------------- */
 .editorOnly {
-  background: #ffb4b4;
+  background: #ffcece;
   color: red;
   padding: 10px;
   border: 1px solid red; }
@@ -3099,8 +3119,12 @@ button {
 .editor-post-title {
   background: #f2f2f2; }
 
-button {
-  outline: none; }
+.button-selectimg {
+  outline: none;
+  z-index: 999;
+  position: relative;
+  background: #ffcece !important;
+  color: red !important; }
 
 .swo-button {
   font-size: 14px;
