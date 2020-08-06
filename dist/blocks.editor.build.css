@@ -5,6 +5,15 @@
  * that are used across the project.
 */
 /* General styling -------------------------- */
+.editorOnly {
+  background: #ffb4b4;
+  color: red;
+  padding: 10px;
+  border: 1px solid red; }
+
+.editor-post-title {
+  background: #f2f2f2; }
+
 button {
   outline: none; }
 
@@ -686,6 +695,15 @@ button {
  * that are used across the project.
 */
 /* General styling -------------------------- */
+.editorOnly {
+  background: #ffb4b4;
+  color: red;
+  padding: 10px;
+  border: 1px solid red; }
+
+.editor-post-title {
+  background: #f2f2f2; }
+
 button {
   outline: none; }
 
@@ -1335,6 +1353,15 @@ button {
  * that are used across the project.
 */
 /* General styling -------------------------- */
+.editorOnly {
+  background: #ffb4b4;
+  color: red;
+  padding: 10px;
+  border: 1px solid red; }
+
+.editor-post-title {
+  background: #f2f2f2; }
+
 button {
   outline: none; }
 
@@ -1984,6 +2011,15 @@ button {
  * that are used across the project.
 */
 /* General styling -------------------------- */
+.editorOnly {
+  background: #ffb4b4;
+  color: red;
+  padding: 10px;
+  border: 1px solid red; }
+
+.editor-post-title {
+  background: #f2f2f2; }
+
 button {
   outline: none; }
 
@@ -2593,6 +2629,15 @@ button {
  * that are used across the project.
 */
 /* General styling -------------------------- */
+.editorOnly {
+  background: #ffb4b4;
+  color: red;
+  padding: 10px;
+  border: 1px solid red; }
+
+.editor-post-title {
+  background: #f2f2f2; }
+
 button {
   outline: none; }
 
@@ -3202,6 +3247,15 @@ button {
  * that are used across the project.
 */
 /* General styling -------------------------- */
+.editorOnly {
+  background: #ffb4b4;
+  color: red;
+  padding: 10px;
+  border: 1px solid red; }
+
+.editor-post-title {
+  background: #f2f2f2; }
+
 button {
   outline: none; }
 

@@ -38,7 +38,7 @@ registerBlockType( 'swo-elements/button-element', {
 						tagName="a"
 					/>
 				</a>
-				<p><strong>Link des Buttons (wird nicht angezeigt): </strong>
+				<p className="editorOnly"><strong>Link des Buttons (wird nicht angezeigt): </strong>
 					<span>
 						<RichText
 							onChange={ newContent => { props.setAttributes({buttonLink: newContent})} }
