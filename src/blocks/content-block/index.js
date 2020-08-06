@@ -3,12 +3,12 @@ import './style.scss';
 
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
-const { RichText, PlainText, MediaUpload, InnerBlocks } = wp.editor;
+const { RichText, PlainText, MediaUpload, InnerBlocks } = wp.blockEditor;
 const { Button } = wp.components;
 
 registerBlockType( 'swo-blocks/content-block', {
-	title: 'Projekt Inhaltsseite',
-	description: 'Hiermit kann eine Projekt-Inhaltsseite mit einem Bild und Inhalten erstellt werden.',
+	title: 'Projekt Inhalt',
+	description: 'Hiermit kann der Projekt-Inhalt mit einem Bild und Inhalten erstellt werden.',
 	icon: 'media-spreadsheet',
 	category: 'swo-blocks',
 	keywords: ['Projekt', 'Inhaltsseite', 'SWO'],
