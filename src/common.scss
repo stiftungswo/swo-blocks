@@ -28,15 +28,7 @@
 }
 
 .back-button {
-	font-size: 14px;
-	background: #fff;
-	border: 2px solid #000;
-	color: #000;
-	border-radius: 4px;
-	text-transform: uppercase;
-	font-weight: bold !important;
-	padding: 4px 8px 4px 4px;
-	text-decoration: none !important;
+	padding-right: 8px !important;
 }
 
 .back-button::before {
@@ -47,6 +39,11 @@
 	height: 18px;
 	width: 18px;
 	vertical-align: middle;
+	margin: 0 6px 4px 0;
+}
+
+.back-button:after {
+	display: none !important;
 }
 
 .swo-button {

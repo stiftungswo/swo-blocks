@@ -28,7 +28,7 @@ registerBlockType( 'swo-blocks/back-button', {
 	edit: function( props ) {
 		return (
 			<div>
-				<a className="back-button zivi-braun">
+				<a className="swo-button back-button">
 					<RichText
 						onChange={ newContent => { props.setAttributes({buttonContent: newContent})} }
 						value={props.attributes.buttonContent}
@@ -38,7 +38,7 @@ registerBlockType( 'swo-blocks/back-button', {
 						tagName="a"
 					/>
 				</a>
-				<p><strong>Link des Buttons (wird nicht angezeigt): </strong>
+				<p className="editorOnly"><strong>Link des Buttons (wird nicht angezeigt): </strong>
 					<span>
 						<RichText
 							onChange={ newContent => { props.setAttributes({buttonLink: newContent})} }
@@ -57,7 +57,7 @@ registerBlockType( 'swo-blocks/back-button', {
 	save: function( props ) {
 
 		return (
-				<a href={props.attributes.buttonLink} className="selector-button back-button zivi-braun" style="color: #61330E !important;border: 2px solid #61330E;">
+				<a href={props.attributes.buttonLink} className="selector-button swo-button back-button">
 					{props.attributes.buttonContent}
 				</a>
 		);
