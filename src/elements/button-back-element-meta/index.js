@@ -5,8 +5,8 @@ const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
 const { RichText } = wp.editor;
 
-registerBlockType( 'swo-elements/button-back-element', {
-	title: 'Back Button',
+registerBlockType( 'swo-elements/button-back-element-meta', {
+	title: 'Back Button Meta',
 	description: 'Hiermit kann ein "Zurück"-Button eingefügt werden.',
 	icon: 'editor-removeformatting',
 	category: 'swo-elements',

@@ -32,3 +32,4 @@ import './blocks/all-pages-block'; /* TODO */
 import './elements/button-element';
 import './elements/list-element';
 import './elements/button-back-element';
+import './elements/button-back-element-meta';
