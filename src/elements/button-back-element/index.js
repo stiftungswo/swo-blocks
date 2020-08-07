@@ -26,6 +26,14 @@ registerBlockType( 'swo-elements/button-back-element', {
 	},
 
 	edit: function( props ) {
+
+		const blockHasParent = ( clientId ) => clientId !== wp.data.select( 'core/editor' ).getBlockHierarchyRootClientId( clientId );
+
+		if ( !blockHasParent( props.clientId ) ) {
+			alert('ACHTUNG. Bitte ein Zurück-Knopf Element nur innerhalb eines anderen Blocks oder einer Seite einfügen.');
+			throw new Error("ACHTUNG. Bitte ein Zurück-Knopf Element nur innerhalb eines anderen Blocks oder einer Seite einfügen.");
+		}
+
 		return (
 			<div>
 				<a className="swo-button back-button">

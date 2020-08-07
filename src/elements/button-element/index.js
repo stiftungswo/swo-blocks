@@ -26,6 +26,14 @@ registerBlockType( 'swo-elements/button-element', {
 	},
 
 	edit: function( props ) {
+
+		const blockHasParent = ( clientId ) => clientId !== wp.data.select( 'core/editor' ).getBlockHierarchyRootClientId( clientId );
+
+		if ( !blockHasParent( props.clientId ) ) {
+			alert('ACHTUNG. Bitte ein Knopf Element nur innerhalb eines anderen Blocks oder einer Seite einfügen.');
+			throw new Error("ACHTUNG. Bitte ein Knopf Element nur innerhalb eines anderen Blocks oder einer Seite einfügen.");
+		}
+
 		return (
 			<div>
 				<a className="swo-button zivi-braun">

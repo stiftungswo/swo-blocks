@@ -20,6 +20,14 @@ registerBlockType( 'swo-elements/list-element', {
 	},
 
 	edit: function( props ) {
+
+		const blockHasParent = ( clientId ) => clientId !== wp.data.select( 'core/editor' ).getBlockHierarchyRootClientId( clientId );
+
+		if ( !blockHasParent( props.clientId ) ) {
+			alert('ACHTUNG. Bitte ein Listen Element nur innerhalb eines anderen Blocks oder einer Seite einfügen.');
+			throw new Error("ACHTUNG. Bitte ein Listen Element nur innerhalb eines anderen Blocks oder einer Seite einfügen.");
+		}
+
 		return (
 			<ul className="feature-list">
 				<RichText

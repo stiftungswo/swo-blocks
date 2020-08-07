@@ -77,6 +77,13 @@ registerBlockType( 'swo-blocks/employee-block', {
 			});
 		}
 
+		const blockHasParent = ( clientId ) => clientId !== wp.data.select( 'core/editor' ).getBlockHierarchyRootClientId( clientId );
+
+		if ( !blockHasParent( props.clientId ) ) {
+			alert('ACHTUNG. Bitte einen Angestellten Block nur innerhalb einer Seite einfügen. Bitte zuerst ein Seitenblock einfügen.');
+			throw new Error("ACHTUNG. Bitte einen Angestellten Block nur innerhalb einer Seite einfügen. Bitte zuerst ein Seitenblock einfügen.");
+		}
+
 		return (
 			<div className="wrap-employee">
 				<div className="imageDiv imageDivteam">
