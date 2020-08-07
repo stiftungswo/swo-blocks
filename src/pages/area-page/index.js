@@ -30,6 +30,10 @@ registerBlockType( 'swo-pages/area-page', {
 			type: 'string',
 			selector: '.bereich-title h1'
 		},
+		subTitle: {
+			type: 'string',
+			selector: '.bereich-title h4'
+		},
 		boxContent: {
 			type: 'string',
 			selector: '.bereich-title p'
@@ -90,7 +94,15 @@ registerBlockType( 'swo-pages/area-page', {
                                 <div className="entry-header-inner section-inner medium">
 
                                     <div className="bereich-title classic-text">
-                                        <PostTitle />   
+                                        <PostTitle />
+										<h4>
+                                            <RichText
+                                                onChange={ newContent => { props.setAttributes({subTitle: newContent})} }
+                                                value={props.attributes.subTitle}
+                                                placeholder="Untertitel (Leerlassen, falls nicht benötigt)"
+                                                keepPlaceholderOnFocus={true}
+                                            />
+                                        </h4>
                                         <p>
                                             <RichText
                                                 onChange={ newContent => { props.setAttributes({boxContent: newContent})} }
@@ -137,7 +149,8 @@ registerBlockType( 'swo-pages/area-page', {
                     <div className="entry-header-inner section-inner medium">
 
                         <div className="bereich-title classic-text">
-                            <h1>{props.attributes.titleString}</h1>    
+                            <h1>{props.attributes.titleString}</h1>
+                            <h5>{props.attributes.subTitle}</h5>
                             <p>{props.attributes.boxContent}</p>
                         </div>
                     </div>

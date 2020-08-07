@@ -13,9 +13,8 @@
 
 import './pages/start-page'; /* TODO */
 import './pages/menu-page'; /* TODO */
-import './pages/content-page'; /* TODO */
-import './pages/area-page'; /* TODO */
-import './pages/area-sub-page'; /* TODO */
+import './pages/content-page'; /* TODO > add colums for the employees, but with limited innerblocks > see my stackoverflow question */
+import './pages/area-page';
 
 /** BLOCKS --> Category Name: 'swo-blocks' */
 
