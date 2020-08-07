@@ -114,3 +114,11 @@ function swo_blocks_cgb_block_assets() { // phpcs:ignore
 
 // Hook: Block assets.
 add_action( 'init', 'swo_blocks_cgb_block_assets' );
+
+function gutenberg_my_block_init() {
+    register_meta( 'post', 'backButtonContent', array(
+		'show_in_rest' => true,
+		'type'         => 'string',
+    ) );
+}
+add_action( 'init', 'gutenberg_my_block_init' );
