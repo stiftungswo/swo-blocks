@@ -719,3 +719,13 @@
 	width: 60%;
 	margin: 0 auto;
 }
+
+.block-editor-writing-flow, .edit-post-visual-editor, .editor-styles-wrapper {
+	background: #f2f2f2;
+	padding-top: 0;
+}
+
+.wp-block.block-editor-block-list__block {
+	background: #fff !important;
+	padding-bottom: 40px;
+}

@@ -3,6 +3,7 @@ import './style.scss';
 
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
+const { withSelect, select } = wp.data;
 const { RichText, PlainText, MediaUpload, InnerBlocks } = wp.blockEditor;
 const { Button } = wp.components;
 
@@ -25,7 +26,10 @@ registerBlockType( 'swo-pages/content-page', {
 			attribute: 'alt',
 			selector: 'img'
 		},
-		
+		titleString: {
+			type: 'string',
+			selector: '.entry-title'
+		}
 	},
 
 	edit: function( props ) {
@@ -45,17 +49,31 @@ registerBlockType( 'swo-pages/content-page', {
 			});
 		}
 
+		const onChangeTitle = (newTitle) => {
+			props.setAttributes({
+				titleString: newTitle
+			});
+		}
+
+		var GetTitle = function GetTitle(props) {
+			const title = select("core/editor").getEditedPostAttribute( 'title' );
+			onChangeTitle(title);
+			return <h1 className="entry-title">{props.title}</h1>;
+		};
+
+		const selectTitle = withSelect(select => ({
+			title: select("core/editor").getEditedPostAttribute( 'title' )
+		}));
+		const PostTitle = selectTitle(GetTitle);
+
 		return (
 			<div>
 				<div>
-					<p>Ihr Bild für die Kopfzeile:</p>
 					{
 						(props.attributes.imgURL) ? (
-							<div>
-								<img 
-									src={props.attributes.imgURL}
-									alt={props.attributes.imgAlt}
-								/>
+							<header className="entry-header has-text-align-center header-footer-group"
+								style={{ backgroundImage: `url(${props.attributes.imgURL})`}}>
+
 								{ (props.isSelected) ? (
 									<Button
 									onClick={onRemoveImg}
@@ -63,7 +81,12 @@ registerBlockType( 'swo-pages/content-page', {
 								>Bild löschen
 								</Button>
 								) : null }
-							</div>
+
+								<div className="entry-header-inner section-inner medium">
+									<PostTitle />
+								</div>
+								
+							</header>
 						) : (
 							<MediaUpload
 								onSelect={onFileSelect}
@@ -73,14 +96,16 @@ registerBlockType( 'swo-pages/content-page', {
 									<Button
 										onClick={open}
 										className="button button-selectimg"
-									>Bild wählen
+									>Bild für Kopfzeile wählen
 									</Button>
 								}
 							/>
 						)
 					}
 				</div>
-				<InnerBlocks allowedBlocks={ [ 'swo-blocks/content-block' ] } />
+				<div class="limit-content-width">
+					<InnerBlocks allowedBlocks={ [ 'swo-blocks/content-block' ] } />
+				</div>
 			</div>
 		);
 	},
@@ -89,13 +114,12 @@ registerBlockType( 'swo-pages/content-page', {
 
 		return (
 			<div>
-				<header className="entry-header has-text-align-center header-footer-group" style={{
-						backgroundImage: `url(${props.attributes.imgURL})`
-					}}>
+				<header className="entry-header has-text-align-center header-footer-group"
+						style={{ backgroundImage: `url(${props.attributes.imgURL})`}}>
 
 					<div class="entry-header-inner section-inner medium">
 
-						<h1 class="entry-title">erverve</h1>
+						<h1 class="entry-title">{props.attributes.titleString}</h1>
 					</div>
 
 				</header>

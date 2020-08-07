@@ -4,3 +4,26 @@
  * CSS for just Backend enqueued after style.scss
  * which makes it higher in priority.
  */
+
+ header {
+     min-height: 200px;
+     position: relative;
+ }
+
+ .singular .entry-header {
+	background: url(./assets/images/ONLY_TEMPORARY_1.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 14rem 0 1rem;
+}
+
+h1.entry-title{
+	position: absolute;
+	bottom: 0;
+	color: #fff !important;
+	font-size: 46px;
+	padding-left: 18rem;
+	text-align: left;
+}
