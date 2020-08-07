@@ -3,12 +3,12 @@ import './style.scss';
 
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
-const { RichText, PlainText, MediaUpload, InnerBlocks } = wp.editor;
+const { RichText, PlainText, MediaUpload, InnerBlocks } = wp.blockEditor;
 const { Button } = wp.components;
 
 registerBlockType( 'swo-blocks/content-block', {
-	title: 'Projekt Inhaltsseite',
-	description: 'Hiermit kann eine Projekt-Inhaltsseite mit einem Bild und Inhalten erstellt werden.',
+	title: 'Projekt Inhalt',
+	description: 'Hiermit kann der Projekt-Inhalt mit einem Bild und Inhalten erstellt werden.',
 	icon: 'media-spreadsheet',
 	category: 'swo-blocks',
 	keywords: ['Projekt', 'Inhaltsseite', 'SWO'],
@@ -77,8 +77,15 @@ registerBlockType( 'swo-blocks/content-block', {
 			});
 		}
 
+		const blockHasParent = ( clientId ) => clientId !== wp.data.select( 'core/editor' ).getBlockHierarchyRootClientId( clientId );
+
+		if ( !blockHasParent( props.clientId ) ) {
+			alert('ACHTUNG. Bitte einen Inhalt Block nur in einer Inhaltsseite benutzen.');
+			throw new Error("ACHTUNG. Bitte einen Inhalt Block nur in einer Inhaltsseite benutzen.");
+		}
+
 		return (
-			<div className="wrap-project wp-block-columns alignfull">
+			<div className="wrap-project wp-block-columns alignfull">	
 				<div className="wp-block-column main-info">
 					{
 						(props.attributes.imgURL) ? (

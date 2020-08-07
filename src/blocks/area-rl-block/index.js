@@ -3,7 +3,7 @@ import './style.scss';
 
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
-const { RichText, PlainText, MediaUpload, InnerBlocks } = wp.editor;
+const { RichText, PlainText, MediaUpload, InnerBlocks } = wp.blockEditor;
 const { Button } = wp.components;
 
 registerBlockType( 'swo-blocks/area-rl-block', {
@@ -55,6 +55,13 @@ registerBlockType( 'swo-blocks/area-rl-block', {
 				imgID: null,
 				imgAlt: null
 			});
+		}
+
+		const blockHasParent = ( clientId ) => clientId !== wp.data.select( 'core/editor' ).getBlockHierarchyRootClientId( clientId );
+
+		if ( !blockHasParent( props.clientId ) ) {
+			alert('ACHTUNG. Bitte einen Inhalt Block nur in einer Inhaltsseite benutzen.');
+			throw new Error("ACHTUNG. Bitte einen Inhalt Block nur in einer Inhaltsseite benutzen.");
 		}
 
 		return (
