@@ -153,7 +153,7 @@ registerBlockType( 'swo-blocks/content-block', {
 							allowedFormats={'none'}
 						/>
 					</p>
-					<InnerBlocks allowedBlocks={ [ 'core/image', 'core/paragraph', 'core/heading' ] } />
+					<InnerBlocks allowedBlocks={ [ 'core/image', 'core/paragraph', 'core/heading', 'swo-elements/button-element', 'swo-elements/button-back-element', 'swo-elements/list-element' ] } />
 					<RichText
 						onChange={ newContent => { props.setAttributes({projHashtags: newContent})} }
 						value={props.attributes.projHashtags}
