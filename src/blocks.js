@@ -27,6 +27,8 @@ import './blocks/all-projects-block'; /* TODO */
 import './blocks/recent-projects-block'; /* TODO */
 import './blocks/all-pages-block'; /* TODO */
 
+import './blocks/meta-block-example'; /* TO DELETE */
+
 /** ELEMENTS --> Category Name: 'swo-elements' */
 
 import './elements/button-element';
