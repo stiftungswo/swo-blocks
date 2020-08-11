@@ -20,9 +20,11 @@ import './pages/area-page';
 
 import './blocks/start-slide-block'; /* TODO */
 import './blocks/content-block';
+import './blocks/title-text-block';
 import './blocks/area-lr-block';
 import './blocks/area-rl-block';
 import './blocks/employee-block';
+import './blocks/philosophy-block';
 import './blocks/all-projects-block'; /* TODO */
 import './blocks/recent-projects-block'; /* TODO */
 import './blocks/all-pages-block'; /* TODO */
