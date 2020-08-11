@@ -47,7 +47,7 @@ registerBlockType( 'swo-blocks/title-text-block', {
 				<RichText
 					onChange={ newContent => { props.setAttributes({text: newContent})} }
 					value={props.attributes.text}
-					placeholder="Text"
+					placeholder="Text (Kann auch leer gelassen werden, um nur den Titel anzuzeigen)"
 					keepPlaceholderOnFocus={true}
 					allowedFormats={'none'}
 					tagName="p"

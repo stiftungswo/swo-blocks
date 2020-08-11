@@ -104,7 +104,7 @@ registerBlockType( 'swo-pages/content-page', {
 					}
 				</div>
 				<div class="limit-content-width">
-					<InnerBlocks allowedBlocks={ [ 'swo-blocks/content-block', 'swo-blocks/employee-block', 'core/heading', 'core/paragraph'  ] } />
+					<InnerBlocks allowedBlocks={ [ 'swo-blocks/content-block', 'swo-blocks/employee-block', 'swo-blocks/title-text-block', 'core/heading', 'core/paragraph'  ] } />
 				</div>
 			</div>
 		);
