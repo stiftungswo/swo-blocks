@@ -16,7 +16,7 @@ registerBlockType( 'swo-pages/start-page', {
 		return (
 			<div>
 				<div class="limit-content-width">
-					<InnerBlocks allowedBlocks={ [ 'swo-blocks/philosophy-block' ] } />
+					<InnerBlocks allowedBlocks={ [ 'swo-blocks/title-text-block', 'eedee/block-gutenslide', 'swo-blocks/philosophy-block' ] } />
 				</div>
 			</div>
 		);
