@@ -6,6 +6,8 @@ const { registerBlockType } = wp.blocks;
 const { withSelect, select } = wp.data;
 const { RichText, PlainText, MediaUpload, InnerBlocks } = wp.blockEditor;
 const { Button } = wp.components;
+const { Dropdown } = wp.components;
+const { SelectControl } = wp.components;
 
 registerBlockType( 'swo-pages/content-page', {
 	title: 'Inhaltsseite Standard & Projekte',
@@ -14,8 +16,18 @@ registerBlockType( 'swo-pages/content-page', {
 	category: 'swo-pages',
 	keywords: ['Inhalt', 'Inhalt', 'SWO'],
 	attributes: {
+		typeOfPost: {
+			type: 'string',
+			source: 'meta',
+			meta: 'typeOfPost',
+		},
+		signatureImage: {
+			type: 'string',
+			source: 'meta',
+			meta: 'signatureImage',
+		},
 		imgURL: {
-			type: 'string'
+			type: 'string',
 		},
 		imgID: {
 			type: 'number'
@@ -29,7 +41,7 @@ registerBlockType( 'swo-pages/content-page', {
 		titleString: {
 			type: 'string',
 			selector: '.entry-title'
-		}
+		},
 	},
 
 	edit: function( props ) {
@@ -37,6 +49,7 @@ registerBlockType( 'swo-pages/content-page', {
 		const onFileSelect = (img) => {
 			props.setAttributes({
 				imgURL: img.url,
+				signatureImage: img.url,
 				imgID: img.id,
 				imgAlt: img.alt
 			});
@@ -55,6 +68,12 @@ registerBlockType( 'swo-pages/content-page', {
 			});
 		}
 
+		const onSelectDropdown = (newValue) => {
+			props.setAttributes({
+				typeOfPost: newValue
+			});
+		}
+
 		var GetTitle = function GetTitle(props) {
 			const title = select("core/editor").getEditedPostAttribute( 'title' );
 			onChangeTitle(title);
@@ -68,6 +87,18 @@ registerBlockType( 'swo-pages/content-page', {
 
 		return (
 			<div>
+				<div>
+				<SelectControl
+				        label={ __( 'Soll diese Seite in einer Übersicht angezeigt werden?   ' ) }
+				        value={ props.attributes.typeOfPost }
+				        onChange={onSelectDropdown}
+				        options={ [
+				            { value: 'type_common', label: 'Nein' },
+				            { value: 'type_project', label: 'Projektübersicht' },
+				            { value: 'type_page', label: 'Seitenübersicht' },
+				        ] }
+				    />
+				</div>
 				<div>
 					{
 						(props.attributes.imgURL) ? (
@@ -104,7 +135,7 @@ registerBlockType( 'swo-pages/content-page', {
 					}
 				</div>
 				<div class="limit-content-width">
-					<InnerBlocks allowedBlocks={ [ 'swo-blocks/content-block', 'swo-blocks/employee-block', 'core/heading', 'core/paragraph'  ] } />
+					<InnerBlocks allowedBlocks={ [ 'swo-blocks/content-block', 'swo-blocks/employee-block', 'core/heading', 'core/paragraph', 'swo-blocks/recent-projects-block'  ] } />
 				</div>
 			</div>
 		);

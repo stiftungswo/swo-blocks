@@ -66,7 +66,7 @@ function swo_blocks_cgb_block_assets() { // phpcs:ignore
 	wp_register_script(
 		'swo_blocks-cgb-block-js', // Handle.
 		plugins_url( '/dist/blocks.build.js', dirname( __FILE__ ) ), // Block.build.js: We register the block here. Built with Webpack.
-		array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor' ), // Dependencies, defined above.
+		array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor', 'wp-data', 'wp-compose' ), // Dependencies, defined above.
 		null, // filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.build.js' ), // Version: filemtime — Gets file modification time.
 		true // Enqueue the script in the footer.
 	);
@@ -115,8 +115,17 @@ function swo_blocks_cgb_block_assets() { // phpcs:ignore
 // Hook: Block assets.
 add_action( 'init', 'swo_blocks_cgb_block_assets' );
 
+//adding meta-fields of different blocks
 function gutenberg_my_block_init() {
     register_meta( 'post', 'backButtonContent', array(
+		'show_in_rest' => true,
+		'type'         => 'string',
+    ) );
+    register_meta( 'post', 'typeOfPost', array(
+		'show_in_rest' => true,
+		'type'         => 'string',
+    ) );
+    register_meta( 'post', 'signatureImage', array(
 		'show_in_rest' => true,
 		'type'         => 'string',
     ) );
