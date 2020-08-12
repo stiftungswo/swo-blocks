@@ -103,14 +103,13 @@ registerBlockType( 'swo-pages/area-page', {
                                                 keepPlaceholderOnFocus={true}
                                             />
                                         </h4>
-                                        <p>
-                                            <RichText
-                                                onChange={ newContent => { props.setAttributes({boxContent: newContent})} }
-                                                value={props.attributes.boxContent}
-                                                placeholder="Hier den Text für die Box bearbeiten"
-                                                keepPlaceholderOnFocus={true}
-                                            />
-                                        </p>
+										<RichText
+											onChange={ newContent => { props.setAttributes({boxContent: newContent})} }
+											value={props.attributes.boxContent}
+											placeholder="Hier den Text für die Box bearbeiten"
+											keepPlaceholderOnFocus={true}
+											tagName="p"
+										/>
                                     </div>
                                 </div>
 								
@@ -151,7 +150,10 @@ registerBlockType( 'swo-pages/area-page', {
                         <div className="bereich-title classic-text">
                             <h1>{props.attributes.titleString}</h1>
                             <h5>{props.attributes.subTitle}</h5>
-                            <p>{props.attributes.boxContent}</p>
+                            <RichText.Content
+								value={props.attributes.boxContent}
+								tagName="p"
+							/>
                         </div>
                     </div>
 

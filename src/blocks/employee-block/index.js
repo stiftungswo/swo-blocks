@@ -137,15 +137,14 @@ registerBlockType( 'swo-blocks/employee-block', {
 							allowedFormats={'none'}
 						/>
 					</h7>
-					<p>
-						<RichText
-							onChange={ newContent => { props.setAttributes({employeeDescr: newContent})} }
-							value={props.attributes.employeeDescr}
-							placeholder="Beschreibung"
-							keepPlaceholderOnFocus={true}
-							allowedFormats={'none'}
-						/>
-					</p>
+					<RichText
+						onChange={ newContent => { props.setAttributes({employeeDescr: newContent})} }
+						value={props.attributes.employeeDescr}
+						placeholder="Beschreibung"
+						keepPlaceholderOnFocus={true}
+						allowedFormats={'none'}
+						tagName="p"
+					/>
 					<p><strong>Telefon Festnetz: </strong>
 							<RichText
 								onChange={ newContent => { props.setAttributes({employeeFPhone: newContent})} }
@@ -189,7 +188,10 @@ registerBlockType( 'swo-blocks/employee-block', {
 				<div className="imageDiv bottomDiv classic-text bottomDivteam">
 					<h1>{props.attributes.employeeName}</h1>
 					<h7>{props.attributes.employeeFunct}</h7>
-					<p>{props.attributes.employeeDescr}</p>
+					<RichText.Content
+						value={props.attributes.employeeDescr}
+						tagName="p"
+					/>
 					<p><strong>Telefon Festnetz: </strong><span className="selectorFPhone">{props.attributes.employeeFPhone}</span><br></br>
 						<strong>Telefon Mobil: </strong><span className="selectorMPhone">{props.attributes.employeeMPhone}</span><br></br>
 						<strong>E-Mail: </strong><span className="selectorMail">{props.attributes.employeeMail}</span><br></br>
