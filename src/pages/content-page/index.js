@@ -27,7 +27,7 @@ registerBlockType( 'swo-pages/content-page', {
 			meta: 'signatureImage',
 		},
 		imgURL: {
-			type: 'string',
+			type: 'string'
 		},
 		imgID: {
 			type: 'number'
@@ -41,7 +41,7 @@ registerBlockType( 'swo-pages/content-page', {
 		titleString: {
 			type: 'string',
 			selector: '.entry-title'
-		},
+		}
 	},
 
 	edit: function( props ) {
@@ -88,8 +88,8 @@ registerBlockType( 'swo-pages/content-page', {
 		return (
 			<div>
 				<div>
-				<SelectControl
-				        label={ __( 'Soll diese Seite in einer Übersicht angezeigt werden?   ' ) }
+					<SelectControl
+				        label='Soll diese Seite in einer Übersicht angezeigt werden?'
 				        value={ props.attributes.typeOfPost }
 				        onChange={onSelectDropdown}
 				        options={ [

@@ -14,55 +14,43 @@ const { SelectControl } = wp.components;
 registerBlockType( 'swo-blocks/recent-projects-block', {
 	title: 'Letzte 4 Projekte',
 	description: 'Dies ist ein Baustein, der die 4 neusten Projekte anzeigt (mit Link)',
-    icon: 'media-default',
-    //icon: 'dashicons-screenoptions',
+    icon: 'dashicons-screenoptions',
 	category: 'swo-blocks',
-    keywords: ['Breiche', 'Inhalt', 'SWO'],
-    attributes: {
-        number1: {
-            type: 'string',
-        },
-        number2: {
-            type: 'string',
-        },
-    },
+    keywords: ['Projekte', 'Inhalt', 'SWO'],
 
-    edit ( props ) {
-        
-        var number1 = props.attributes.number1 
-        var number2 = props.attributes.number2 
-        
-        function onChangeNumber1 ( content ) {
-            props.setAttributes({number1: content})
+    edit: withSelect( select => {
+        return {
+            posts: select('core').getEntityRecords('postType', 'post', {per_page: 4})
+        };
+    })(({posts, className}) => {
+        if( !posts ) {
+            return (
+                <p className={className}>Loading recent posts</p>
+            );
         }
-
-        function onChangeNumber2 ( content ) {
-            props.setAttributes({number2: content})
-        }              
-          
-        return (
-            <div>
-                <h1>Test</h1>
-                <p>Diese Zahlen sollen vom Server addiert werden</p>
-                <label>Zahl 1:</label>
-                <RichText
-                    className={props.className}
-                    onChange={onChangeNumber1}
-                    value={number1}
-                    placeholder="Zahl eingeben"
-                />
-                <label>Zahl 2:</label>
-                <RichText
-                    className={props.className} 
-                    onChange={onChangeNumber2} 
-                    value={number2}
-                    placeholder="Zahl eingeben"
-                />                
-            </div>
-        )
-    },
+        if( posts.length === 0 ) {
+            return (
+                <p className={className}>No posts</p>
+            );
+        }
+            return (
+                <ul className={className}>
+                    {posts.map( post => {
+                        return (
+                            <li>
+                                <img src={post.fimg_url} width="100%"></img>
+                                <a href={post.link}>
+                                    {post.title.rendered}
+                                </a>
+                            </li>
+                        );
+                    })}
+                </ul>
+            );
+    }),
 
     save ( props ) {
         return null //This block is rendered on PHP.
     },
+
 } );

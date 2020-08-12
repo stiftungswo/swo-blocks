@@ -1,35 +1,66 @@
 <?php
 
+add_action( 'plugins_loaded', 'register_recent_projects_block' );
 
-function register_dynamic_block_action ( ) {
+function register_recent_projects_block() {
+    register_block_type('swo-blocks/recent-projects-block', [
+            'render_callback' => 'render_recent_projects_block'
+    ]);
+}
 
-    // Registering the block
-    register_block_type(
-        'swo-blocks/recent-projects-block',
-        [
-            // Enqueue blocks.style.build.css on both frontend & backend.
-			'style'           => 'swo_blocks-cgb-style-css',
-			// Enqueue blocks.build.js in the editor only.
-			'editor_script'   => 'swo_blocks-cgb-block-js',
-			// Enqueue blocks.editor.build.css in the editor only.
-            'editor_style'    => 'swo_blocks-cgb-block-editor-css',
-            // The render callback
-            'render_callback' => ['block_dynamic_render_cb'],
-        ]
+function render_recent_projects_block() {
+
+    $latest_posts = wp_get_recent_posts( [
+        'numberposts' => 4,
+        'post_status' => 'publish'
+    ] );
+
+    if( empty($latest_posts) ) {
+        return '<p>No posts</p>';
+    }
+
+    $posts_output = '<section class="boxes-container-menu"><ul>';
+    foreach( $latest_posts as $post) {
+        $post_id = $post['ID'];
+        $post_thumbnail = get_the_post_thumbnail_url( $post_id, 'full');
+        $posts_output .= '
+        <li class="wrap-boxes">
+            <div class="imageDiv img-background" style="background-image: url('.$post_thumbnail.')"></div>
+            <div class="imageDiv bottomDiv classic-text">
+                <h1>
+                    '.get_the_title( $post_id ).'
+                </h1>
+                <p>
+                    '.get_the_title( $post_id ).'
+                </p>
+                <a class="svg-button" href="'.get_permalink( $post_id ).'">Weiterlesen</a>
+            </div>
+        </li>';
+    }
+    $posts_output .= '</ul></section>';
+
+    return $posts_output;
+}
+
+
+
+add_action( 'rest_api_init', 'register_rest_images' );
+
+function register_rest_images() {
+    register_rest_field( array('post'),
+        'fimg_url',
+        array(
+            'get_callback'      => 'get_rest_featured_image',
+            'update_callback'   => null,
+            'schema'            => null,
+        )
     );
-
 }
 
-function block_dynamic_render_cb ( $att ) {
-
-    // // Coming from RichText, each line is an array's element
-    // $summe = $att['number1'][0] + $att['number2'][0]; 
-
-    // $html = "<h1>$summe</h1>";
-
-    // return $html;
-
-    return "<h1>Hello SWO</h1>";
+function get_rest_featured_image( $object, $field_name, $request) {
+    if( $object['featured_media'] ) {
+        $img = wp_get_attachment_image_src( $object['featured_media'], 'app-thumb' );
+        return $img[0];
+    }
+    return false;
 }
-
-add_action( 'init', 'register_dynamic_block_action' );

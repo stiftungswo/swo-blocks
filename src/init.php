@@ -115,6 +115,8 @@ function swo_blocks_cgb_block_assets() { // phpcs:ignore
 // Hook: Block assets.
 add_action( 'init', 'swo_blocks_cgb_block_assets' );
 
+include(plugin_dir_path(__FILE__).'blocks/recent-projects-block/index.php');
+
 //adding meta-fields of different blocks
 function gutenberg_my_block_init() {
     register_meta( 'post', 'backButtonContent', array(
