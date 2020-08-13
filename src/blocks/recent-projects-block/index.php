@@ -64,3 +64,22 @@ function get_rest_featured_image( $object, $field_name, $request) {
     }
     return false;
 }
+
+
+
+function add_metadata_swo() {
+    register_rest_field( 'page',
+        'signatureImage',
+        array(
+            'get_callback'      => 'rest_get_metadata',
+            'update_callback'   => null,
+            'schema'            => null,
+        )
+    );
+}
+
+add_action( 'rest_api_init', 'add_metadata_swo' );
+
+function rest_get_metadata( $post, $field_name, $request ) {
+    return get_post_meta( $post[ 'id' ], $field_name, true );
+}

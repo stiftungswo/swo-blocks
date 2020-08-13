@@ -53,6 +53,19 @@ function swo_elements_category( $categories, $post ) {
 }
 add_filter( 'block_categories', 'swo_elements_category', 10, 2);
 
+
+
+function swo_adding_meta( $args, $request ) {
+	if ( $meta_key = $request->get_param( 'metaKey' ) ) {
+        $args['meta_key'] = $meta_key;
+        $args['meta_value'] = $request->get_param( 'metaValue' );
+    }
+    return $args;
+}
+add_filter( 'rest_page_query', 'swo_adding_meta', 10, 2);
+
+
+
 function swo_blocks_cgb_block_assets() { // phpcs:ignore
 	// Register block styles for both frontend + backend.
 	wp_register_style(

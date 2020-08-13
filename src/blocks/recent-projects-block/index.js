@@ -20,33 +20,46 @@ registerBlockType( 'swo-blocks/recent-projects-block', {
 
     edit: withSelect( select => {
         return {
-            posts: select('core').getEntityRecords('postType', 'post', {per_page: 4})
+            posts: select( 'core' ).getEntityRecords( 'postType', 'page', {
+                // Default args.
+                per_page: 4,
+              
+                // Custom args.
+                metaKey: 'typeOfPost', // filter by metadata
+                metaValue: 'type_project' // not "true" unless the database value is exactly "true" (string)
+              } )
         };
     })(({posts, className}) => {
         if( !posts ) {
             return (
-                <p className={className}>Loading recent posts</p>
+                <p className={className}>Projekte der SWO werden geladen...</p>
             );
         }
         if( posts.length === 0 ) {
             return (
-                <p className={className}>No posts</p>
+                <p className={className}>Keine Projekte der SWO vorhanden! Bitte erstellen Sie eine neue Seite und fügen Sie einen Inhaltsseiten-Block hinzu.</p>
             );
         }
-            return (
-                <ul className={className}>
+        return (
+            <section className="boxes-container-menu">
+                <ul>
                     {posts.map( post => {
                         return (
-                            <li>
-                                <img src={post.fimg_url} width="100%"></img>
-                                <a href={post.link}>
-                                    {post.title.rendered}
-                                </a>
+                            <li class="wrap-boxes">
+                                <div class="imageDiv img-background" 
+								    style={{ backgroundImage: `url(${post.signatureImage})`}}>
+                                </div>
+                                <div class="imageDiv bottomDiv classic-text">
+                                    <h1>{post.title.rendered}</h1>
+                                    <p>{post.title.rendered}</p>
+                                    <a className="svg-button" href={post.link}>Weiterlesen</a>
+                                </div>
                             </li>
                         );
                     })}
                 </ul>
-            );
+            </section>
+        );
     }),
 
     save ( props ) {
