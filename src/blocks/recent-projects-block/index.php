@@ -11,8 +11,13 @@ function register_recent_projects_block() {
 function render_recent_projects_block() {
 
     $latest_posts = wp_get_recent_posts( [
-        'numberposts' => 4,
-        'post_status' => 'publish'
+        'numberposts'   => 4,
+        'orderby'       => 'post_date',
+        'order'         => 'DESC',
+        'post_type'     => 'page',
+        'post_status'   => 'publish',
+        'meta_key'      => 'typeOfPost',
+        'meta_value'    => 'type_project'
     ] );
 
     if( empty($latest_posts) ) {
@@ -22,7 +27,7 @@ function render_recent_projects_block() {
     $posts_output = '<section class="boxes-container-menu"><ul>';
     foreach( $latest_posts as $post) {
         $post_id = $post['ID'];
-        $post_thumbnail = get_the_post_thumbnail_url( $post_id, 'full');
+        $post_thumbnail = get_post_meta( $post_id, 'signatureImage', true );
         $posts_output .= '
         <li class="wrap-boxes">
             <div class="imageDiv img-background" style="background-image: url('.$post_thumbnail.')"></div>
