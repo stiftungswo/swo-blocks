@@ -8,16 +8,17 @@ const { withSelect } = wp.data;
 registerBlockType( 'swo-blocks/all-projects-block', {
 	title: 'Alle Projekte',
 	description: 'Dies ist ein Baustein, der alle Projekte anzeigt (mit Link)',
-    icon: 'dashicons-screenoptions',
+    icon: 'screenoptions',
 	category: 'swo-blocks',
     keywords: ['Projekte', 'Inhalt', 'SWO'],
 
     edit: withSelect( select => {
         return {
             posts: select( 'core' ).getEntityRecords( 'postType', 'page', {
-                // per_page: 4,
-                metaKey: 'typeOfPost', // filter by metadata
-                metaValue: 'type_project' // filter by metadata
+                order: 'asc',
+                orderby: 'title',
+                metaKey: 'typeOfPost',
+                metaValue: 'type_project'
               } )
         };
     })(({posts, className}) => {
@@ -43,7 +44,7 @@ registerBlockType( 'swo-blocks/all-projects-block', {
                                 <div class="imageDiv bottomDiv classic-text">
                                     <h1>{post.title.rendered}</h1>
                                     <p>{post.postDescription}</p>
-                                    <a className="svg-button" href={post.link}>Weiterlesen</a>
+                                    <a className="svg-button swo-button" href={post.link}>Weiterlesen</a>
                                 </div>
                             </li>
                         );

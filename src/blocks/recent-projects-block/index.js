@@ -8,7 +8,7 @@ const { withSelect} = wp.data;
 registerBlockType( 'swo-blocks/recent-projects-block', {
 	title: 'Letzte 4 Projekte',
 	description: 'Dies ist ein Baustein, der die 4 neusten Projekte anzeigt (mit Link)',
-    icon: 'dashicons-screenoptions',
+    icon: 'screenoptions',
 	category: 'swo-blocks',
     keywords: ['Projekte', 'Inhalt', 'SWO'],
 
@@ -16,8 +16,10 @@ registerBlockType( 'swo-blocks/recent-projects-block', {
         return {
             posts: select( 'core' ).getEntityRecords( 'postType', 'page', {
                 per_page: 4,
-                metaKey: 'typeOfPost', // filter by metadata
-                metaValue: 'type_project' // filter by metadata
+                order: 'desc',
+                orderby: 'date',
+                metaKey: 'typeOfPost',
+                metaValue: 'type_project'
               } )
         };
     })(({posts, className}) => {
@@ -43,7 +45,7 @@ registerBlockType( 'swo-blocks/recent-projects-block', {
                                 <div class="imageDiv bottomDiv classic-text">
                                     <h1>{post.title.rendered}</h1>
                                     <p>{post.postDescription}</p>
-                                    <a className="svg-button" href={post.link}>Weiterlesen</a>
+                                    <a className="svg-button swo-button" href={post.link}>Weiterlesen</a>
                                 </div>
                             </li>
                         );
