@@ -1,27 +1,26 @@
 <?php
 
-add_action( 'plugins_loaded', 'register_recent_projects_block' );
+add_action( 'plugins_loaded', 'register_all_pages_block' );
 
-function register_recent_projects_block() {
-    register_block_type('swo-blocks/recent-projects-block', [
-            'render_callback' => 'render_recent_projects_block'
+function register_all_pages_block() {
+    register_block_type('swo-blocks/all-pages-block', [
+            'render_callback' => 'render_all_pages_block'
     ]);
 }
 
-function render_recent_projects_block() {
+function render_all_pages_block() {
 
     $latest_posts = wp_get_recent_posts( [
-        'numberposts'   => 4,
-        'orderby'       => 'post_date',
-        'order'         => 'DESC',
+        'orderby'       => 'post_title',
+        'order'         => 'ASC',
         'post_type'     => 'page',
         'post_status'   => 'publish',
         'meta_key'      => 'typeOfPost',
-        'meta_value'    => 'type_project'
+        'meta_value'    => 'type_page'
     ] );
 
     if( empty($latest_posts) ) {
-        return '<p>Aktuell sind keine Projekte vorhanden</p>';
+        return '<p>Aktuell sind keine Seiten vorhanden</p>';
     }
 
     $posts_output = '<section class="boxes-container-menu"><ul>';

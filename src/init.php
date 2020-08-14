@@ -129,6 +129,8 @@ function swo_blocks_cgb_block_assets() { // phpcs:ignore
 add_action( 'init', 'swo_blocks_cgb_block_assets' );
 
 include(plugin_dir_path(__FILE__).'blocks/recent-projects-block/index.php');
+include(plugin_dir_path(__FILE__).'blocks/all-projects-block/index.php');
+include(plugin_dir_path(__FILE__).'blocks/all-pages-block/index.php');
 
 //adding meta-fields of different blocks
 function gutenberg_my_block_init() {
@@ -144,5 +146,36 @@ function gutenberg_my_block_init() {
 		'show_in_rest' => true,
 		'type'         => 'string',
     ) );
+    register_meta( 'post', 'postDescription', array(
+		'show_in_rest' => true,
+		'type'         => 'string',
+		'single'       => true,
+    ) );
 }
 add_action( 'init', 'gutenberg_my_block_init' );
+
+function add_metadata_swo() {
+    register_rest_field( 'page',
+        'signatureImage',
+        array(
+            'get_callback'      => 'rest_get_metadata',
+            'update_callback'   => null,
+            'schema'            => null,
+        )
+    );
+    register_rest_field( 'page',
+        'postDescription',
+        array(
+            'get_callback'      => 'rest_get_metadata',
+            'update_callback'   => null,
+            'schema'            => null,
+        )
+    );
+}
+
+add_action( 'rest_api_init', 'add_metadata_swo' );
+
+
+function rest_get_metadata( $post, $field_name, $request ) {
+    return get_post_meta( $post[ 'id' ], $field_name, true );
+}

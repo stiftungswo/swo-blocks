@@ -4,9 +4,8 @@ import './style.scss';
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
 const { withSelect, select } = wp.data;
-const { RichText, PlainText, MediaUpload, InnerBlocks } = wp.blockEditor;
+const { RichText, MediaUpload, InnerBlocks } = wp.blockEditor;
 const { Button } = wp.components;
-const { Dropdown } = wp.components;
 const { SelectControl } = wp.components;
 
 registerBlockType( 'swo-pages/content-page', {
@@ -20,6 +19,11 @@ registerBlockType( 'swo-pages/content-page', {
 			type: 'string',
 			source: 'meta',
 			meta: 'typeOfPost',
+		},
+		postDescription: {
+			type: 'string',
+			source: 'meta',
+			meta: 'postDescription',
 		},
 		signatureImage: {
 			type: 'string',
@@ -67,10 +71,16 @@ registerBlockType( 'swo-pages/content-page', {
 				titleString: newTitle
 			});
 		}
-
+		
 		const onSelectDropdown = (newValue) => {
 			props.setAttributes({
 				typeOfPost: newValue
+			});
+		}
+		
+		const onChangeDescription = (newValue) => {
+			props.setAttributes({
+				postDescription: newValue
 			});
 		}
 
@@ -98,6 +108,16 @@ registerBlockType( 'swo-pages/content-page', {
 				            { value: 'type_page', label: 'Seitenübersicht' },
 				        ] }
 				    />
+				</div>
+				<div>
+					Beschreibung hinzufügen: 
+					<RichText
+						onChange={onChangeDescription}
+						value={ props.attributes.postDescription }
+						placeholder="Diese Beschreibung wird auf Kärtchen angezeigt.."
+						keepPlaceholderOnFocus={true}
+						allowedFormats={'none'}
+					/>
 				</div>
 				<div>
 					{
@@ -135,7 +155,7 @@ registerBlockType( 'swo-pages/content-page', {
 					}
 				</div>
 				<div className="limit-content-width">
-					<InnerBlocks allowedBlocks={ [ 'swo-blocks/content-block', 'swo-blocks/employee-block', 'swo-blocks/title-text-block', 'core/heading', 'core/paragraph', 'swo-blocks/recent-projects-block'  ] } />
+					<InnerBlocks allowedBlocks={ [ 'swo-blocks/content-block', 'swo-blocks/employee-block', 'swo-blocks/title-text-block', 'core/heading', 'core/paragraph', 'swo-blocks/recent-projects-block', 'swo-blocks/all-projects-block', 'swo-blocks/all-pages-block'  ] } />
 				</div>
 			</div>
 		);
