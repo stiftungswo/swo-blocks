@@ -15,8 +15,6 @@ registerBlockType( 'swo-blocks/all-pages-block', {
     edit: withSelect( select => {
         return {
             posts: select( 'core' ).getEntityRecords( 'postType', 'page', {
-                'orderby': 'post_title',
-                'order':'ASC',
                 metaKey: 'typeOfPost', // filter by metadata
                 metaValue: 'type_page', // filter by metadata
               } )
@@ -44,7 +42,7 @@ registerBlockType( 'swo-blocks/all-pages-block', {
                                 <div class="imageDiv bottomDiv classic-text">
                                     <h1>{post.title.rendered}</h1>
                                     <p>{post.postDescription}</p>
-                                    <a className="svg-button" href={post.link}>Weiterlesen</a>
+                                    <a className="svg-button " href={post.link}>Weiterlesen</a>
                                 </div>
                             </li>
                         );
