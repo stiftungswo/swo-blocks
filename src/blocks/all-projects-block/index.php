@@ -38,10 +38,10 @@ function render_all_projects_block() {
                 <h1>
                     '. $post_titel .'
                 </h1>
-                <p>
+                <p class="bottomDivDescription">
                     '. $post_description .'
                 </p>
-                <a class="svg-button" href="'. $post_permalink .'">Weiterlesen</a>
+                <a class="svg-button bottomDivButton" href="'. $post_permalink .'">Weiterlesen</a>
             </div>
         </li>';
     }

@@ -15,9 +15,10 @@ registerBlockType( 'swo-blocks/all-pages-block', {
     edit: withSelect( select => {
         return {
             posts: select( 'core' ).getEntityRecords( 'postType', 'page', {
-                // per_page: 4,
+                'orderby': 'post_title',
+                'order':'ASC',
                 metaKey: 'typeOfPost', // filter by metadata
-                metaValue: 'type_page' // filter by metadata
+                metaValue: 'type_page', // filter by metadata
               } )
         };
     })(({posts, className}) => {
