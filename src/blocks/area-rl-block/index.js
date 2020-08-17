@@ -11,7 +11,7 @@ registerBlockType( 'swo-blocks/area-rl-block', {
 	description: 'Dies ist ein Baustein für die Bereichsseiten mit einem Bild rechts und Inhalt links.',
 	icon: 'image-flip-horizontal',
 	category: 'swo-blocks',
-	keywords: ['Breiche', 'Inhalt', 'SWO'],
+	keywords: ['Bereiche', 'Inhalt', 'SWO'],
 	attributes: {
 		imgURL: {
 			type: 'string',

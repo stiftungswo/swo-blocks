@@ -132,7 +132,7 @@ registerBlockType( 'swo-pages/area-page', {
 					}
 				</div>
 				<div class="limit-content-width bereich-container">
-					<InnerBlocks allowedBlocks={ [ 'swo-blocks/title-text-block', 'swo-blocks/area-lr-block', 'swo-blocks/area-rl-block' ] } />
+					<InnerBlocks allowedBlocks={ [ 'swo-elements/button-element', 'swo-elements/button-back-element', 'swo-blocks/title-text-block', 'swo-blocks/area-lr-block', 'swo-blocks/area-rl-block' , 'swo-blocks/area-banner-block' ] } />
 				</div>
 			</div>
 		);

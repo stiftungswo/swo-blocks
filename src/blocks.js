@@ -11,10 +11,10 @@
 
 /** PAGES --> Category Name: 'swo-pages' */
 
-import './pages/start-page'; /* TODO */
-import './pages/menu-page'; /* TODO */
-import './pages/content-page'; /* TODO > add colums for the employees, but with limited innerblocks > see my stackoverflow question */
-import './pages/area-page';
+import './pages/start-page'; /* TO FINISH */
+import './pages/content-page';
+import './pages/area-page'; /* TO FINISH */
+
 
 /** BLOCKS --> Category Name: 'swo-blocks' */
 
@@ -23,17 +23,16 @@ import './blocks/content-block';
 import './blocks/title-text-block';
 import './blocks/area-lr-block';
 import './blocks/area-rl-block';
+import './blocks/area-banner-block';
 import './blocks/employee-block';
 import './blocks/philosophy-block';
-import './blocks/all-projects-block'; /* TODO */
-import './blocks/recent-projects-block'; /* TODO */
-import './blocks/all-pages-block'; /* TODO */
+import './blocks/recent-projects-block';
+import './blocks/all-projects-block';
+import './blocks/all-pages-block';
 
-import './blocks/meta-block-example'; /* TO DELETE */
 
 /** ELEMENTS --> Category Name: 'swo-elements' */
 
 import './elements/button-element';
 import './elements/list-element';
 import './elements/button-back-element';
-import './elements/button-back-element-meta';

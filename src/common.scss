@@ -134,6 +134,51 @@ h6,
 
 /* Bereiche styling -------------------------- */
 
+.area-banner {
+	background: #61330E;
+	width: 100vw;
+	position: relative;
+	margin-left: -50vw;
+	left: 50%;
+}
+
+.area-banner-button {
+	background:#61330E;
+	color: #fff !important;
+	border: 2px solid #fff;
+}
+
+.area-banner-button::after {
+	margin-top: 5px;
+	filter: invert(100%) sepia(1%) saturate(7500%) hue-rotate(343deg) brightness(115%) contrast(101%);
+}
+
+.area-banner .limit-content-width {
+	margin: 0 auto !important;
+}
+
+.area-banner .left-right .bereich-text {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.area-banner .left-right .bereich-text h1{
+	color: #fff;
+	font-size: 46px;
+}
+
+.area-banner .left-right .bereich-text p{
+	color: #fff;
+	font-size: 26px;
+}
+
 
 .bereich-header {
 	background: url(./assets/images/bereich_temp.jpg)  no-repeat center center; 
