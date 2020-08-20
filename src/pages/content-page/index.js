@@ -5,8 +5,7 @@ const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
 const { withSelect, select } = wp.data;
 const { RichText, MediaUpload, InnerBlocks } = wp.blockEditor;
-const { Button } = wp.components;
-const { SelectControl } = wp.components;
+const { SelectControl, Button } = wp.components;
 
 registerBlockType( 'swo-pages/content-page', {
 	title: 'Inhaltsseite Standard & Projekte',
