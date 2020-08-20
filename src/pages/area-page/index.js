@@ -4,8 +4,9 @@ import './style.scss';
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
 const { withSelect, select } = wp.data;
-const { RichText, PlainText, MediaUpload, InnerBlocks } = wp.blockEditor;
+const { RichText, MediaUpload, InnerBlocks } = wp.blockEditor;
 const { Button } = wp.components;
+const { SelectControl } = wp.components;
 
 registerBlockType( 'swo-pages/area-page', {
 	title: 'Bereichsseite',
@@ -14,6 +15,21 @@ registerBlockType( 'swo-pages/area-page', {
 	category: 'swo-pages',
 	keywords: ['Inhalt', 'Inhalt', 'SWO'],
 	attributes: {
+		typeOfPost: {
+			type: 'string',
+			source: 'meta',
+			meta: 'typeOfPost',
+		},
+		postDescription: {
+			type: 'string',
+			source: 'meta',
+			meta: 'postDescription',
+		},
+		signatureImage: {
+			type: 'string',
+			source: 'meta',
+			meta: 'signatureImage',
+		},
 		imgURL: {
 			type: 'string'
 		},
@@ -45,6 +61,7 @@ registerBlockType( 'swo-pages/area-page', {
 		const onFileSelect = (img) => {
 			props.setAttributes({
 				imgURL: img.url,
+				signatureImage: img.url,
 				imgID: img.id,
 				imgAlt: img.alt
 			});
@@ -62,6 +79,18 @@ registerBlockType( 'swo-pages/area-page', {
 				titleString: newTitle
 			});
 		}
+		
+		const onSelectDropdown = (newValue) => {
+			props.setAttributes({
+				typeOfPost: newValue
+			});
+		}
+		
+		const onChangeDescription = (newValue) => {
+			props.setAttributes({
+				postDescription: newValue
+			});
+		}
 
 		var GetTitle = function GetTitle(props) {
 			const title = select("core/editor").getEditedPostAttribute( 'title' );
@@ -76,6 +105,28 @@ registerBlockType( 'swo-pages/area-page', {
 
 		return (
 			<div>
+				<div>
+					<SelectControl
+				        label='Soll diese Seite in einer Übersicht angezeigt werden?'
+				        value={ props.attributes.typeOfPost }
+				        onChange={onSelectDropdown}
+				        options={ [
+				            { value: 'type_common', label: 'Nein' },
+				            { value: 'type_project', label: 'Projektübersicht' },
+				            { value: 'type_page', label: 'Seitenübersicht' },
+				        ] }
+				    />
+				</div>
+				<div>
+					Beschreibung hinzufügen: 
+					<RichText
+						onChange={onChangeDescription}
+						value={ props.attributes.postDescription }
+						placeholder="Diese Beschreibung wird auf Kärtchen angezeigt.."
+						keepPlaceholderOnFocus={true}
+						allowedFormats={'none'}
+					/>
+				</div>
 				<div>
 					{
 						(props.attributes.imgURL) ? (
