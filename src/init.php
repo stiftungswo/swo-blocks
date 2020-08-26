@@ -134,22 +134,21 @@ include(plugin_dir_path(__FILE__).'blocks/all-pages-block/index.php');
 
 //adding meta-fields of different blocks
 function gutenberg_my_block_init() {
-    register_meta( 'post', 'backButtonContent', array(
-		'show_in_rest' => true,
-		'type'         => 'string',
-    ) );
     register_meta( 'post', 'typeOfPost', array(
 		'show_in_rest' => true,
-		'type'         => 'string',
+		'type'         => 'string'
     ) );
     register_meta( 'post', 'signatureImage', array(
 		'show_in_rest' => true,
-		'type'         => 'string',
+		'type'         => 'string'
     ) );
     register_meta( 'post', 'postDescription', array(
 		'show_in_rest' => true,
-		'type'         => 'string',
-		'single'       => true,
+		'type'         => 'string'
+	) );
+	register_meta( 'post', 'areaColor', array(
+		'show_in_rest' => true,
+		'type'         => 'string'
     ) );
 }
 add_action( 'init', 'gutenberg_my_block_init' );

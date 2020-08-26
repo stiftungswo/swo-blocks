@@ -24,6 +24,7 @@ h6,
 
 .n2-section-smartslider {
 	top: 0;
+	margin-top:-90px;
 }
 
 .editorOnly {
@@ -139,7 +140,7 @@ h6,
 /* Bereiche styling -------------------------- */
 
 .area-banner {
-	background: #61330E;
+	background: red;
 	width: 100vw;
 	position: relative;
 	margin-left: -50vw;
@@ -147,7 +148,7 @@ h6,
 }
 
 .area-banner-button {
-	background:#61330E;
+	background: red;
 	color: #fff !important;
 	border: 2px solid #fff;
 }
@@ -225,7 +226,7 @@ h6,
 }
 
 .feature-list li span{
-	color: #61330E;
+	color: red;
 	font-weight: 1000;
 	text-decoration: none;
 }
@@ -239,23 +240,112 @@ h6,
 	background: #fff;
 	width: 60%;
 	margin: 0 auto -104px;
-	border: 4px solid #61330E;
+	border: 4px solid red;
 	padding: 2rem 4rem;
 	border-radius: 12px;
 }
 
 .bereich-title h1{
-	color: #61330E;
+	color: red;
 	font-size: 40px;
 	margin: 0 0 8px;
 }
 
 .bereich-title h5 {
-	color: #61330E;
+	color: red;
 	font-size: 24px;
 	font-style: italic;
 	margin: 0 0 14px !important;
 }
+
+.master-brown .bereich-title { 
+	border-color: #61330E;
+}
+.master-brown .bereich-title h1 { 
+	color: #61330E;
+}
+.master-brown .bereich-title h5 { 
+	color: #61330E;
+}
+.master-brown .area-banner {
+	background: #61330E;
+}
+.master-brown .area-banner-button {
+	background:#61330E;
+}
+.master-brown .feature-list li span{
+	color: #61330E;
+}
+.master-brown .feature-list li:before{
+	color: #61330E;
+}
+
+.master-orange .bereich-title { 
+	border-color: #FC7A57;
+}
+.master-orange .bereich-title h1 { 
+	color: #FC7A57;
+}
+.master-orange .bereich-title h5 { 
+	color: #FC7A57;
+}
+.master-orange .area-banner {
+	background: #FC7A57;
+}
+.master-orange .area-banner-button {
+	background:#FC7A57;
+}
+.master-orange .feature-list li span{
+	color: #FC7A57;
+}
+.master-orange .feature-list li:before{
+	color: #FC7A57;
+}
+
+.master-green .bereich-title { 
+	border-color: #87A878;
+}
+.master-green .bereich-title h1 { 
+	color: #87A878;
+}
+.master-green .bereich-title h5 { 
+	color: #87A878;
+}
+.master-green .area-banner {
+	background: #87A878;
+}
+.master-green .area-banner-button {
+	background:#87A878;
+}
+.master-green .feature-list li span{
+	color: #87A878;
+}
+.master-green .feature-list li:before{
+	color: #87A878;
+}
+
+.master-yellow .bereich-title { 
+	border-color: #FCD757;
+}
+.master-yellow .bereich-title h1 { 
+	color: #FCD757;
+}
+.master-yellow .bereich-title h5 { 
+	color: #FCD757;
+}
+.master-yellow .area-banner {
+	background: #FCD757;
+}
+.master-yellow .area-banner-button {
+	background:#FCD757;
+}
+.master-yellow .feature-list li span{
+	color: #FCD757;
+}
+.master-yellow .feature-list li:before{
+	color: #FCD757;
+}
+
 
 .bereich-container {
 	padding-top: 120px;
