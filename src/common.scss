@@ -146,6 +146,10 @@ h6,
 	left: 50%;
 }
 
+.selector-area-banner {
+	padding-bottom: 20px;
+}
+
 .area-banner-button {
 	background: red;
 	color: #fff !important;
@@ -278,7 +282,7 @@ h6,
 .master-brown .feature-list li:before{
 	color: #61330E;
 }
-.master-brown .swo-button {
+.master-brown .swo-button:not(.area-banner-button) {
 	color: #61330E !important;
 	border: 2px solid #61330E;
 }
@@ -311,7 +315,7 @@ h6,
 .master-orange .feature-list li:before{
 	color: #FC7A57;
 }
-.master-orange .swo-button {
+.master-orange .swo-button:not(.area-banner-button) {
 	color: #FC7A57 !important;
 	border: 2px solid #FC7A57;
 }
@@ -343,7 +347,7 @@ h6,
 .master-green .feature-list li:before{
 	color: #87A878;
 }
-.master-green .swo-button {
+.master-green .swo-button:not(.area-banner-button) {
 	color: #87A878 !important;
 	border: 2px solid #87A878;
 }
@@ -375,15 +379,20 @@ h6,
 .master-yellow .feature-list li:before{
 	color: #FCD757;
 }
-.master-yellow .swo-button {
+.master-yellow .swo-button:not(.area-banner-button) {
 	color: #FCD757 !important;
 	border: 2px solid #FCD757;
 }
 .master-yellow .swo-button:after {
 	filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
 }
-.master-yellow .back-button::before {
+.master-yellow .back-button:before {
 	filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+}
+
+.area-banner-button::after {
+	margin-top: 5px;
+	filter: invert(100%) sepia(1%) saturate(7500%) hue-rotate(343deg) brightness(115%) contrast(101%) !important;
 }
 
 
