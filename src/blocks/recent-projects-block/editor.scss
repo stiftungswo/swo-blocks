@@ -5,12 +5,68 @@
  * which makes it higher in priority.
  */
 
- .bottomDiv {
+ .imageDiv {
+	width: 100%;
+	height: 220px;
+	border-radius: 8px;
+}
+
+.imageDivteam {
+	margin: 0 auto;
+	height: 260px;
+	width: 80%;
+	position: relative;
+}
+
+.imageDivteam img {
+	position: absolute;
+	z-index: 1;
+	border-radius: 8px;
+	height: 260px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.bottomDiv {
 	background: #fff;
 	width: 80%;
 	margin: -10% auto 16%;
-	padding: 20px 20px 30px;
+	padding: 20px 20px 10px;
 	box-sizing: unset;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-	height: unset;
+	height: 220px;
+}
+
+.bottomDivDescription {                 
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: relative;
+	height: 100px;
+}
+
+.bottomDiv h1 {
+	margin: 1.5rem auto !important;
+}
+
+.bottomDivteam {
+	bottom: 2%;
+	margin-bottom: 40px;
+	padding-bottom: 20px;
+	width: 80%;
+	z-index: 5;
+	position: relative;
+}
+
+.bottomDivteam h1 {
+	margin: 1.5rem auto 0 !important;
+}
+
+.bottomDivteam h7 {
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 3;
+}
+
+.bottomDivteam p {
+	font-size: 12px;
 }

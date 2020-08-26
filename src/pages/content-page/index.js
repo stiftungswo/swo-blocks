@@ -96,27 +96,29 @@ registerBlockType( 'swo-pages/content-page', {
 
 		return (
 			<div>
-				<div>
-					<SelectControl
-				        label='Soll diese Seite in einer Übersicht angezeigt werden?'
-				        value={ props.attributes.typeOfPost }
-				        onChange={onSelectDropdown}
-				        options={ [
-				            { value: 'type_common', label: 'Nein' },
-				            { value: 'type_project', label: 'Projektübersicht' },
-				            { value: 'type_page', label: 'Seitenübersicht' },
-				        ] }
-				    />
-				</div>
-				<div>
-					Beschreibung hinzufügen: 
-					<RichText
-						onChange={onChangeDescription}
-						value={ props.attributes.postDescription }
-						placeholder="Diese Beschreibung wird auf Kärtchen angezeigt.."
-						keepPlaceholderOnFocus={true}
-						allowedFormats={'none'}
-					/>
+				<div className="editorOnly">
+					<div>
+						<SelectControl
+							label='Soll diese Seite in einer Übersicht angezeigt werden?'
+							value={ props.attributes.typeOfPost }
+							onChange={onSelectDropdown}
+							options={ [
+								{ value: 'type_common', label: 'Nein' },
+								{ value: 'type_project', label: 'Projektübersicht' },
+								{ value: 'type_page', label: 'Seitenübersicht' },
+							] }
+						/>
+					</div>
+					<div>
+						Beschreibung hinzufügen: 
+						<RichText
+							onChange={onChangeDescription}
+							value={ props.attributes.postDescription }
+							placeholder="Diese Beschreibung wird auf Kärtchen angezeigt.."
+							keepPlaceholderOnFocus={true}
+							allowedFormats={'none'}
+						/>
+					</div>
 				</div>
 				<div>
 					{
