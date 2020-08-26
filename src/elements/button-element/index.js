@@ -36,7 +36,7 @@ registerBlockType( 'swo-elements/button-element', {
 
 		return (
 			<div>
-				<a className="swo-button zivi-braun">
+				<a className="swo-button">
 					<RichText
 						onChange={ newContent => { props.setAttributes({buttonContent: newContent})} }
 						value={props.attributes.buttonContent}
@@ -65,7 +65,7 @@ registerBlockType( 'swo-elements/button-element', {
 	save: function( props ) {
 
 		return (
-				<a href={props.attributes.buttonLink} className="selector-button swo-button zivi-braun" style="color: #61330E !important;border: 2px solid #61330E;">
+				<a href={props.attributes.buttonLink} className="selector-button swo-button">
 					{props.attributes.buttonContent}
 				</a>
 		);

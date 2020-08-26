@@ -5,6 +5,10 @@
  * that are used across the project.
 */
 
+* {
+	font-family: "Open sans", sans-serif;
+}
+
 h1,
 h2,
 h3,
@@ -87,11 +91,6 @@ h6,
 	width: 18px;
 	position: absolute;
 	transform: rotate(180deg);
-	margin-left:5px;
-}
-
-.zivi-braun:after {
-	filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
 	margin: 5px 0 0 6px;
 }
 
@@ -279,6 +278,17 @@ h6,
 .master-brown .feature-list li:before{
 	color: #61330E;
 }
+.master-brown .swo-button {
+	color: #61330E !important;
+	border: 2px solid #61330E;
+}
+.master-brown .swo-button:after {
+	filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+}
+.master-brown .back-button::before {
+	filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+}
+
 
 .master-orange .bereich-title { 
 	border-color: #FC7A57;
@@ -300,6 +310,16 @@ h6,
 }
 .master-orange .feature-list li:before{
 	color: #FC7A57;
+}
+.master-orange .swo-button {
+	color: #FC7A57 !important;
+	border: 2px solid #FC7A57;
+}
+.master-orange .swo-button:after {
+	filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+}
+.master-orange .back-button::before {
+	filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
 }
 
 .master-green .bereich-title { 
@@ -323,6 +343,16 @@ h6,
 .master-green .feature-list li:before{
 	color: #87A878;
 }
+.master-green .swo-button {
+	color: #87A878 !important;
+	border: 2px solid #87A878;
+}
+.master-green .swo-button:after {
+	filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+}
+.master-green .back-button::before {
+	filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+}
 
 .master-yellow .bereich-title { 
 	border-color: #FCD757;
@@ -344,6 +374,16 @@ h6,
 }
 .master-yellow .feature-list li:before{
 	color: #FCD757;
+}
+.master-yellow .swo-button {
+	color: #FCD757 !important;
+	border: 2px solid #FCD757;
+}
+.master-yellow .swo-button:after {
+	filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+}
+.master-yellow .back-button::before {
+	filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
 }
 
 

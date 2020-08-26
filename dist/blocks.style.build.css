@@ -4,6 +4,9 @@
  * Can include things like variables and mixins
  * that are used across the project.
 */
+* {
+  font-family: "Open sans", sans-serif; }
+
 h1,
 h2,
 h3,
@@ -78,11 +81,6 @@ h6,
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  margin-left: 5px; }
-
-.zivi-braun:after {
-  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
-          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
   margin: 5px 0 0 6px; }
 
 .classic-text h1 {
@@ -230,6 +228,18 @@ h6,
 .master-brown .feature-list li:before {
   color: #61330E; }
 
+.master-brown .swo-button {
+  color: #61330E !important;
+  border: 2px solid #61330E; }
+
+.master-brown .swo-button:after {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
+.master-brown .back-button::before {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
 .master-orange .bereich-title {
   border-color: #FC7A57; }
 
@@ -250,6 +260,18 @@ h6,
 
 .master-orange .feature-list li:before {
   color: #FC7A57; }
+
+.master-orange .swo-button {
+  color: #FC7A57 !important;
+  border: 2px solid #FC7A57; }
+
+.master-orange .swo-button:after {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
+
+.master-orange .back-button::before {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
 
 .master-green .bereich-title {
   border-color: #87A878; }
@@ -272,6 +294,18 @@ h6,
 .master-green .feature-list li:before {
   color: #87A878; }
 
+.master-green .swo-button {
+  color: #87A878 !important;
+  border: 2px solid #87A878; }
+
+.master-green .swo-button:after {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
+.master-green .back-button::before {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
 .master-yellow .bereich-title {
   border-color: #FCD757; }
 
@@ -292,6 +326,18 @@ h6,
 
 .master-yellow .feature-list li:before {
   color: #FCD757; }
+
+.master-yellow .swo-button {
+  color: #FCD757 !important;
+  border: 2px solid #FCD757; }
+
+.master-yellow .swo-button:after {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
+
+.master-yellow .back-button::before {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
 
 .bereich-container {
   padding-top: 120px; }
@@ -789,6 +835,9 @@ h6,
  * Can include things like variables and mixins
  * that are used across the project.
 */
+* {
+  font-family: "Open sans", sans-serif; }
+
 h1,
 h2,
 h3,
@@ -863,11 +912,6 @@ h6,
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  margin-left: 5px; }
-
-.zivi-braun:after {
-  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
-          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
   margin: 5px 0 0 6px; }
 
 .classic-text h1 {
@@ -1015,6 +1059,18 @@ h6,
 .master-brown .feature-list li:before {
   color: #61330E; }
 
+.master-brown .swo-button {
+  color: #61330E !important;
+  border: 2px solid #61330E; }
+
+.master-brown .swo-button:after {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
+.master-brown .back-button::before {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
 .master-orange .bereich-title {
   border-color: #FC7A57; }
 
@@ -1035,6 +1091,18 @@ h6,
 
 .master-orange .feature-list li:before {
   color: #FC7A57; }
+
+.master-orange .swo-button {
+  color: #FC7A57 !important;
+  border: 2px solid #FC7A57; }
+
+.master-orange .swo-button:after {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
+
+.master-orange .back-button::before {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
 
 .master-green .bereich-title {
   border-color: #87A878; }
@@ -1057,6 +1125,18 @@ h6,
 .master-green .feature-list li:before {
   color: #87A878; }
 
+.master-green .swo-button {
+  color: #87A878 !important;
+  border: 2px solid #87A878; }
+
+.master-green .swo-button:after {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
+.master-green .back-button::before {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
 .master-yellow .bereich-title {
   border-color: #FCD757; }
 
@@ -1077,6 +1157,18 @@ h6,
 
 .master-yellow .feature-list li:before {
   color: #FCD757; }
+
+.master-yellow .swo-button {
+  color: #FCD757 !important;
+  border: 2px solid #FCD757; }
+
+.master-yellow .swo-button:after {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
+
+.master-yellow .back-button::before {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
 
 .bereich-container {
   padding-top: 120px; }
@@ -1574,6 +1666,9 @@ h6,
  * Can include things like variables and mixins
  * that are used across the project.
 */
+* {
+  font-family: "Open sans", sans-serif; }
+
 h1,
 h2,
 h3,
@@ -1648,11 +1743,6 @@ h6,
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  margin-left: 5px; }
-
-.zivi-braun:after {
-  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
-          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
   margin: 5px 0 0 6px; }
 
 .classic-text h1 {
@@ -1800,6 +1890,18 @@ h6,
 .master-brown .feature-list li:before {
   color: #61330E; }
 
+.master-brown .swo-button {
+  color: #61330E !important;
+  border: 2px solid #61330E; }
+
+.master-brown .swo-button:after {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
+.master-brown .back-button::before {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
 .master-orange .bereich-title {
   border-color: #FC7A57; }
 
@@ -1820,6 +1922,18 @@ h6,
 
 .master-orange .feature-list li:before {
   color: #FC7A57; }
+
+.master-orange .swo-button {
+  color: #FC7A57 !important;
+  border: 2px solid #FC7A57; }
+
+.master-orange .swo-button:after {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
+
+.master-orange .back-button::before {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
 
 .master-green .bereich-title {
   border-color: #87A878; }
@@ -1842,6 +1956,18 @@ h6,
 .master-green .feature-list li:before {
   color: #87A878; }
 
+.master-green .swo-button {
+  color: #87A878 !important;
+  border: 2px solid #87A878; }
+
+.master-green .swo-button:after {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
+.master-green .back-button::before {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
 .master-yellow .bereich-title {
   border-color: #FCD757; }
 
@@ -1862,6 +1988,18 @@ h6,
 
 .master-yellow .feature-list li:before {
   color: #FCD757; }
+
+.master-yellow .swo-button {
+  color: #FCD757 !important;
+  border: 2px solid #FCD757; }
+
+.master-yellow .swo-button:after {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
+
+.master-yellow .back-button::before {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
 
 .bereich-container {
   padding-top: 120px; }
@@ -2359,6 +2497,9 @@ h6,
  * Can include things like variables and mixins
  * that are used across the project.
 */
+* {
+  font-family: "Open sans", sans-serif; }
+
 h1,
 h2,
 h3,
@@ -2433,11 +2574,6 @@ h6,
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  margin-left: 5px; }
-
-.zivi-braun:after {
-  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
-          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
   margin: 5px 0 0 6px; }
 
 .classic-text h1 {
@@ -2585,6 +2721,18 @@ h6,
 .master-brown .feature-list li:before {
   color: #61330E; }
 
+.master-brown .swo-button {
+  color: #61330E !important;
+  border: 2px solid #61330E; }
+
+.master-brown .swo-button:after {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
+.master-brown .back-button::before {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
 .master-orange .bereich-title {
   border-color: #FC7A57; }
 
@@ -2605,6 +2753,18 @@ h6,
 
 .master-orange .feature-list li:before {
   color: #FC7A57; }
+
+.master-orange .swo-button {
+  color: #FC7A57 !important;
+  border: 2px solid #FC7A57; }
+
+.master-orange .swo-button:after {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
+
+.master-orange .back-button::before {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
 
 .master-green .bereich-title {
   border-color: #87A878; }
@@ -2627,6 +2787,18 @@ h6,
 .master-green .feature-list li:before {
   color: #87A878; }
 
+.master-green .swo-button {
+  color: #87A878 !important;
+  border: 2px solid #87A878; }
+
+.master-green .swo-button:after {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
+.master-green .back-button::before {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
 .master-yellow .bereich-title {
   border-color: #FCD757; }
 
@@ -2647,6 +2819,18 @@ h6,
 
 .master-yellow .feature-list li:before {
   color: #FCD757; }
+
+.master-yellow .swo-button {
+  color: #FCD757 !important;
+  border: 2px solid #FCD757; }
+
+.master-yellow .swo-button:after {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
+
+.master-yellow .back-button::before {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
 
 .bereich-container {
   padding-top: 120px; }
@@ -3144,6 +3328,9 @@ h6,
  * Can include things like variables and mixins
  * that are used across the project.
 */
+* {
+  font-family: "Open sans", sans-serif; }
+
 h1,
 h2,
 h3,
@@ -3218,11 +3405,6 @@ h6,
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  margin-left: 5px; }
-
-.zivi-braun:after {
-  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
-          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
   margin: 5px 0 0 6px; }
 
 .classic-text h1 {
@@ -3370,6 +3552,18 @@ h6,
 .master-brown .feature-list li:before {
   color: #61330E; }
 
+.master-brown .swo-button {
+  color: #61330E !important;
+  border: 2px solid #61330E; }
+
+.master-brown .swo-button:after {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
+.master-brown .back-button::before {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
 .master-orange .bereich-title {
   border-color: #FC7A57; }
 
@@ -3390,6 +3584,18 @@ h6,
 
 .master-orange .feature-list li:before {
   color: #FC7A57; }
+
+.master-orange .swo-button {
+  color: #FC7A57 !important;
+  border: 2px solid #FC7A57; }
+
+.master-orange .swo-button:after {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
+
+.master-orange .back-button::before {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
 
 .master-green .bereich-title {
   border-color: #87A878; }
@@ -3412,6 +3618,18 @@ h6,
 .master-green .feature-list li:before {
   color: #87A878; }
 
+.master-green .swo-button {
+  color: #87A878 !important;
+  border: 2px solid #87A878; }
+
+.master-green .swo-button:after {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
+.master-green .back-button::before {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
 .master-yellow .bereich-title {
   border-color: #FCD757; }
 
@@ -3432,6 +3650,18 @@ h6,
 
 .master-yellow .feature-list li:before {
   color: #FCD757; }
+
+.master-yellow .swo-button {
+  color: #FCD757 !important;
+  border: 2px solid #FCD757; }
+
+.master-yellow .swo-button:after {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
+
+.master-yellow .back-button::before {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
 
 .bereich-container {
   padding-top: 120px; }
@@ -3929,6 +4159,9 @@ h6,
  * Can include things like variables and mixins
  * that are used across the project.
 */
+* {
+  font-family: "Open sans", sans-serif; }
+
 h1,
 h2,
 h3,
@@ -4003,11 +4236,6 @@ h6,
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  margin-left: 5px; }
-
-.zivi-braun:after {
-  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
-          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
   margin: 5px 0 0 6px; }
 
 .classic-text h1 {
@@ -4155,6 +4383,18 @@ h6,
 .master-brown .feature-list li:before {
   color: #61330E; }
 
+.master-brown .swo-button {
+  color: #61330E !important;
+  border: 2px solid #61330E; }
+
+.master-brown .swo-button:after {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
+.master-brown .back-button::before {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
 .master-orange .bereich-title {
   border-color: #FC7A57; }
 
@@ -4175,6 +4415,18 @@ h6,
 
 .master-orange .feature-list li:before {
   color: #FC7A57; }
+
+.master-orange .swo-button {
+  color: #FC7A57 !important;
+  border: 2px solid #FC7A57; }
+
+.master-orange .swo-button:after {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
+
+.master-orange .back-button::before {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
 
 .master-green .bereich-title {
   border-color: #87A878; }
@@ -4197,6 +4449,18 @@ h6,
 .master-green .feature-list li:before {
   color: #87A878; }
 
+.master-green .swo-button {
+  color: #87A878 !important;
+  border: 2px solid #87A878; }
+
+.master-green .swo-button:after {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
+.master-green .back-button::before {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
 .master-yellow .bereich-title {
   border-color: #FCD757; }
 
@@ -4217,6 +4481,18 @@ h6,
 
 .master-yellow .feature-list li:before {
   color: #FCD757; }
+
+.master-yellow .swo-button {
+  color: #FCD757 !important;
+  border: 2px solid #FCD757; }
+
+.master-yellow .swo-button:after {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
+
+.master-yellow .back-button::before {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
 
 .bereich-container {
   padding-top: 120px; }
@@ -4714,6 +4990,9 @@ h6,
  * Can include things like variables and mixins
  * that are used across the project.
 */
+* {
+  font-family: "Open sans", sans-serif; }
+
 h1,
 h2,
 h3,
@@ -4788,11 +5067,6 @@ h6,
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  margin-left: 5px; }
-
-.zivi-braun:after {
-  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
-          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
   margin: 5px 0 0 6px; }
 
 .classic-text h1 {
@@ -4940,6 +5214,18 @@ h6,
 .master-brown .feature-list li:before {
   color: #61330E; }
 
+.master-brown .swo-button {
+  color: #61330E !important;
+  border: 2px solid #61330E; }
+
+.master-brown .swo-button:after {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
+.master-brown .back-button::before {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
 .master-orange .bereich-title {
   border-color: #FC7A57; }
 
@@ -4960,6 +5246,18 @@ h6,
 
 .master-orange .feature-list li:before {
   color: #FC7A57; }
+
+.master-orange .swo-button {
+  color: #FC7A57 !important;
+  border: 2px solid #FC7A57; }
+
+.master-orange .swo-button:after {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
+
+.master-orange .back-button::before {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
 
 .master-green .bereich-title {
   border-color: #87A878; }
@@ -4982,6 +5280,18 @@ h6,
 .master-green .feature-list li:before {
   color: #87A878; }
 
+.master-green .swo-button {
+  color: #87A878 !important;
+  border: 2px solid #87A878; }
+
+.master-green .swo-button:after {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
+.master-green .back-button::before {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
 .master-yellow .bereich-title {
   border-color: #FCD757; }
 
@@ -5002,6 +5312,18 @@ h6,
 
 .master-yellow .feature-list li:before {
   color: #FCD757; }
+
+.master-yellow .swo-button {
+  color: #FCD757 !important;
+  border: 2px solid #FCD757; }
+
+.master-yellow .swo-button:after {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
+
+.master-yellow .back-button::before {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
 
 .bereich-container {
   padding-top: 120px; }
@@ -5499,6 +5821,9 @@ h6,
  * Can include things like variables and mixins
  * that are used across the project.
 */
+* {
+  font-family: "Open sans", sans-serif; }
+
 h1,
 h2,
 h3,
@@ -5573,11 +5898,6 @@ h6,
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  margin-left: 5px; }
-
-.zivi-braun:after {
-  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
-          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
   margin: 5px 0 0 6px; }
 
 .classic-text h1 {
@@ -5725,6 +6045,18 @@ h6,
 .master-brown .feature-list li:before {
   color: #61330E; }
 
+.master-brown .swo-button {
+  color: #61330E !important;
+  border: 2px solid #61330E; }
+
+.master-brown .swo-button:after {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
+.master-brown .back-button::before {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
 .master-orange .bereich-title {
   border-color: #FC7A57; }
 
@@ -5745,6 +6077,18 @@ h6,
 
 .master-orange .feature-list li:before {
   color: #FC7A57; }
+
+.master-orange .swo-button {
+  color: #FC7A57 !important;
+  border: 2px solid #FC7A57; }
+
+.master-orange .swo-button:after {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
+
+.master-orange .back-button::before {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
 
 .master-green .bereich-title {
   border-color: #87A878; }
@@ -5767,6 +6111,18 @@ h6,
 .master-green .feature-list li:before {
   color: #87A878; }
 
+.master-green .swo-button {
+  color: #87A878 !important;
+  border: 2px solid #87A878; }
+
+.master-green .swo-button:after {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
+.master-green .back-button::before {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
 .master-yellow .bereich-title {
   border-color: #FCD757; }
 
@@ -5787,6 +6143,18 @@ h6,
 
 .master-yellow .feature-list li:before {
   color: #FCD757; }
+
+.master-yellow .swo-button {
+  color: #FCD757 !important;
+  border: 2px solid #FCD757; }
+
+.master-yellow .swo-button:after {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
+
+.master-yellow .back-button::before {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
 
 .bereich-container {
   padding-top: 120px; }
@@ -6284,6 +6652,9 @@ h6,
  * Can include things like variables and mixins
  * that are used across the project.
 */
+* {
+  font-family: "Open sans", sans-serif; }
+
 h1,
 h2,
 h3,
@@ -6358,11 +6729,6 @@ h6,
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  margin-left: 5px; }
-
-.zivi-braun:after {
-  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
-          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
   margin: 5px 0 0 6px; }
 
 .classic-text h1 {
@@ -6510,6 +6876,18 @@ h6,
 .master-brown .feature-list li:before {
   color: #61330E; }
 
+.master-brown .swo-button {
+  color: #61330E !important;
+  border: 2px solid #61330E; }
+
+.master-brown .swo-button:after {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
+.master-brown .back-button::before {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
 .master-orange .bereich-title {
   border-color: #FC7A57; }
 
@@ -6530,6 +6908,18 @@ h6,
 
 .master-orange .feature-list li:before {
   color: #FC7A57; }
+
+.master-orange .swo-button {
+  color: #FC7A57 !important;
+  border: 2px solid #FC7A57; }
+
+.master-orange .swo-button:after {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
+
+.master-orange .back-button::before {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
 
 .master-green .bereich-title {
   border-color: #87A878; }
@@ -6552,6 +6942,18 @@ h6,
 .master-green .feature-list li:before {
   color: #87A878; }
 
+.master-green .swo-button {
+  color: #87A878 !important;
+  border: 2px solid #87A878; }
+
+.master-green .swo-button:after {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
+.master-green .back-button::before {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
 .master-yellow .bereich-title {
   border-color: #FCD757; }
 
@@ -6572,6 +6974,18 @@ h6,
 
 .master-yellow .feature-list li:before {
   color: #FCD757; }
+
+.master-yellow .swo-button {
+  color: #FCD757 !important;
+  border: 2px solid #FCD757; }
+
+.master-yellow .swo-button:after {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
+
+.master-yellow .back-button::before {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
 
 .bereich-container {
   padding-top: 120px; }
@@ -7069,6 +7483,9 @@ h6,
  * Can include things like variables and mixins
  * that are used across the project.
 */
+* {
+  font-family: "Open sans", sans-serif; }
+
 h1,
 h2,
 h3,
@@ -7143,11 +7560,6 @@ h6,
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  margin-left: 5px; }
-
-.zivi-braun:after {
-  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
-          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
   margin: 5px 0 0 6px; }
 
 .classic-text h1 {
@@ -7295,6 +7707,18 @@ h6,
 .master-brown .feature-list li:before {
   color: #61330E; }
 
+.master-brown .swo-button {
+  color: #61330E !important;
+  border: 2px solid #61330E; }
+
+.master-brown .swo-button:after {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
+.master-brown .back-button::before {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
 .master-orange .bereich-title {
   border-color: #FC7A57; }
 
@@ -7315,6 +7739,18 @@ h6,
 
 .master-orange .feature-list li:before {
   color: #FC7A57; }
+
+.master-orange .swo-button {
+  color: #FC7A57 !important;
+  border: 2px solid #FC7A57; }
+
+.master-orange .swo-button:after {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
+
+.master-orange .back-button::before {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
 
 .master-green .bereich-title {
   border-color: #87A878; }
@@ -7337,6 +7773,18 @@ h6,
 .master-green .feature-list li:before {
   color: #87A878; }
 
+.master-green .swo-button {
+  color: #87A878 !important;
+  border: 2px solid #87A878; }
+
+.master-green .swo-button:after {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
+.master-green .back-button::before {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
 .master-yellow .bereich-title {
   border-color: #FCD757; }
 
@@ -7357,6 +7805,18 @@ h6,
 
 .master-yellow .feature-list li:before {
   color: #FCD757; }
+
+.master-yellow .swo-button {
+  color: #FCD757 !important;
+  border: 2px solid #FCD757; }
+
+.master-yellow .swo-button:after {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
+
+.master-yellow .back-button::before {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
 
 .bereich-container {
   padding-top: 120px; }
@@ -7854,6 +8314,9 @@ h6,
  * Can include things like variables and mixins
  * that are used across the project.
 */
+* {
+  font-family: "Open sans", sans-serif; }
+
 h1,
 h2,
 h3,
@@ -7928,11 +8391,6 @@ h6,
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  margin-left: 5px; }
-
-.zivi-braun:after {
-  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
-          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
   margin: 5px 0 0 6px; }
 
 .classic-text h1 {
@@ -8080,6 +8538,18 @@ h6,
 .master-brown .feature-list li:before {
   color: #61330E; }
 
+.master-brown .swo-button {
+  color: #61330E !important;
+  border: 2px solid #61330E; }
+
+.master-brown .swo-button:after {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
+.master-brown .back-button::before {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
 .master-orange .bereich-title {
   border-color: #FC7A57; }
 
@@ -8100,6 +8570,18 @@ h6,
 
 .master-orange .feature-list li:before {
   color: #FC7A57; }
+
+.master-orange .swo-button {
+  color: #FC7A57 !important;
+  border: 2px solid #FC7A57; }
+
+.master-orange .swo-button:after {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
+
+.master-orange .back-button::before {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
 
 .master-green .bereich-title {
   border-color: #87A878; }
@@ -8122,6 +8604,18 @@ h6,
 .master-green .feature-list li:before {
   color: #87A878; }
 
+.master-green .swo-button {
+  color: #87A878 !important;
+  border: 2px solid #87A878; }
+
+.master-green .swo-button:after {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
+.master-green .back-button::before {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
 .master-yellow .bereich-title {
   border-color: #FCD757; }
 
@@ -8142,6 +8636,18 @@ h6,
 
 .master-yellow .feature-list li:before {
   color: #FCD757; }
+
+.master-yellow .swo-button {
+  color: #FCD757 !important;
+  border: 2px solid #FCD757; }
+
+.master-yellow .swo-button:after {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
+
+.master-yellow .back-button::before {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
 
 .bereich-container {
   padding-top: 120px; }
@@ -8639,6 +9145,9 @@ h6,
  * Can include things like variables and mixins
  * that are used across the project.
 */
+* {
+  font-family: "Open sans", sans-serif; }
+
 h1,
 h2,
 h3,
@@ -8713,11 +9222,6 @@ h6,
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  margin-left: 5px; }
-
-.zivi-braun:after {
-  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
-          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
   margin: 5px 0 0 6px; }
 
 .classic-text h1 {
@@ -8865,6 +9369,18 @@ h6,
 .master-brown .feature-list li:before {
   color: #61330E; }
 
+.master-brown .swo-button {
+  color: #61330E !important;
+  border: 2px solid #61330E; }
+
+.master-brown .swo-button:after {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
+.master-brown .back-button::before {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
 .master-orange .bereich-title {
   border-color: #FC7A57; }
 
@@ -8885,6 +9401,18 @@ h6,
 
 .master-orange .feature-list li:before {
   color: #FC7A57; }
+
+.master-orange .swo-button {
+  color: #FC7A57 !important;
+  border: 2px solid #FC7A57; }
+
+.master-orange .swo-button:after {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
+
+.master-orange .back-button::before {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
 
 .master-green .bereich-title {
   border-color: #87A878; }
@@ -8907,6 +9435,18 @@ h6,
 .master-green .feature-list li:before {
   color: #87A878; }
 
+.master-green .swo-button {
+  color: #87A878 !important;
+  border: 2px solid #87A878; }
+
+.master-green .swo-button:after {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
+.master-green .back-button::before {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
 .master-yellow .bereich-title {
   border-color: #FCD757; }
 
@@ -8927,6 +9467,18 @@ h6,
 
 .master-yellow .feature-list li:before {
   color: #FCD757; }
+
+.master-yellow .swo-button {
+  color: #FCD757 !important;
+  border: 2px solid #FCD757; }
+
+.master-yellow .swo-button:after {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
+
+.master-yellow .back-button::before {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
 
 .bereich-container {
   padding-top: 120px; }
@@ -9424,6 +9976,9 @@ h6,
  * Can include things like variables and mixins
  * that are used across the project.
 */
+* {
+  font-family: "Open sans", sans-serif; }
+
 h1,
 h2,
 h3,
@@ -9498,11 +10053,6 @@ h6,
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  margin-left: 5px; }
-
-.zivi-braun:after {
-  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
-          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
   margin: 5px 0 0 6px; }
 
 .classic-text h1 {
@@ -9650,6 +10200,18 @@ h6,
 .master-brown .feature-list li:before {
   color: #61330E; }
 
+.master-brown .swo-button {
+  color: #61330E !important;
+  border: 2px solid #61330E; }
+
+.master-brown .swo-button:after {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
+.master-brown .back-button::before {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
 .master-orange .bereich-title {
   border-color: #FC7A57; }
 
@@ -9670,6 +10232,18 @@ h6,
 
 .master-orange .feature-list li:before {
   color: #FC7A57; }
+
+.master-orange .swo-button {
+  color: #FC7A57 !important;
+  border: 2px solid #FC7A57; }
+
+.master-orange .swo-button:after {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
+
+.master-orange .back-button::before {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
 
 .master-green .bereich-title {
   border-color: #87A878; }
@@ -9692,6 +10266,18 @@ h6,
 .master-green .feature-list li:before {
   color: #87A878; }
 
+.master-green .swo-button {
+  color: #87A878 !important;
+  border: 2px solid #87A878; }
+
+.master-green .swo-button:after {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
+.master-green .back-button::before {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
 .master-yellow .bereich-title {
   border-color: #FCD757; }
 
@@ -9712,6 +10298,18 @@ h6,
 
 .master-yellow .feature-list li:before {
   color: #FCD757; }
+
+.master-yellow .swo-button {
+  color: #FCD757 !important;
+  border: 2px solid #FCD757; }
+
+.master-yellow .swo-button:after {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
+
+.master-yellow .back-button::before {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
 
 .bereich-container {
   padding-top: 120px; }
@@ -10209,6 +10807,9 @@ h6,
  * Can include things like variables and mixins
  * that are used across the project.
 */
+* {
+  font-family: "Open sans", sans-serif; }
+
 h1,
 h2,
 h3,
@@ -10283,11 +10884,6 @@ h6,
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  margin-left: 5px; }
-
-.zivi-braun:after {
-  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
-          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
   margin: 5px 0 0 6px; }
 
 .classic-text h1 {
@@ -10435,6 +11031,18 @@ h6,
 .master-brown .feature-list li:before {
   color: #61330E; }
 
+.master-brown .swo-button {
+  color: #61330E !important;
+  border: 2px solid #61330E; }
+
+.master-brown .swo-button:after {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
+.master-brown .back-button::before {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
 .master-orange .bereich-title {
   border-color: #FC7A57; }
 
@@ -10455,6 +11063,18 @@ h6,
 
 .master-orange .feature-list li:before {
   color: #FC7A57; }
+
+.master-orange .swo-button {
+  color: #FC7A57 !important;
+  border: 2px solid #FC7A57; }
+
+.master-orange .swo-button:after {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
+
+.master-orange .back-button::before {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
 
 .master-green .bereich-title {
   border-color: #87A878; }
@@ -10477,6 +11097,18 @@ h6,
 .master-green .feature-list li:before {
   color: #87A878; }
 
+.master-green .swo-button {
+  color: #87A878 !important;
+  border: 2px solid #87A878; }
+
+.master-green .swo-button:after {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
+.master-green .back-button::before {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
 .master-yellow .bereich-title {
   border-color: #FCD757; }
 
@@ -10497,6 +11129,18 @@ h6,
 
 .master-yellow .feature-list li:before {
   color: #FCD757; }
+
+.master-yellow .swo-button {
+  color: #FCD757 !important;
+  border: 2px solid #FCD757; }
+
+.master-yellow .swo-button:after {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
+
+.master-yellow .back-button::before {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
 
 .bereich-container {
   padding-top: 120px; }
@@ -10994,6 +11638,9 @@ h6,
  * Can include things like variables and mixins
  * that are used across the project.
 */
+* {
+  font-family: "Open sans", sans-serif; }
+
 h1,
 h2,
 h3,
@@ -11068,11 +11715,6 @@ h6,
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  margin-left: 5px; }
-
-.zivi-braun:after {
-  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
-          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
   margin: 5px 0 0 6px; }
 
 .classic-text h1 {
@@ -11220,6 +11862,18 @@ h6,
 .master-brown .feature-list li:before {
   color: #61330E; }
 
+.master-brown .swo-button {
+  color: #61330E !important;
+  border: 2px solid #61330E; }
+
+.master-brown .swo-button:after {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
+.master-brown .back-button::before {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
 .master-orange .bereich-title {
   border-color: #FC7A57; }
 
@@ -11240,6 +11894,18 @@ h6,
 
 .master-orange .feature-list li:before {
   color: #FC7A57; }
+
+.master-orange .swo-button {
+  color: #FC7A57 !important;
+  border: 2px solid #FC7A57; }
+
+.master-orange .swo-button:after {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
+
+.master-orange .back-button::before {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
 
 .master-green .bereich-title {
   border-color: #87A878; }
@@ -11262,6 +11928,18 @@ h6,
 .master-green .feature-list li:before {
   color: #87A878; }
 
+.master-green .swo-button {
+  color: #87A878 !important;
+  border: 2px solid #87A878; }
+
+.master-green .swo-button:after {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
+.master-green .back-button::before {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
 .master-yellow .bereich-title {
   border-color: #FCD757; }
 
@@ -11282,6 +11960,18 @@ h6,
 
 .master-yellow .feature-list li:before {
   color: #FCD757; }
+
+.master-yellow .swo-button {
+  color: #FCD757 !important;
+  border: 2px solid #FCD757; }
+
+.master-yellow .swo-button:after {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
+
+.master-yellow .back-button::before {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
 
 .bereich-container {
   padding-top: 120px; }
@@ -11779,6 +12469,9 @@ h6,
  * Can include things like variables and mixins
  * that are used across the project.
 */
+* {
+  font-family: "Open sans", sans-serif; }
+
 h1,
 h2,
 h3,
@@ -11853,11 +12546,6 @@ h6,
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  margin-left: 5px; }
-
-.zivi-braun:after {
-  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
-          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
   margin: 5px 0 0 6px; }
 
 .classic-text h1 {
@@ -12005,6 +12693,18 @@ h6,
 .master-brown .feature-list li:before {
   color: #61330E; }
 
+.master-brown .swo-button {
+  color: #61330E !important;
+  border: 2px solid #61330E; }
+
+.master-brown .swo-button:after {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
+.master-brown .back-button::before {
+  -webkit-filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%);
+          filter: invert(20%) sepia(38%) saturate(1469%) hue-rotate(351deg) brightness(93%) contrast(93%); }
+
 .master-orange .bereich-title {
   border-color: #FC7A57; }
 
@@ -12025,6 +12725,18 @@ h6,
 
 .master-orange .feature-list li:before {
   color: #FC7A57; }
+
+.master-orange .swo-button {
+  color: #FC7A57 !important;
+  border: 2px solid #FC7A57; }
+
+.master-orange .swo-button:after {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
+
+.master-orange .back-button::before {
+  -webkit-filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%);
+          filter: invert(68%) sepia(65%) saturate(2577%) hue-rotate(321deg) brightness(97%) contrast(104%); }
 
 .master-green .bereich-title {
   border-color: #87A878; }
@@ -12047,6 +12759,18 @@ h6,
 .master-green .feature-list li:before {
   color: #87A878; }
 
+.master-green .swo-button {
+  color: #87A878 !important;
+  border: 2px solid #87A878; }
+
+.master-green .swo-button:after {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
+.master-green .back-button::before {
+  -webkit-filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%);
+          filter: invert(71%) sepia(7%) saturate(1485%) hue-rotate(57deg) brightness(88%) contrast(83%); }
+
 .master-yellow .bereich-title {
   border-color: #FCD757; }
 
@@ -12067,6 +12791,18 @@ h6,
 
 .master-yellow .feature-list li:before {
   color: #FCD757; }
+
+.master-yellow .swo-button {
+  color: #FCD757 !important;
+  border: 2px solid #FCD757; }
+
+.master-yellow .swo-button:after {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
+
+.master-yellow .back-button::before {
+  -webkit-filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%);
+          filter: invert(91%) sepia(19%) saturate(1373%) hue-rotate(342deg) brightness(96%) contrast(105%); }
 
 .bereich-container {
   padding-top: 120px; }
