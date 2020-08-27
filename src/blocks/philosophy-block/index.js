@@ -42,20 +42,44 @@ registerBlockType( 'swo-blocks/philosophy-block', {
 			source: 'html',
 			selector: '.box1 .onpicture p',
 		},
+		box1Link: {
+			type: 'string',
+			source: 'attribute',
+			attribute: 'href',
+			selector: '.selectorBox1Link',
+		},
 		box2: {
 			type: 'string',
 			source: 'html',
 			selector: '.box2 .onpicture p',
+		},
+		box2Link: {
+			type: 'string',
+			source: 'attribute',
+			attribute: 'href',
+			selector: '.selectorBox2Link',
 		},
 		box3: {
 			type: 'string',
 			source: 'html',
 			selector: '.box3 .onpicture p',
 		},
+		box3Link: {
+			type: 'string',
+			source: 'attribute',
+			attribute: 'href',
+			selector: '.selectorBox3Link',
+		},
 		box4: {
 			type: 'string',
 			source: 'html',
 			selector: '.box4 .onpicture p',
+		},
+		box4Link: {
+			type: 'string',
+			source: 'attribute',
+			attribute: 'href',
+			selector: '.selectorBox4Link',
 		},
 		philoText: {
 			type: 'string',
@@ -155,6 +179,14 @@ registerBlockType( 'swo-blocks/philosophy-block', {
 												allowedFormats={'none'}
 												tagName="p"
 											/>
+											<RichText
+												onChange={ newContent => { props.setAttributes({box1Link: newContent})} }
+												value={props.attributes.box1Link}
+												placeholder='Link... z.B: "about/zivildienst"'
+												keepPlaceholderOnFocus={true}
+												allowedFormats={'none'}
+												className="editorOnly"
+											/>
 										</div>
 										
 									</div>
@@ -197,6 +229,14 @@ registerBlockType( 'swo-blocks/philosophy-block', {
 												keepPlaceholderOnFocus={true}
 												allowedFormats={'none'}
 												tagName="p"
+											/>
+											<RichText
+												onChange={ newContent => { props.setAttributes({box2Link: newContent})} }
+												value={props.attributes.box2Link}
+												placeholder='Link... z.B: "about/zivildienst"'
+												keepPlaceholderOnFocus={true}
+												allowedFormats={'none'}
+												className="editorOnly"
 											/>
 										</div>
 										
@@ -241,6 +281,14 @@ registerBlockType( 'swo-blocks/philosophy-block', {
 												allowedFormats={'none'}
 												tagName="p"
 											/>
+											<RichText
+												onChange={ newContent => { props.setAttributes({box3Link: newContent})} }
+												value={props.attributes.box3Link}
+												placeholder='Link... z.B: "about/zivildienst"'
+												keepPlaceholderOnFocus={true}
+												allowedFormats={'none'}
+												className="editorOnly"
+											/>
 										</div>
 										
 									</div>
@@ -283,6 +331,14 @@ registerBlockType( 'swo-blocks/philosophy-block', {
 												keepPlaceholderOnFocus={true}
 												allowedFormats={'none'}
 												tagName="p"
+											/>
+											<RichText
+												onChange={ newContent => { props.setAttributes({box4Link: newContent})} }
+												value={props.attributes.box4Link}
+												placeholder='Link... z.B: "about/zivildienst"'
+												keepPlaceholderOnFocus={true}
+												allowedFormats={'none'}
+												className="editorOnly"
 											/>
 										</div>
 										
@@ -331,7 +387,7 @@ registerBlockType( 'swo-blocks/philosophy-block', {
 
 					<div className="Front-page-top-right">
 
-						<a className="picture-link" href="url">
+						<a className="picture-link selectorBox1Link" href={props.attributes.box1Link}>
 							<div class="Bildung-forschung-entwicklung box1"
 								style={{ backgroundImage: `url(${props.attributes.imgURL_Box1})`}}>
 
@@ -342,7 +398,7 @@ registerBlockType( 'swo-blocks/philosophy-block', {
 							</div>
 						</a>
 
-						<a className="picture-link" href="url">
+						<a className="picture-link selectorBox2Link" href={props.attributes.box2Link}>
 							<div class="Bau box2"
 								style={{ backgroundImage: `url(${props.attributes.imgURL_Box2})`}}>
 								
@@ -353,7 +409,7 @@ registerBlockType( 'swo-blocks/philosophy-block', {
 							</div>
 						</a>
 
-						<a className="picture-link" href="url">
+						<a className="picture-link selectorBox3Link" href={props.attributes.box3Link}>
 							<div class="Zivildienst box3"
 								style={{ backgroundImage: `url(${props.attributes.imgURL_Box3})`}}>
 								
@@ -364,7 +420,7 @@ registerBlockType( 'swo-blocks/philosophy-block', {
 							</div>
 						</a>
 
-						<a className="picture-link" href="url">
+						<a className="picture-link selectorBox4Link" href={props.attributes.box4Link}>
 							<div class="Integration box4"
 								style={{ backgroundImage: `url(${props.attributes.imgURL_Box4})`}}>
 								
