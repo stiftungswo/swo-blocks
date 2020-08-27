@@ -688,6 +688,7 @@ h6,
 
 /* --------------------------------------------------------------------------------------------UPPER FRONT PAGE-------------------------------------------------------------------------*/
 
+
 .grid-container-fp1 {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -696,6 +697,17 @@ h6,
 	grid-template-areas: "Front-page-top-left Front-page-top-right";
 	margin-bottom: 100px;
   }
+  
+  @media only screen and (max-width: 600px) {
+	.grid-container-fp1 {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		gap: 1px 1px;
+		grid-template-areas: "." ".";
+	  }
+}
+  
   
 .Front-page-top-right {
 	display: grid;
@@ -820,19 +832,6 @@ h6,
 		/* FOOTER*/
 
 /* --------------------------------------------------------------------------------------------UPPER FOOTER-------------------------------------------------------------------------*/
-
-.grid-container {
-	position: fixed center;
-	font-size: 14px;
-	font-weight: 600;
-	text-align: center; 
-	padding:1em 5em;
-	display: grid;
-	grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-	grid-template-rows: 1fr;
-	gap: 0px 0px;
-	grid-template-areas: "a b c logo d f g";
-	}
 		  
 .a { grid-area: a;
 	padding-top: 7em; }
