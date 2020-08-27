@@ -238,40 +238,44 @@ registerBlockType( 'swo-blocks/content-block', {
 
 		return (
 			<div className="wrap-project wp-block-columns alignfull">
-				<div className="wp-block-column main-info">
-					<figure className="wp-block-image size-large">
-						<img 
-							src={props.attributes.imgURL}
-							alt={props.attributes.imgAlt}
+				<div className="wp-block-column left-column">
+					<div className="main-info">
+						<figure className="wp-block-image size-large">
+							<img 
+								src={props.attributes.imgURL}
+								alt={props.attributes.imgAlt}
+							/>
+						</figure>
+						<h4>{props.attributes.projHeading1}</h4>
+						<RichText.Content
+							className="main-content-p"
+							tagName="p"
+							value={ props.attributes.projContent1 } 
 						/>
-					</figure>
-					<h4>{props.attributes.projHeading1}</h4>
-					<RichText.Content
-						className="main-content-p"
-						tagName="p"
-						value={ props.attributes.projContent1 } 
-					/>
-					<InnerBlocks.Content />
+						<InnerBlocks.Content />
+					</div>
 				</div>
-				<div className="wp-block-column side-info">
-					<h6 id="inh1">{props.attributes.projInhalt1}</h6>
-					<p id="tit1" className="side-content-p">{props.attributes.projTitel1}</p>
-					<h6 id="inh2">{props.attributes.projInhalt2}</h6>
-					<p id="tit2" className="side-content-p">{props.attributes.projTitel2}</p>
-					<h6 id="inh3">{props.attributes.projInhalt3}</h6>
-					<p id="tit3" className="side-content-p">{props.attributes.projTitel3}</p>
-					<RichText.Content
-						className="hashtags"
-						tagName="div"
-						multiline="p"
-						value={ props.attributes.projHashtags } 
-					/>
-					<h6>Kontakt</h6>
-					<RichText.Content
-						className="side-contact"
-						tagName="p"
-						value={ props.attributes.projContact } 
-					/>
+				<div className="wp-block-column right-column">
+					<div className="side-info">
+						<h6 id="inh1">{props.attributes.projInhalt1}</h6>
+						<p id="tit1" className="side-content-p">{props.attributes.projTitel1}</p>
+						<h6 id="inh2">{props.attributes.projInhalt2}</h6>
+						<p id="tit2" className="side-content-p">{props.attributes.projTitel2}</p>
+						<h6 id="inh3">{props.attributes.projInhalt3}</h6>
+						<p id="tit3" className="side-content-p">{props.attributes.projTitel3}</p>
+						<RichText.Content
+							className="hashtags"
+							tagName="div"
+							multiline="p"
+							value={ props.attributes.projHashtags } 
+						/>
+						<h6>Kontakt</h6>
+						<RichText.Content
+							className="side-contact"
+							tagName="p"
+							value={ props.attributes.projContact } 
+						/>
+					</div>
 				</div>
 			</div>
 		);
