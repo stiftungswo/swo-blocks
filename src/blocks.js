@@ -11,14 +11,13 @@
 
 /** PAGES --> Category Name: 'swo-pages' */
 
-import './pages/start-page'; /* TO FINISH */
+import './pages/start-page';
 import './pages/content-page';
-import './pages/area-page'; /* TO FINISH */
+import './pages/area-page';
 
 
 /** BLOCKS --> Category Name: 'swo-blocks' */
 
-import './blocks/start-slide-block'; /* TODO */
 import './blocks/content-block';
 import './blocks/title-text-block';
 import './blocks/area-lr-block';

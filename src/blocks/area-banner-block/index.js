@@ -50,6 +50,7 @@ registerBlockType( 'swo-blocks/area-banner-block', {
 				<div className="left-right limit-content-width">
 					<div className="bereich-image">
 						<InnerBlocks allowedBlocks={ [ 'swo-blocks/employee-block'] } />
+						<p className="editorOnly">Klicken Sie auf das "+" um ein Mitarbeiter hinzuzufügen. (Klicken Sie <strong>hier</strong>, wenn kein "+" angezeigt wird)</p>
 					</div>
 					<div className="bereich-text classic-text">
 						<div>

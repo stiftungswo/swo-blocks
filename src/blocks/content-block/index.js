@@ -31,12 +31,32 @@ registerBlockType( 'swo-blocks/content-block', {
 		projInhalt1: {
 			type: 'string',
 			source: 'html',
-			selector: 'h6',
+			selector: '#inh1',
 		},
 		projTitel1: {
 			type: 'string',
 			source: 'html',
-			selector: '.side-content-p',
+			selector: '#tit1',
+		},
+		projInhalt2: {
+			type: 'string',
+			source: 'html',
+			selector: '#inh2',
+		},
+		projTitel2: {
+			type: 'string',
+			source: 'html',
+			selector: '#tit2',
+		},
+		projInhalt3: {
+			type: 'string',
+			source: 'html',
+			selector: '#inh3',
+		},
+		projTitel3: {
+			type: 'string',
+			source: 'html',
+			selector: '#tit3',
 		},
 		projHeading1: {
 			type: 'string',
@@ -121,7 +141,7 @@ registerBlockType( 'swo-blocks/content-block', {
 						<RichText
 							onChange={ newContent => { props.setAttributes({projHeading1: newContent})} }
 							value={props.attributes.projHeading1}
-							placeholder="Überschrift"
+							placeholder="Überschrift..."
 							keepPlaceholderOnFocus={true}
 							allowedFormats={'none'}
 						/>
@@ -129,35 +149,72 @@ registerBlockType( 'swo-blocks/content-block', {
 					<RichText
 						onChange={ newContent => { props.setAttributes({projContent1: newContent})} }
 						value={props.attributes.projContent1}
-						placeholder="Hier den Inhalt zu diesem Projekt einfüllen. (Hier kann auch Text formatiert werden, so können nach belieben mehrere Zeilen und Untertitel erstellt werden.)"
+						placeholder="Inhalt zu diesem Projekt... (Hier kann auch Text formatiert werden, zum Beispiel Fett, kursiv, unterstrichen"
 						keepPlaceholderOnFocus={true}
 						className="main-content-p"
 					/>
+					<InnerBlocks allowedBlocks={ [ 'core/image', 'core/paragraph', 'core/heading', 'swo-elements/button-element', 'swo-elements/button-back-element', 'swo-elements/list-element' ] } />
+					<p className="editorOnly">Klicken Sie auf das "+" um ein Element hinzuzufügen. (Klicken Sie <strong>hier</strong>, wenn kein "+" angezeigt wird)</p>
 				</div>
 				<div className="wp-block-column side-info">
-					<h6>
+					<h6 id="inh1">
 						<RichText
 							onChange={ newContent => { props.setAttributes({projInhalt1: newContent})} }
 							value={props.attributes.projInhalt1}
-							placeholder="Inhalt 1"
+							placeholder="Inhalt..."
 							keepPlaceholderOnFocus={true}
 							allowedFormats={'none'}
 						/>
 					</h6>
-					<p className="side-content-p">
+					<p id="tit1" className="side-content-p">
 						<RichText
 							onChange={ newContent => { props.setAttributes({projTitel1: newContent})} }
 							value={props.attributes.projTitel1}
-							placeholder="Titel 1"
+							placeholder="Titel..."
 							keepPlaceholderOnFocus={true}
 							allowedFormats={'none'}
 						/>
 					</p>
-					<InnerBlocks allowedBlocks={ [ 'core/image', 'core/paragraph', 'core/heading', 'swo-elements/button-element', 'swo-elements/button-back-element', 'swo-elements/list-element' ] } />
+					<h6 id="inh2">
+						<RichText
+							onChange={ newContent => { props.setAttributes({projInhalt2: newContent})} }
+							value={props.attributes.projInhalt2}
+							placeholder="Inhalt... (Leerlassen, falls nicht benötigt)"
+							keepPlaceholderOnFocus={true}
+							allowedFormats={'none'}
+						/>
+					</h6>
+					<p id="tit2" className="side-content-p">
+						<RichText
+							onChange={ newContent => { props.setAttributes({projTitel2: newContent})} }
+							value={props.attributes.projTitel2}
+							placeholder="Titel... (Leerlassen, falls nicht benötigt)"
+							keepPlaceholderOnFocus={true}
+							allowedFormats={'none'}
+						/>
+					</p>
+					<h6 id="inh3">
+						<RichText
+							onChange={ newContent => { props.setAttributes({projInhalt3: newContent})} }
+							value={props.attributes.projInhalt3}
+							placeholder="Inhalt... (Leerlassen, falls nicht benötigt)"
+							keepPlaceholderOnFocus={true}
+							allowedFormats={'none'}
+						/>
+					</h6>
+					<p id="tit3" className="side-content-p">
+						<RichText
+							onChange={ newContent => { props.setAttributes({projTitel3: newContent})} }
+							value={props.attributes.projTitel3}
+							placeholder="Titel... (Leerlassen, falls nicht benötigt)"
+							keepPlaceholderOnFocus={true}
+							allowedFormats={'none'}
+						/>
+					</p>
 					<RichText
 						onChange={ newContent => { props.setAttributes({projHashtags: newContent})} }
 						value={props.attributes.projHashtags}
-						placeholder='#Hashtag (Um mehrere Hashtags zu erstellen, drücken Sie "Enter")'
+						placeholder='#Hashtag... (Um mehrere Hashtags zu erstellen, drücken Sie "Enter")'
 						keepPlaceholderOnFocus={true}
 						allowedFormats={'none'}
 						tagName="div"
@@ -167,7 +224,7 @@ registerBlockType( 'swo-blocks/content-block', {
 					<RichText
 						onChange={ newContent => { props.setAttributes({projContact: newContent})} }
 						value={props.attributes.projContact}
-						placeholder="Max Muster (Hier können Zeilenumbrüche genutzt werden)"
+						placeholder="Ihre Kontaktangaben... (Hier können Zeilenumbrüche genutzt werden)"
 						keepPlaceholderOnFocus={true}
 						allowedFormats={'none'}
 						className="side-contact"
@@ -194,11 +251,15 @@ registerBlockType( 'swo-blocks/content-block', {
 						tagName="p"
 						value={ props.attributes.projContent1 } 
 					/>
+					<InnerBlocks.Content />
 				</div>
 				<div className="wp-block-column side-info">
-					<h6>{props.attributes.projInhalt1}</h6>
-					<p className="side-content-p">{props.attributes.projTitel1}</p>
-					<InnerBlocks.Content />
+					<h6 id="inh1">{props.attributes.projInhalt1}</h6>
+					<p id="tit1" className="side-content-p">{props.attributes.projTitel1}</p>
+					<h6 id="inh2">{props.attributes.projInhalt2}</h6>
+					<p id="tit2" className="side-content-p">{props.attributes.projTitel2}</p>
+					<h6 id="inh3">{props.attributes.projInhalt3}</h6>
+					<p id="tit3" className="side-content-p">{props.attributes.projTitel3}</p>
 					<RichText.Content
 						className="hashtags"
 						tagName="div"

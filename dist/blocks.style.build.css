@@ -27,10 +27,12 @@ h6,
   margin-top: -90px; }
 
 .editorOnly {
+  margin-top: 10px;
   background: #ffcece;
   color: red;
   padding: 10px;
-  border: 1px solid red; }
+  border: 1px solid red;
+  cursor: pointer; }
 
 .editor-post-title {
   background: #f2f2f2; }
@@ -117,7 +119,7 @@ h6,
 
 /* Bereiche styling -------------------------- */
 .area-banner {
-  background: red;
+  background: #007DC2;
   width: 100vw;
   position: relative;
   margin-left: -50vw;
@@ -127,7 +129,7 @@ h6,
   padding-bottom: 20px; }
 
 .area-banner-button {
-  background: red;
+  background: #007DC2;
   color: #fff !important;
   border: 2px solid #fff; }
 
@@ -183,7 +185,7 @@ h6,
   font-style: italic; }
 
 .feature-list li span {
-  color: red;
+  color: #007DC2;
   font-weight: 1000;
   text-decoration: none; }
 
@@ -195,20 +197,53 @@ h6,
   background: #fff;
   width: 60%;
   margin: 0 auto -104px;
-  border: 4px solid red;
+  border: 4px solid #007DC2;
   padding: 2rem 4rem;
   border-radius: 12px; }
 
 .bereich-title h1 {
-  color: red;
+  color: #007DC2;
   font-size: 40px;
   margin: 0 0 8px; }
 
 .bereich-title h5 {
-  color: red;
+  color: #007DC2;
   font-size: 24px;
   font-style: italic;
   margin: 0 0 14px !important; }
+
+.master-blue .bereich-title {
+  border-color: #007DC2; }
+
+.master-blue .bereich-title h1 {
+  color: #007DC2; }
+
+.master-blue .bereich-title h5 {
+  color: #007DC2; }
+
+.master-blue .area-banner {
+  background: #007DC2; }
+
+.master-blue .area-banner-button {
+  background: #007DC2; }
+
+.master-blue .feature-list li span {
+  color: #007DC2; }
+
+.master-blue .feature-list li:before {
+  color: #007DC2; }
+
+.master-blue .swo-button:not(.area-banner-button) {
+  color: #007DC2 !important;
+  border: 2px solid #007DC2; }
+
+.master-blue .swo-button:after {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
+
+.master-blue .back-button::before {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
 
 .master-brown .bereich-title {
   border-color: #61330E; }
@@ -757,6 +792,12 @@ h6,
   padding-left: 50px; }
 
 /* ------------------------------------Inhalt Seite-------------------------------------- */
+.main-info img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  width: 100%; }
+
 .wp-block-columns.alignfull {
   margin-top: 0px;
   padding-top: 0px; }
@@ -866,10 +907,12 @@ h6,
   margin-top: -90px; }
 
 .editorOnly {
+  margin-top: 10px;
   background: #ffcece;
   color: red;
   padding: 10px;
-  border: 1px solid red; }
+  border: 1px solid red;
+  cursor: pointer; }
 
 .editor-post-title {
   background: #f2f2f2; }
@@ -956,7 +999,7 @@ h6,
 
 /* Bereiche styling -------------------------- */
 .area-banner {
-  background: red;
+  background: #007DC2;
   width: 100vw;
   position: relative;
   margin-left: -50vw;
@@ -966,7 +1009,7 @@ h6,
   padding-bottom: 20px; }
 
 .area-banner-button {
-  background: red;
+  background: #007DC2;
   color: #fff !important;
   border: 2px solid #fff; }
 
@@ -1022,7 +1065,7 @@ h6,
   font-style: italic; }
 
 .feature-list li span {
-  color: red;
+  color: #007DC2;
   font-weight: 1000;
   text-decoration: none; }
 
@@ -1034,20 +1077,53 @@ h6,
   background: #fff;
   width: 60%;
   margin: 0 auto -104px;
-  border: 4px solid red;
+  border: 4px solid #007DC2;
   padding: 2rem 4rem;
   border-radius: 12px; }
 
 .bereich-title h1 {
-  color: red;
+  color: #007DC2;
   font-size: 40px;
   margin: 0 0 8px; }
 
 .bereich-title h5 {
-  color: red;
+  color: #007DC2;
   font-size: 24px;
   font-style: italic;
   margin: 0 0 14px !important; }
+
+.master-blue .bereich-title {
+  border-color: #007DC2; }
+
+.master-blue .bereich-title h1 {
+  color: #007DC2; }
+
+.master-blue .bereich-title h5 {
+  color: #007DC2; }
+
+.master-blue .area-banner {
+  background: #007DC2; }
+
+.master-blue .area-banner-button {
+  background: #007DC2; }
+
+.master-blue .feature-list li span {
+  color: #007DC2; }
+
+.master-blue .feature-list li:before {
+  color: #007DC2; }
+
+.master-blue .swo-button:not(.area-banner-button) {
+  color: #007DC2 !important;
+  border: 2px solid #007DC2; }
+
+.master-blue .swo-button:after {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
+
+.master-blue .back-button::before {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
 
 .master-brown .bereich-title {
   border-color: #61330E; }
@@ -1596,6 +1672,12 @@ h6,
   padding-left: 50px; }
 
 /* ------------------------------------Inhalt Seite-------------------------------------- */
+.main-info img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  width: 100%; }
+
 .wp-block-columns.alignfull {
   margin-top: 0px;
   padding-top: 0px; }
@@ -1705,10 +1787,12 @@ h6,
   margin-top: -90px; }
 
 .editorOnly {
+  margin-top: 10px;
   background: #ffcece;
   color: red;
   padding: 10px;
-  border: 1px solid red; }
+  border: 1px solid red;
+  cursor: pointer; }
 
 .editor-post-title {
   background: #f2f2f2; }
@@ -1795,7 +1879,7 @@ h6,
 
 /* Bereiche styling -------------------------- */
 .area-banner {
-  background: red;
+  background: #007DC2;
   width: 100vw;
   position: relative;
   margin-left: -50vw;
@@ -1805,7 +1889,7 @@ h6,
   padding-bottom: 20px; }
 
 .area-banner-button {
-  background: red;
+  background: #007DC2;
   color: #fff !important;
   border: 2px solid #fff; }
 
@@ -1861,7 +1945,7 @@ h6,
   font-style: italic; }
 
 .feature-list li span {
-  color: red;
+  color: #007DC2;
   font-weight: 1000;
   text-decoration: none; }
 
@@ -1873,20 +1957,53 @@ h6,
   background: #fff;
   width: 60%;
   margin: 0 auto -104px;
-  border: 4px solid red;
+  border: 4px solid #007DC2;
   padding: 2rem 4rem;
   border-radius: 12px; }
 
 .bereich-title h1 {
-  color: red;
+  color: #007DC2;
   font-size: 40px;
   margin: 0 0 8px; }
 
 .bereich-title h5 {
-  color: red;
+  color: #007DC2;
   font-size: 24px;
   font-style: italic;
   margin: 0 0 14px !important; }
+
+.master-blue .bereich-title {
+  border-color: #007DC2; }
+
+.master-blue .bereich-title h1 {
+  color: #007DC2; }
+
+.master-blue .bereich-title h5 {
+  color: #007DC2; }
+
+.master-blue .area-banner {
+  background: #007DC2; }
+
+.master-blue .area-banner-button {
+  background: #007DC2; }
+
+.master-blue .feature-list li span {
+  color: #007DC2; }
+
+.master-blue .feature-list li:before {
+  color: #007DC2; }
+
+.master-blue .swo-button:not(.area-banner-button) {
+  color: #007DC2 !important;
+  border: 2px solid #007DC2; }
+
+.master-blue .swo-button:after {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
+
+.master-blue .back-button::before {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
 
 .master-brown .bereich-title {
   border-color: #61330E; }
@@ -2435,6 +2552,12 @@ h6,
   padding-left: 50px; }
 
 /* ------------------------------------Inhalt Seite-------------------------------------- */
+.main-info img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  width: 100%; }
+
 .wp-block-columns.alignfull {
   margin-top: 0px;
   padding-top: 0px; }
@@ -2544,10 +2667,12 @@ h6,
   margin-top: -90px; }
 
 .editorOnly {
+  margin-top: 10px;
   background: #ffcece;
   color: red;
   padding: 10px;
-  border: 1px solid red; }
+  border: 1px solid red;
+  cursor: pointer; }
 
 .editor-post-title {
   background: #f2f2f2; }
@@ -2634,7 +2759,7 @@ h6,
 
 /* Bereiche styling -------------------------- */
 .area-banner {
-  background: red;
+  background: #007DC2;
   width: 100vw;
   position: relative;
   margin-left: -50vw;
@@ -2644,7 +2769,7 @@ h6,
   padding-bottom: 20px; }
 
 .area-banner-button {
-  background: red;
+  background: #007DC2;
   color: #fff !important;
   border: 2px solid #fff; }
 
@@ -2700,7 +2825,7 @@ h6,
   font-style: italic; }
 
 .feature-list li span {
-  color: red;
+  color: #007DC2;
   font-weight: 1000;
   text-decoration: none; }
 
@@ -2712,20 +2837,53 @@ h6,
   background: #fff;
   width: 60%;
   margin: 0 auto -104px;
-  border: 4px solid red;
+  border: 4px solid #007DC2;
   padding: 2rem 4rem;
   border-radius: 12px; }
 
 .bereich-title h1 {
-  color: red;
+  color: #007DC2;
   font-size: 40px;
   margin: 0 0 8px; }
 
 .bereich-title h5 {
-  color: red;
+  color: #007DC2;
   font-size: 24px;
   font-style: italic;
   margin: 0 0 14px !important; }
+
+.master-blue .bereich-title {
+  border-color: #007DC2; }
+
+.master-blue .bereich-title h1 {
+  color: #007DC2; }
+
+.master-blue .bereich-title h5 {
+  color: #007DC2; }
+
+.master-blue .area-banner {
+  background: #007DC2; }
+
+.master-blue .area-banner-button {
+  background: #007DC2; }
+
+.master-blue .feature-list li span {
+  color: #007DC2; }
+
+.master-blue .feature-list li:before {
+  color: #007DC2; }
+
+.master-blue .swo-button:not(.area-banner-button) {
+  color: #007DC2 !important;
+  border: 2px solid #007DC2; }
+
+.master-blue .swo-button:after {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
+
+.master-blue .back-button::before {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
 
 .master-brown .bereich-title {
   border-color: #61330E; }
@@ -3274,6 +3432,12 @@ h6,
   padding-left: 50px; }
 
 /* ------------------------------------Inhalt Seite-------------------------------------- */
+.main-info img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  width: 100%; }
+
 .wp-block-columns.alignfull {
   margin-top: 0px;
   padding-top: 0px; }
@@ -3383,10 +3547,12 @@ h6,
   margin-top: -90px; }
 
 .editorOnly {
+  margin-top: 10px;
   background: #ffcece;
   color: red;
   padding: 10px;
-  border: 1px solid red; }
+  border: 1px solid red;
+  cursor: pointer; }
 
 .editor-post-title {
   background: #f2f2f2; }
@@ -3473,7 +3639,7 @@ h6,
 
 /* Bereiche styling -------------------------- */
 .area-banner {
-  background: red;
+  background: #007DC2;
   width: 100vw;
   position: relative;
   margin-left: -50vw;
@@ -3483,7 +3649,7 @@ h6,
   padding-bottom: 20px; }
 
 .area-banner-button {
-  background: red;
+  background: #007DC2;
   color: #fff !important;
   border: 2px solid #fff; }
 
@@ -3539,7 +3705,7 @@ h6,
   font-style: italic; }
 
 .feature-list li span {
-  color: red;
+  color: #007DC2;
   font-weight: 1000;
   text-decoration: none; }
 
@@ -3551,20 +3717,53 @@ h6,
   background: #fff;
   width: 60%;
   margin: 0 auto -104px;
-  border: 4px solid red;
+  border: 4px solid #007DC2;
   padding: 2rem 4rem;
   border-radius: 12px; }
 
 .bereich-title h1 {
-  color: red;
+  color: #007DC2;
   font-size: 40px;
   margin: 0 0 8px; }
 
 .bereich-title h5 {
-  color: red;
+  color: #007DC2;
   font-size: 24px;
   font-style: italic;
   margin: 0 0 14px !important; }
+
+.master-blue .bereich-title {
+  border-color: #007DC2; }
+
+.master-blue .bereich-title h1 {
+  color: #007DC2; }
+
+.master-blue .bereich-title h5 {
+  color: #007DC2; }
+
+.master-blue .area-banner {
+  background: #007DC2; }
+
+.master-blue .area-banner-button {
+  background: #007DC2; }
+
+.master-blue .feature-list li span {
+  color: #007DC2; }
+
+.master-blue .feature-list li:before {
+  color: #007DC2; }
+
+.master-blue .swo-button:not(.area-banner-button) {
+  color: #007DC2 !important;
+  border: 2px solid #007DC2; }
+
+.master-blue .swo-button:after {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
+
+.master-blue .back-button::before {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
 
 .master-brown .bereich-title {
   border-color: #61330E; }
@@ -4113,6 +4312,12 @@ h6,
   padding-left: 50px; }
 
 /* ------------------------------------Inhalt Seite-------------------------------------- */
+.main-info img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  width: 100%; }
+
 .wp-block-columns.alignfull {
   margin-top: 0px;
   padding-top: 0px; }
@@ -4222,10 +4427,12 @@ h6,
   margin-top: -90px; }
 
 .editorOnly {
+  margin-top: 10px;
   background: #ffcece;
   color: red;
   padding: 10px;
-  border: 1px solid red; }
+  border: 1px solid red;
+  cursor: pointer; }
 
 .editor-post-title {
   background: #f2f2f2; }
@@ -4312,7 +4519,7 @@ h6,
 
 /* Bereiche styling -------------------------- */
 .area-banner {
-  background: red;
+  background: #007DC2;
   width: 100vw;
   position: relative;
   margin-left: -50vw;
@@ -4322,7 +4529,7 @@ h6,
   padding-bottom: 20px; }
 
 .area-banner-button {
-  background: red;
+  background: #007DC2;
   color: #fff !important;
   border: 2px solid #fff; }
 
@@ -4378,7 +4585,7 @@ h6,
   font-style: italic; }
 
 .feature-list li span {
-  color: red;
+  color: #007DC2;
   font-weight: 1000;
   text-decoration: none; }
 
@@ -4390,20 +4597,53 @@ h6,
   background: #fff;
   width: 60%;
   margin: 0 auto -104px;
-  border: 4px solid red;
+  border: 4px solid #007DC2;
   padding: 2rem 4rem;
   border-radius: 12px; }
 
 .bereich-title h1 {
-  color: red;
+  color: #007DC2;
   font-size: 40px;
   margin: 0 0 8px; }
 
 .bereich-title h5 {
-  color: red;
+  color: #007DC2;
   font-size: 24px;
   font-style: italic;
   margin: 0 0 14px !important; }
+
+.master-blue .bereich-title {
+  border-color: #007DC2; }
+
+.master-blue .bereich-title h1 {
+  color: #007DC2; }
+
+.master-blue .bereich-title h5 {
+  color: #007DC2; }
+
+.master-blue .area-banner {
+  background: #007DC2; }
+
+.master-blue .area-banner-button {
+  background: #007DC2; }
+
+.master-blue .feature-list li span {
+  color: #007DC2; }
+
+.master-blue .feature-list li:before {
+  color: #007DC2; }
+
+.master-blue .swo-button:not(.area-banner-button) {
+  color: #007DC2 !important;
+  border: 2px solid #007DC2; }
+
+.master-blue .swo-button:after {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
+
+.master-blue .back-button::before {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
 
 .master-brown .bereich-title {
   border-color: #61330E; }
@@ -4952,6 +5192,12 @@ h6,
   padding-left: 50px; }
 
 /* ------------------------------------Inhalt Seite-------------------------------------- */
+.main-info img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  width: 100%; }
+
 .wp-block-columns.alignfull {
   margin-top: 0px;
   padding-top: 0px; }
@@ -5061,10 +5307,12 @@ h6,
   margin-top: -90px; }
 
 .editorOnly {
+  margin-top: 10px;
   background: #ffcece;
   color: red;
   padding: 10px;
-  border: 1px solid red; }
+  border: 1px solid red;
+  cursor: pointer; }
 
 .editor-post-title {
   background: #f2f2f2; }
@@ -5151,7 +5399,7 @@ h6,
 
 /* Bereiche styling -------------------------- */
 .area-banner {
-  background: red;
+  background: #007DC2;
   width: 100vw;
   position: relative;
   margin-left: -50vw;
@@ -5161,7 +5409,7 @@ h6,
   padding-bottom: 20px; }
 
 .area-banner-button {
-  background: red;
+  background: #007DC2;
   color: #fff !important;
   border: 2px solid #fff; }
 
@@ -5217,7 +5465,7 @@ h6,
   font-style: italic; }
 
 .feature-list li span {
-  color: red;
+  color: #007DC2;
   font-weight: 1000;
   text-decoration: none; }
 
@@ -5229,20 +5477,53 @@ h6,
   background: #fff;
   width: 60%;
   margin: 0 auto -104px;
-  border: 4px solid red;
+  border: 4px solid #007DC2;
   padding: 2rem 4rem;
   border-radius: 12px; }
 
 .bereich-title h1 {
-  color: red;
+  color: #007DC2;
   font-size: 40px;
   margin: 0 0 8px; }
 
 .bereich-title h5 {
-  color: red;
+  color: #007DC2;
   font-size: 24px;
   font-style: italic;
   margin: 0 0 14px !important; }
+
+.master-blue .bereich-title {
+  border-color: #007DC2; }
+
+.master-blue .bereich-title h1 {
+  color: #007DC2; }
+
+.master-blue .bereich-title h5 {
+  color: #007DC2; }
+
+.master-blue .area-banner {
+  background: #007DC2; }
+
+.master-blue .area-banner-button {
+  background: #007DC2; }
+
+.master-blue .feature-list li span {
+  color: #007DC2; }
+
+.master-blue .feature-list li:before {
+  color: #007DC2; }
+
+.master-blue .swo-button:not(.area-banner-button) {
+  color: #007DC2 !important;
+  border: 2px solid #007DC2; }
+
+.master-blue .swo-button:after {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
+
+.master-blue .back-button::before {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
 
 .master-brown .bereich-title {
   border-color: #61330E; }
@@ -5791,6 +6072,12 @@ h6,
   padding-left: 50px; }
 
 /* ------------------------------------Inhalt Seite-------------------------------------- */
+.main-info img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  width: 100%; }
+
 .wp-block-columns.alignfull {
   margin-top: 0px;
   padding-top: 0px; }
@@ -5900,10 +6187,12 @@ h6,
   margin-top: -90px; }
 
 .editorOnly {
+  margin-top: 10px;
   background: #ffcece;
   color: red;
   padding: 10px;
-  border: 1px solid red; }
+  border: 1px solid red;
+  cursor: pointer; }
 
 .editor-post-title {
   background: #f2f2f2; }
@@ -5990,7 +6279,7 @@ h6,
 
 /* Bereiche styling -------------------------- */
 .area-banner {
-  background: red;
+  background: #007DC2;
   width: 100vw;
   position: relative;
   margin-left: -50vw;
@@ -6000,7 +6289,7 @@ h6,
   padding-bottom: 20px; }
 
 .area-banner-button {
-  background: red;
+  background: #007DC2;
   color: #fff !important;
   border: 2px solid #fff; }
 
@@ -6056,7 +6345,7 @@ h6,
   font-style: italic; }
 
 .feature-list li span {
-  color: red;
+  color: #007DC2;
   font-weight: 1000;
   text-decoration: none; }
 
@@ -6068,20 +6357,53 @@ h6,
   background: #fff;
   width: 60%;
   margin: 0 auto -104px;
-  border: 4px solid red;
+  border: 4px solid #007DC2;
   padding: 2rem 4rem;
   border-radius: 12px; }
 
 .bereich-title h1 {
-  color: red;
+  color: #007DC2;
   font-size: 40px;
   margin: 0 0 8px; }
 
 .bereich-title h5 {
-  color: red;
+  color: #007DC2;
   font-size: 24px;
   font-style: italic;
   margin: 0 0 14px !important; }
+
+.master-blue .bereich-title {
+  border-color: #007DC2; }
+
+.master-blue .bereich-title h1 {
+  color: #007DC2; }
+
+.master-blue .bereich-title h5 {
+  color: #007DC2; }
+
+.master-blue .area-banner {
+  background: #007DC2; }
+
+.master-blue .area-banner-button {
+  background: #007DC2; }
+
+.master-blue .feature-list li span {
+  color: #007DC2; }
+
+.master-blue .feature-list li:before {
+  color: #007DC2; }
+
+.master-blue .swo-button:not(.area-banner-button) {
+  color: #007DC2 !important;
+  border: 2px solid #007DC2; }
+
+.master-blue .swo-button:after {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
+
+.master-blue .back-button::before {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
 
 .master-brown .bereich-title {
   border-color: #61330E; }
@@ -6630,6 +6952,12 @@ h6,
   padding-left: 50px; }
 
 /* ------------------------------------Inhalt Seite-------------------------------------- */
+.main-info img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  width: 100%; }
+
 .wp-block-columns.alignfull {
   margin-top: 0px;
   padding-top: 0px; }
@@ -6739,10 +7067,12 @@ h6,
   margin-top: -90px; }
 
 .editorOnly {
+  margin-top: 10px;
   background: #ffcece;
   color: red;
   padding: 10px;
-  border: 1px solid red; }
+  border: 1px solid red;
+  cursor: pointer; }
 
 .editor-post-title {
   background: #f2f2f2; }
@@ -6829,7 +7159,7 @@ h6,
 
 /* Bereiche styling -------------------------- */
 .area-banner {
-  background: red;
+  background: #007DC2;
   width: 100vw;
   position: relative;
   margin-left: -50vw;
@@ -6839,7 +7169,7 @@ h6,
   padding-bottom: 20px; }
 
 .area-banner-button {
-  background: red;
+  background: #007DC2;
   color: #fff !important;
   border: 2px solid #fff; }
 
@@ -6895,7 +7225,7 @@ h6,
   font-style: italic; }
 
 .feature-list li span {
-  color: red;
+  color: #007DC2;
   font-weight: 1000;
   text-decoration: none; }
 
@@ -6907,20 +7237,53 @@ h6,
   background: #fff;
   width: 60%;
   margin: 0 auto -104px;
-  border: 4px solid red;
+  border: 4px solid #007DC2;
   padding: 2rem 4rem;
   border-radius: 12px; }
 
 .bereich-title h1 {
-  color: red;
+  color: #007DC2;
   font-size: 40px;
   margin: 0 0 8px; }
 
 .bereich-title h5 {
-  color: red;
+  color: #007DC2;
   font-size: 24px;
   font-style: italic;
   margin: 0 0 14px !important; }
+
+.master-blue .bereich-title {
+  border-color: #007DC2; }
+
+.master-blue .bereich-title h1 {
+  color: #007DC2; }
+
+.master-blue .bereich-title h5 {
+  color: #007DC2; }
+
+.master-blue .area-banner {
+  background: #007DC2; }
+
+.master-blue .area-banner-button {
+  background: #007DC2; }
+
+.master-blue .feature-list li span {
+  color: #007DC2; }
+
+.master-blue .feature-list li:before {
+  color: #007DC2; }
+
+.master-blue .swo-button:not(.area-banner-button) {
+  color: #007DC2 !important;
+  border: 2px solid #007DC2; }
+
+.master-blue .swo-button:after {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
+
+.master-blue .back-button::before {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
 
 .master-brown .bereich-title {
   border-color: #61330E; }
@@ -7469,6 +7832,12 @@ h6,
   padding-left: 50px; }
 
 /* ------------------------------------Inhalt Seite-------------------------------------- */
+.main-info img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  width: 100%; }
+
 .wp-block-columns.alignfull {
   margin-top: 0px;
   padding-top: 0px; }
@@ -7578,10 +7947,12 @@ h6,
   margin-top: -90px; }
 
 .editorOnly {
+  margin-top: 10px;
   background: #ffcece;
   color: red;
   padding: 10px;
-  border: 1px solid red; }
+  border: 1px solid red;
+  cursor: pointer; }
 
 .editor-post-title {
   background: #f2f2f2; }
@@ -7668,7 +8039,7 @@ h6,
 
 /* Bereiche styling -------------------------- */
 .area-banner {
-  background: red;
+  background: #007DC2;
   width: 100vw;
   position: relative;
   margin-left: -50vw;
@@ -7678,7 +8049,7 @@ h6,
   padding-bottom: 20px; }
 
 .area-banner-button {
-  background: red;
+  background: #007DC2;
   color: #fff !important;
   border: 2px solid #fff; }
 
@@ -7734,7 +8105,7 @@ h6,
   font-style: italic; }
 
 .feature-list li span {
-  color: red;
+  color: #007DC2;
   font-weight: 1000;
   text-decoration: none; }
 
@@ -7746,20 +8117,53 @@ h6,
   background: #fff;
   width: 60%;
   margin: 0 auto -104px;
-  border: 4px solid red;
+  border: 4px solid #007DC2;
   padding: 2rem 4rem;
   border-radius: 12px; }
 
 .bereich-title h1 {
-  color: red;
+  color: #007DC2;
   font-size: 40px;
   margin: 0 0 8px; }
 
 .bereich-title h5 {
-  color: red;
+  color: #007DC2;
   font-size: 24px;
   font-style: italic;
   margin: 0 0 14px !important; }
+
+.master-blue .bereich-title {
+  border-color: #007DC2; }
+
+.master-blue .bereich-title h1 {
+  color: #007DC2; }
+
+.master-blue .bereich-title h5 {
+  color: #007DC2; }
+
+.master-blue .area-banner {
+  background: #007DC2; }
+
+.master-blue .area-banner-button {
+  background: #007DC2; }
+
+.master-blue .feature-list li span {
+  color: #007DC2; }
+
+.master-blue .feature-list li:before {
+  color: #007DC2; }
+
+.master-blue .swo-button:not(.area-banner-button) {
+  color: #007DC2 !important;
+  border: 2px solid #007DC2; }
+
+.master-blue .swo-button:after {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
+
+.master-blue .back-button::before {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
 
 .master-brown .bereich-title {
   border-color: #61330E; }
@@ -8308,6 +8712,12 @@ h6,
   padding-left: 50px; }
 
 /* ------------------------------------Inhalt Seite-------------------------------------- */
+.main-info img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  width: 100%; }
+
 .wp-block-columns.alignfull {
   margin-top: 0px;
   padding-top: 0px; }
@@ -8417,10 +8827,12 @@ h6,
   margin-top: -90px; }
 
 .editorOnly {
+  margin-top: 10px;
   background: #ffcece;
   color: red;
   padding: 10px;
-  border: 1px solid red; }
+  border: 1px solid red;
+  cursor: pointer; }
 
 .editor-post-title {
   background: #f2f2f2; }
@@ -8507,7 +8919,7 @@ h6,
 
 /* Bereiche styling -------------------------- */
 .area-banner {
-  background: red;
+  background: #007DC2;
   width: 100vw;
   position: relative;
   margin-left: -50vw;
@@ -8517,7 +8929,7 @@ h6,
   padding-bottom: 20px; }
 
 .area-banner-button {
-  background: red;
+  background: #007DC2;
   color: #fff !important;
   border: 2px solid #fff; }
 
@@ -8573,7 +8985,7 @@ h6,
   font-style: italic; }
 
 .feature-list li span {
-  color: red;
+  color: #007DC2;
   font-weight: 1000;
   text-decoration: none; }
 
@@ -8585,20 +8997,53 @@ h6,
   background: #fff;
   width: 60%;
   margin: 0 auto -104px;
-  border: 4px solid red;
+  border: 4px solid #007DC2;
   padding: 2rem 4rem;
   border-radius: 12px; }
 
 .bereich-title h1 {
-  color: red;
+  color: #007DC2;
   font-size: 40px;
   margin: 0 0 8px; }
 
 .bereich-title h5 {
-  color: red;
+  color: #007DC2;
   font-size: 24px;
   font-style: italic;
   margin: 0 0 14px !important; }
+
+.master-blue .bereich-title {
+  border-color: #007DC2; }
+
+.master-blue .bereich-title h1 {
+  color: #007DC2; }
+
+.master-blue .bereich-title h5 {
+  color: #007DC2; }
+
+.master-blue .area-banner {
+  background: #007DC2; }
+
+.master-blue .area-banner-button {
+  background: #007DC2; }
+
+.master-blue .feature-list li span {
+  color: #007DC2; }
+
+.master-blue .feature-list li:before {
+  color: #007DC2; }
+
+.master-blue .swo-button:not(.area-banner-button) {
+  color: #007DC2 !important;
+  border: 2px solid #007DC2; }
+
+.master-blue .swo-button:after {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
+
+.master-blue .back-button::before {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
 
 .master-brown .bereich-title {
   border-color: #61330E; }
@@ -9147,6 +9592,12 @@ h6,
   padding-left: 50px; }
 
 /* ------------------------------------Inhalt Seite-------------------------------------- */
+.main-info img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  width: 100%; }
+
 .wp-block-columns.alignfull {
   margin-top: 0px;
   padding-top: 0px; }
@@ -9256,10 +9707,12 @@ h6,
   margin-top: -90px; }
 
 .editorOnly {
+  margin-top: 10px;
   background: #ffcece;
   color: red;
   padding: 10px;
-  border: 1px solid red; }
+  border: 1px solid red;
+  cursor: pointer; }
 
 .editor-post-title {
   background: #f2f2f2; }
@@ -9346,7 +9799,7 @@ h6,
 
 /* Bereiche styling -------------------------- */
 .area-banner {
-  background: red;
+  background: #007DC2;
   width: 100vw;
   position: relative;
   margin-left: -50vw;
@@ -9356,7 +9809,7 @@ h6,
   padding-bottom: 20px; }
 
 .area-banner-button {
-  background: red;
+  background: #007DC2;
   color: #fff !important;
   border: 2px solid #fff; }
 
@@ -9412,7 +9865,7 @@ h6,
   font-style: italic; }
 
 .feature-list li span {
-  color: red;
+  color: #007DC2;
   font-weight: 1000;
   text-decoration: none; }
 
@@ -9424,20 +9877,53 @@ h6,
   background: #fff;
   width: 60%;
   margin: 0 auto -104px;
-  border: 4px solid red;
+  border: 4px solid #007DC2;
   padding: 2rem 4rem;
   border-radius: 12px; }
 
 .bereich-title h1 {
-  color: red;
+  color: #007DC2;
   font-size: 40px;
   margin: 0 0 8px; }
 
 .bereich-title h5 {
-  color: red;
+  color: #007DC2;
   font-size: 24px;
   font-style: italic;
   margin: 0 0 14px !important; }
+
+.master-blue .bereich-title {
+  border-color: #007DC2; }
+
+.master-blue .bereich-title h1 {
+  color: #007DC2; }
+
+.master-blue .bereich-title h5 {
+  color: #007DC2; }
+
+.master-blue .area-banner {
+  background: #007DC2; }
+
+.master-blue .area-banner-button {
+  background: #007DC2; }
+
+.master-blue .feature-list li span {
+  color: #007DC2; }
+
+.master-blue .feature-list li:before {
+  color: #007DC2; }
+
+.master-blue .swo-button:not(.area-banner-button) {
+  color: #007DC2 !important;
+  border: 2px solid #007DC2; }
+
+.master-blue .swo-button:after {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
+
+.master-blue .back-button::before {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
 
 .master-brown .bereich-title {
   border-color: #61330E; }
@@ -9986,6 +10472,12 @@ h6,
   padding-left: 50px; }
 
 /* ------------------------------------Inhalt Seite-------------------------------------- */
+.main-info img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  width: 100%; }
+
 .wp-block-columns.alignfull {
   margin-top: 0px;
   padding-top: 0px; }
@@ -10095,10 +10587,12 @@ h6,
   margin-top: -90px; }
 
 .editorOnly {
+  margin-top: 10px;
   background: #ffcece;
   color: red;
   padding: 10px;
-  border: 1px solid red; }
+  border: 1px solid red;
+  cursor: pointer; }
 
 .editor-post-title {
   background: #f2f2f2; }
@@ -10185,7 +10679,7 @@ h6,
 
 /* Bereiche styling -------------------------- */
 .area-banner {
-  background: red;
+  background: #007DC2;
   width: 100vw;
   position: relative;
   margin-left: -50vw;
@@ -10195,7 +10689,7 @@ h6,
   padding-bottom: 20px; }
 
 .area-banner-button {
-  background: red;
+  background: #007DC2;
   color: #fff !important;
   border: 2px solid #fff; }
 
@@ -10251,7 +10745,7 @@ h6,
   font-style: italic; }
 
 .feature-list li span {
-  color: red;
+  color: #007DC2;
   font-weight: 1000;
   text-decoration: none; }
 
@@ -10263,20 +10757,53 @@ h6,
   background: #fff;
   width: 60%;
   margin: 0 auto -104px;
-  border: 4px solid red;
+  border: 4px solid #007DC2;
   padding: 2rem 4rem;
   border-radius: 12px; }
 
 .bereich-title h1 {
-  color: red;
+  color: #007DC2;
   font-size: 40px;
   margin: 0 0 8px; }
 
 .bereich-title h5 {
-  color: red;
+  color: #007DC2;
   font-size: 24px;
   font-style: italic;
   margin: 0 0 14px !important; }
+
+.master-blue .bereich-title {
+  border-color: #007DC2; }
+
+.master-blue .bereich-title h1 {
+  color: #007DC2; }
+
+.master-blue .bereich-title h5 {
+  color: #007DC2; }
+
+.master-blue .area-banner {
+  background: #007DC2; }
+
+.master-blue .area-banner-button {
+  background: #007DC2; }
+
+.master-blue .feature-list li span {
+  color: #007DC2; }
+
+.master-blue .feature-list li:before {
+  color: #007DC2; }
+
+.master-blue .swo-button:not(.area-banner-button) {
+  color: #007DC2 !important;
+  border: 2px solid #007DC2; }
+
+.master-blue .swo-button:after {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
+
+.master-blue .back-button::before {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
 
 .master-brown .bereich-title {
   border-color: #61330E; }
@@ -10825,6 +11352,12 @@ h6,
   padding-left: 50px; }
 
 /* ------------------------------------Inhalt Seite-------------------------------------- */
+.main-info img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  width: 100%; }
+
 .wp-block-columns.alignfull {
   margin-top: 0px;
   padding-top: 0px; }
@@ -10934,10 +11467,12 @@ h6,
   margin-top: -90px; }
 
 .editorOnly {
+  margin-top: 10px;
   background: #ffcece;
   color: red;
   padding: 10px;
-  border: 1px solid red; }
+  border: 1px solid red;
+  cursor: pointer; }
 
 .editor-post-title {
   background: #f2f2f2; }
@@ -11024,7 +11559,7 @@ h6,
 
 /* Bereiche styling -------------------------- */
 .area-banner {
-  background: red;
+  background: #007DC2;
   width: 100vw;
   position: relative;
   margin-left: -50vw;
@@ -11034,7 +11569,7 @@ h6,
   padding-bottom: 20px; }
 
 .area-banner-button {
-  background: red;
+  background: #007DC2;
   color: #fff !important;
   border: 2px solid #fff; }
 
@@ -11090,7 +11625,7 @@ h6,
   font-style: italic; }
 
 .feature-list li span {
-  color: red;
+  color: #007DC2;
   font-weight: 1000;
   text-decoration: none; }
 
@@ -11102,20 +11637,53 @@ h6,
   background: #fff;
   width: 60%;
   margin: 0 auto -104px;
-  border: 4px solid red;
+  border: 4px solid #007DC2;
   padding: 2rem 4rem;
   border-radius: 12px; }
 
 .bereich-title h1 {
-  color: red;
+  color: #007DC2;
   font-size: 40px;
   margin: 0 0 8px; }
 
 .bereich-title h5 {
-  color: red;
+  color: #007DC2;
   font-size: 24px;
   font-style: italic;
   margin: 0 0 14px !important; }
+
+.master-blue .bereich-title {
+  border-color: #007DC2; }
+
+.master-blue .bereich-title h1 {
+  color: #007DC2; }
+
+.master-blue .bereich-title h5 {
+  color: #007DC2; }
+
+.master-blue .area-banner {
+  background: #007DC2; }
+
+.master-blue .area-banner-button {
+  background: #007DC2; }
+
+.master-blue .feature-list li span {
+  color: #007DC2; }
+
+.master-blue .feature-list li:before {
+  color: #007DC2; }
+
+.master-blue .swo-button:not(.area-banner-button) {
+  color: #007DC2 !important;
+  border: 2px solid #007DC2; }
+
+.master-blue .swo-button:after {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
+
+.master-blue .back-button::before {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
 
 .master-brown .bereich-title {
   border-color: #61330E; }
@@ -11664,6 +12232,12 @@ h6,
   padding-left: 50px; }
 
 /* ------------------------------------Inhalt Seite-------------------------------------- */
+.main-info img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  width: 100%; }
+
 .wp-block-columns.alignfull {
   margin-top: 0px;
   padding-top: 0px; }
@@ -11773,10 +12347,12 @@ h6,
   margin-top: -90px; }
 
 .editorOnly {
+  margin-top: 10px;
   background: #ffcece;
   color: red;
   padding: 10px;
-  border: 1px solid red; }
+  border: 1px solid red;
+  cursor: pointer; }
 
 .editor-post-title {
   background: #f2f2f2; }
@@ -11863,7 +12439,7 @@ h6,
 
 /* Bereiche styling -------------------------- */
 .area-banner {
-  background: red;
+  background: #007DC2;
   width: 100vw;
   position: relative;
   margin-left: -50vw;
@@ -11873,7 +12449,7 @@ h6,
   padding-bottom: 20px; }
 
 .area-banner-button {
-  background: red;
+  background: #007DC2;
   color: #fff !important;
   border: 2px solid #fff; }
 
@@ -11929,7 +12505,7 @@ h6,
   font-style: italic; }
 
 .feature-list li span {
-  color: red;
+  color: #007DC2;
   font-weight: 1000;
   text-decoration: none; }
 
@@ -11941,20 +12517,53 @@ h6,
   background: #fff;
   width: 60%;
   margin: 0 auto -104px;
-  border: 4px solid red;
+  border: 4px solid #007DC2;
   padding: 2rem 4rem;
   border-radius: 12px; }
 
 .bereich-title h1 {
-  color: red;
+  color: #007DC2;
   font-size: 40px;
   margin: 0 0 8px; }
 
 .bereich-title h5 {
-  color: red;
+  color: #007DC2;
   font-size: 24px;
   font-style: italic;
   margin: 0 0 14px !important; }
+
+.master-blue .bereich-title {
+  border-color: #007DC2; }
+
+.master-blue .bereich-title h1 {
+  color: #007DC2; }
+
+.master-blue .bereich-title h5 {
+  color: #007DC2; }
+
+.master-blue .area-banner {
+  background: #007DC2; }
+
+.master-blue .area-banner-button {
+  background: #007DC2; }
+
+.master-blue .feature-list li span {
+  color: #007DC2; }
+
+.master-blue .feature-list li:before {
+  color: #007DC2; }
+
+.master-blue .swo-button:not(.area-banner-button) {
+  color: #007DC2 !important;
+  border: 2px solid #007DC2; }
+
+.master-blue .swo-button:after {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
+
+.master-blue .back-button::before {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
 
 .master-brown .bereich-title {
   border-color: #61330E; }
@@ -12503,6 +13112,12 @@ h6,
   padding-left: 50px; }
 
 /* ------------------------------------Inhalt Seite-------------------------------------- */
+.main-info img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  width: 100%; }
+
 .wp-block-columns.alignfull {
   margin-top: 0px;
   padding-top: 0px; }
@@ -12612,10 +13227,12 @@ h6,
   margin-top: -90px; }
 
 .editorOnly {
+  margin-top: 10px;
   background: #ffcece;
   color: red;
   padding: 10px;
-  border: 1px solid red; }
+  border: 1px solid red;
+  cursor: pointer; }
 
 .editor-post-title {
   background: #f2f2f2; }
@@ -12702,7 +13319,7 @@ h6,
 
 /* Bereiche styling -------------------------- */
 .area-banner {
-  background: red;
+  background: #007DC2;
   width: 100vw;
   position: relative;
   margin-left: -50vw;
@@ -12712,7 +13329,7 @@ h6,
   padding-bottom: 20px; }
 
 .area-banner-button {
-  background: red;
+  background: #007DC2;
   color: #fff !important;
   border: 2px solid #fff; }
 
@@ -12768,7 +13385,7 @@ h6,
   font-style: italic; }
 
 .feature-list li span {
-  color: red;
+  color: #007DC2;
   font-weight: 1000;
   text-decoration: none; }
 
@@ -12780,20 +13397,53 @@ h6,
   background: #fff;
   width: 60%;
   margin: 0 auto -104px;
-  border: 4px solid red;
+  border: 4px solid #007DC2;
   padding: 2rem 4rem;
   border-radius: 12px; }
 
 .bereich-title h1 {
-  color: red;
+  color: #007DC2;
   font-size: 40px;
   margin: 0 0 8px; }
 
 .bereich-title h5 {
-  color: red;
+  color: #007DC2;
   font-size: 24px;
   font-style: italic;
   margin: 0 0 14px !important; }
+
+.master-blue .bereich-title {
+  border-color: #007DC2; }
+
+.master-blue .bereich-title h1 {
+  color: #007DC2; }
+
+.master-blue .bereich-title h5 {
+  color: #007DC2; }
+
+.master-blue .area-banner {
+  background: #007DC2; }
+
+.master-blue .area-banner-button {
+  background: #007DC2; }
+
+.master-blue .feature-list li span {
+  color: #007DC2; }
+
+.master-blue .feature-list li:before {
+  color: #007DC2; }
+
+.master-blue .swo-button:not(.area-banner-button) {
+  color: #007DC2 !important;
+  border: 2px solid #007DC2; }
+
+.master-blue .swo-button:after {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
+
+.master-blue .back-button::before {
+  -webkit-filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%);
+          filter: invert(33%) sepia(69%) saturate(5955%) hue-rotate(185deg) brightness(98%) contrast(101%); }
 
 .master-brown .bereich-title {
   border-color: #61330E; }
@@ -13342,6 +13992,12 @@ h6,
   padding-left: 50px; }
 
 /* ------------------------------------Inhalt Seite-------------------------------------- */
+.main-info img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  width: 100%; }
+
 .wp-block-columns.alignfull {
   margin-top: 0px;
   padding-top: 0px; }

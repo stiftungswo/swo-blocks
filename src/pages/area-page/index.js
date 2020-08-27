@@ -103,8 +103,8 @@ registerBlockType( 'swo-pages/area-page', {
 				<div className={props.attributes.areaColorSave}>
 					<div className="editorOnly">
 						<div>
+							<p>Soll diese Seite in einer Übersicht angezeigt werden?</p>
 							<SelectControl
-								label='Soll diese Seite in einer Übersicht angezeigt werden?'
 								value={ props.attributes.typeOfPost }
 								onChange={ newContent => { props.setAttributes({typeOfPost: newContent})} }
 								options={ [
@@ -115,7 +115,7 @@ registerBlockType( 'swo-pages/area-page', {
 							/>
 						</div>
 						<div>
-							<p>Beschreibung hinzufügen:</p>
+							<p>Beschreibung / Zusammenfassung / Kurzer Ausschnitt:</p>
 							<RichText
 								onChange={ newContent => { props.setAttributes({postDescription: newContent})} }
 								value={ props.attributes.postDescription }
@@ -123,16 +123,16 @@ registerBlockType( 'swo-pages/area-page', {
 								keepPlaceholderOnFocus={true}
 								allowedFormats={'none'}
 							/>
-							<p>Bereichsfarbe als HEX angeben:</p>
+							<p>Bereichsfarbe aus SWO Farben auswählen:</p>
 							<SelectControl
-								label='Farbe: '
 								value={ props.attributes.areaColor }
 								onChange={ newContent => { props.setAttributes({areaColor: newContent, areaColorSave: newContent})} }
 								options={ [
-									{ value: 'master-yellow', label: 'Gelb' },
-									{ value: 'master-orange', label: 'Orange' },
-									{ value: 'master-brown', label: 'Braun' },
-									{ value: 'master-green', label: 'Grün' },
+									{ value: 'master-blue', label: 'SWO-Hauptfarbe: Blau' },
+									{ value: 'master-yellow', label: 'SWO-Gelb' },
+									{ value: 'master-orange', label: 'SWO-Orange' },
+									{ value: 'master-green', label: 'SWO-Grün' },
+									{ value: 'master-brown', label: 'Zivi-Braun' },
 								] }
 							/>
 						</div>
@@ -148,7 +148,7 @@ registerBlockType( 'swo-pages/area-page', {
 										<Button
 										onClick={onRemoveImg}
 										className="button button-selectimg"
-									>Bild löschen
+									>Bild aus Kopfzeile löschen
 									</Button>
 									) : null }
 
@@ -160,14 +160,14 @@ registerBlockType( 'swo-pages/area-page', {
 												<RichText
 													onChange={ newContent => { props.setAttributes({subTitle: newContent})} }
 													value={props.attributes.subTitle}
-													placeholder="Untertitel (Leerlassen, falls nicht benötigt)"
+													placeholder="Untertitel... (Leerlassen, falls nicht benötigt)"
 													keepPlaceholderOnFocus={true}
 												/>
 											</h4>
 											<RichText
 												onChange={ newContent => { props.setAttributes({boxContent: newContent})} }
 												value={props.attributes.boxContent}
-												placeholder="Hier den Text für die Box bearbeiten"
+												placeholder="Einführung / Zusammenfassung / Beschreibung zu dieser Seite..."
 												keepPlaceholderOnFocus={true}
 												tagName="p"
 											/>
@@ -194,6 +194,7 @@ registerBlockType( 'swo-pages/area-page', {
 					</div>
 					<div class="limit-content-width bereich-container">
 						<InnerBlocks allowedBlocks={ [ 'swo-elements/button-element', 'swo-elements/button-back-element', 'swo-blocks/title-text-block', 'swo-blocks/area-lr-block', 'swo-blocks/area-rl-block' , 'swo-blocks/area-banner-block' ] } />
+						<p className="editorOnly">Klicken Sie auf das "+" um Blöcke hinzuzufügen. (Klicken Sie <strong>hier</strong>, wenn kein "+" angezeigt wird)</p>
 					</div>
 				</div>
 			</div>

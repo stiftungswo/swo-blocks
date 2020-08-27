@@ -118,6 +118,7 @@ registerBlockType( 'swo-blocks/area-lr-block', {
 						/>
 					</p>
 					<InnerBlocks allowedBlocks={ [ 'swo-elements/button-element', 'swo-elements/button-back-element', 'swo-elements/list-element' ] } />
+					<p className="editorOnly">Klicken Sie auf das "+" um ein Element hinzuzufügen. (Klicken Sie <strong>hier</strong>, wenn kein "+" angezeigt wird)</p>
 				</div>
 			</div>
 		);

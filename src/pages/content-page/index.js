@@ -8,8 +8,8 @@ const { RichText, MediaUpload, InnerBlocks } = wp.blockEditor;
 const { SelectControl, Button } = wp.components;
 
 registerBlockType( 'swo-pages/content-page', {
-	title: 'Inhaltsseite Standard & Projekte',
-	description: 'Dies ist eine Seite um normale Inhalte anzuzeigen.',
+	title: 'Inhaltsseite',
+	description: 'Dies ist eine Seite um alle anderen Inhalte anzuzeigen. (Projekt, Angestellte, Übersichtsseite, Menuseite, AGBs, usw...)',
 	icon: 'media-default',
 	category: 'swo-pages',
 	keywords: ['Inhalt', 'Inhalt', 'SWO'],
@@ -98,8 +98,8 @@ registerBlockType( 'swo-pages/content-page', {
 			<div>
 				<div className="editorOnly">
 					<div>
+						<p>Soll diese Seite in einer Übersicht angezeigt werden?</p>
 						<SelectControl
-							label='Soll diese Seite in einer Übersicht angezeigt werden?'
 							value={ props.attributes.typeOfPost }
 							onChange={onSelectDropdown}
 							options={ [
@@ -110,7 +110,7 @@ registerBlockType( 'swo-pages/content-page', {
 						/>
 					</div>
 					<div>
-						Beschreibung hinzufügen: 
+						<p>Beschreibung / Zusammenfassung / Kurzer Ausschnitt:</p>
 						<RichText
 							onChange={onChangeDescription}
 							value={ props.attributes.postDescription }
@@ -130,7 +130,7 @@ registerBlockType( 'swo-pages/content-page', {
 									<Button
 									onClick={onRemoveImg}
 									className="button button-selectimg"
-								>Bild löschen
+								>Bild aus Kopfzeile löschen
 								</Button>
 								) : null }
 
@@ -157,6 +157,7 @@ registerBlockType( 'swo-pages/content-page', {
 				</div>
 				<div className="limit-content-width">
 					<InnerBlocks allowedBlocks={ [ 'swo-blocks/content-block', 'swo-blocks/employee-block', 'swo-blocks/title-text-block', 'core/heading', 'core/paragraph', 'swo-blocks/recent-projects-block', 'swo-blocks/all-projects-block', 'swo-blocks/all-pages-block'  ] } />
+						<p className="editorOnly">Klicken Sie auf das "+" um Blöcke hinzuzufügen. (Klicken Sie <strong>hier</strong>, wenn kein "+" angezeigt wird)</p>
 				</div>
 			</div>
 		);
