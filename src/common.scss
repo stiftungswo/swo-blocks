@@ -986,7 +986,7 @@ h6,
 	padding-top: 0;
 }
 
-.wp-block.block-editor-block-list__block {
+.wp-block.block-editor-block-list__block:not(.bereich-image .wp-block.block-editor-block-list__block) {
 	background: #fff !important;
 	padding-bottom: 40px;
 }
