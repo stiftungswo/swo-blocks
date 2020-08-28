@@ -26,6 +26,15 @@ h6,
 
 /* General styling -------------------------- */
 
+.entry-header {
+	background: no-repeat top center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 14rem 0 1rem;
+}
+
 .n2-section-smartslider {
 	top: 0;
 	margin-top:-90px;
@@ -526,6 +535,13 @@ h6,
 	height: unset;
 }
 
+.bottomDivDescription {                 
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: relative;
+	height: 100px;
+}
+
 .bottomDivteam {
 	bottom: 2%;
 	margin-bottom: 40px;
@@ -533,6 +549,7 @@ h6,
 	width: 80%;
 	z-index: 5;
 	position: relative;
+	height: unset !important; //Remove if fixed height is necessary (but then css is needed to cutoff too long text)
 }
 
 .bottomDivteam h1 {

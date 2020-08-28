@@ -43,7 +43,7 @@ registerBlockType( 'swo-blocks/all-pages-block', {
                                 </div>
                                 <div class="imageDiv bottomDiv classic-text">
                                     <h1>{post.title.rendered}</h1>
-                                    <p>{post.postDescription}</p>
+                                    <p className="bottomDivDescription">{post.postDescription}</p>
                                     <a className="svg-button swo-button" href={post.link}>Weiterlesen</a>
                                 </div>
                             </li>

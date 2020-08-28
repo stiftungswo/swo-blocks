@@ -22,6 +22,11 @@ h6,
   font-family: "PT Serif", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* General styling -------------------------- */
+.entry-header {
+  background: no-repeat top center;
+  background-size: cover;
+  padding: 14rem 0 1rem; }
+
 .n2-section-smartslider {
   top: 0;
   margin-top: -90px; }
@@ -470,13 +475,21 @@ h6,
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   height: unset; }
 
+.bottomDivDescription {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  position: relative;
+  height: 100px; }
+
 .bottomDivteam {
   bottom: 2%;
   margin-bottom: 40px;
   padding-bottom: 20px;
   width: 80%;
   z-index: 5;
-  position: relative; }
+  position: relative;
+  height: unset !important; }
 
 .bottomDivteam h1 {
   margin: 0; }
@@ -898,6 +911,11 @@ h6,
   font-family: "PT Serif", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* General styling -------------------------- */
+.entry-header {
+  background: no-repeat top center;
+  background-size: cover;
+  padding: 14rem 0 1rem; }
+
 .n2-section-smartslider {
   top: 0;
   margin-top: -90px; }
@@ -1346,13 +1364,21 @@ h6,
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   height: unset; }
 
+.bottomDivDescription {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  position: relative;
+  height: 100px; }
+
 .bottomDivteam {
   bottom: 2%;
   margin-bottom: 40px;
   padding-bottom: 20px;
   width: 80%;
   z-index: 5;
-  position: relative; }
+  position: relative;
+  height: unset !important; }
 
 .bottomDivteam h1 {
   margin: 0; }
@@ -1774,6 +1800,11 @@ h6,
   font-family: "PT Serif", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* General styling -------------------------- */
+.entry-header {
+  background: no-repeat top center;
+  background-size: cover;
+  padding: 14rem 0 1rem; }
+
 .n2-section-smartslider {
   top: 0;
   margin-top: -90px; }
@@ -2222,13 +2253,21 @@ h6,
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   height: unset; }
 
+.bottomDivDescription {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  position: relative;
+  height: 100px; }
+
 .bottomDivteam {
   bottom: 2%;
   margin-bottom: 40px;
   padding-bottom: 20px;
   width: 80%;
   z-index: 5;
-  position: relative; }
+  position: relative;
+  height: unset !important; }
 
 .bottomDivteam h1 {
   margin: 0; }
@@ -2650,6 +2689,11 @@ h6,
   font-family: "PT Serif", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* General styling -------------------------- */
+.entry-header {
+  background: no-repeat top center;
+  background-size: cover;
+  padding: 14rem 0 1rem; }
+
 .n2-section-smartslider {
   top: 0;
   margin-top: -90px; }
@@ -3098,13 +3142,21 @@ h6,
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   height: unset; }
 
+.bottomDivDescription {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  position: relative;
+  height: 100px; }
+
 .bottomDivteam {
   bottom: 2%;
   margin-bottom: 40px;
   padding-bottom: 20px;
   width: 80%;
   z-index: 5;
-  position: relative; }
+  position: relative;
+  height: unset !important; }
 
 .bottomDivteam h1 {
   margin: 0; }
@@ -3526,6 +3578,11 @@ h6,
   font-family: "PT Serif", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* General styling -------------------------- */
+.entry-header {
+  background: no-repeat top center;
+  background-size: cover;
+  padding: 14rem 0 1rem; }
+
 .n2-section-smartslider {
   top: 0;
   margin-top: -90px; }
@@ -3974,13 +4031,21 @@ h6,
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   height: unset; }
 
+.bottomDivDescription {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  position: relative;
+  height: 100px; }
+
 .bottomDivteam {
   bottom: 2%;
   margin-bottom: 40px;
   padding-bottom: 20px;
   width: 80%;
   z-index: 5;
-  position: relative; }
+  position: relative;
+  height: unset !important; }
 
 .bottomDivteam h1 {
   margin: 0; }
@@ -4402,6 +4467,11 @@ h6,
   font-family: "PT Serif", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* General styling -------------------------- */
+.entry-header {
+  background: no-repeat top center;
+  background-size: cover;
+  padding: 14rem 0 1rem; }
+
 .n2-section-smartslider {
   top: 0;
   margin-top: -90px; }
@@ -4850,13 +4920,21 @@ h6,
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   height: unset; }
 
+.bottomDivDescription {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  position: relative;
+  height: 100px; }
+
 .bottomDivteam {
   bottom: 2%;
   margin-bottom: 40px;
   padding-bottom: 20px;
   width: 80%;
   z-index: 5;
-  position: relative; }
+  position: relative;
+  height: unset !important; }
 
 .bottomDivteam h1 {
   margin: 0; }
@@ -5278,6 +5356,11 @@ h6,
   font-family: "PT Serif", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* General styling -------------------------- */
+.entry-header {
+  background: no-repeat top center;
+  background-size: cover;
+  padding: 14rem 0 1rem; }
+
 .n2-section-smartslider {
   top: 0;
   margin-top: -90px; }
@@ -5726,13 +5809,21 @@ h6,
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   height: unset; }
 
+.bottomDivDescription {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  position: relative;
+  height: 100px; }
+
 .bottomDivteam {
   bottom: 2%;
   margin-bottom: 40px;
   padding-bottom: 20px;
   width: 80%;
   z-index: 5;
-  position: relative; }
+  position: relative;
+  height: unset !important; }
 
 .bottomDivteam h1 {
   margin: 0; }
@@ -6154,6 +6245,11 @@ h6,
   font-family: "PT Serif", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* General styling -------------------------- */
+.entry-header {
+  background: no-repeat top center;
+  background-size: cover;
+  padding: 14rem 0 1rem; }
+
 .n2-section-smartslider {
   top: 0;
   margin-top: -90px; }
@@ -6602,13 +6698,21 @@ h6,
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   height: unset; }
 
+.bottomDivDescription {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  position: relative;
+  height: 100px; }
+
 .bottomDivteam {
   bottom: 2%;
   margin-bottom: 40px;
   padding-bottom: 20px;
   width: 80%;
   z-index: 5;
-  position: relative; }
+  position: relative;
+  height: unset !important; }
 
 .bottomDivteam h1 {
   margin: 0; }
@@ -7030,6 +7134,11 @@ h6,
   font-family: "PT Serif", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* General styling -------------------------- */
+.entry-header {
+  background: no-repeat top center;
+  background-size: cover;
+  padding: 14rem 0 1rem; }
+
 .n2-section-smartslider {
   top: 0;
   margin-top: -90px; }
@@ -7478,13 +7587,21 @@ h6,
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   height: unset; }
 
+.bottomDivDescription {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  position: relative;
+  height: 100px; }
+
 .bottomDivteam {
   bottom: 2%;
   margin-bottom: 40px;
   padding-bottom: 20px;
   width: 80%;
   z-index: 5;
-  position: relative; }
+  position: relative;
+  height: unset !important; }
 
 .bottomDivteam h1 {
   margin: 0; }
@@ -7906,6 +8023,11 @@ h6,
   font-family: "PT Serif", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* General styling -------------------------- */
+.entry-header {
+  background: no-repeat top center;
+  background-size: cover;
+  padding: 14rem 0 1rem; }
+
 .n2-section-smartslider {
   top: 0;
   margin-top: -90px; }
@@ -8354,13 +8476,21 @@ h6,
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   height: unset; }
 
+.bottomDivDescription {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  position: relative;
+  height: 100px; }
+
 .bottomDivteam {
   bottom: 2%;
   margin-bottom: 40px;
   padding-bottom: 20px;
   width: 80%;
   z-index: 5;
-  position: relative; }
+  position: relative;
+  height: unset !important; }
 
 .bottomDivteam h1 {
   margin: 0; }
@@ -8782,6 +8912,11 @@ h6,
   font-family: "PT Serif", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* General styling -------------------------- */
+.entry-header {
+  background: no-repeat top center;
+  background-size: cover;
+  padding: 14rem 0 1rem; }
+
 .n2-section-smartslider {
   top: 0;
   margin-top: -90px; }
@@ -9230,13 +9365,21 @@ h6,
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   height: unset; }
 
+.bottomDivDescription {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  position: relative;
+  height: 100px; }
+
 .bottomDivteam {
   bottom: 2%;
   margin-bottom: 40px;
   padding-bottom: 20px;
   width: 80%;
   z-index: 5;
-  position: relative; }
+  position: relative;
+  height: unset !important; }
 
 .bottomDivteam h1 {
   margin: 0; }
@@ -9658,6 +9801,11 @@ h6,
   font-family: "PT Serif", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* General styling -------------------------- */
+.entry-header {
+  background: no-repeat top center;
+  background-size: cover;
+  padding: 14rem 0 1rem; }
+
 .n2-section-smartslider {
   top: 0;
   margin-top: -90px; }
@@ -10106,13 +10254,21 @@ h6,
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   height: unset; }
 
+.bottomDivDescription {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  position: relative;
+  height: 100px; }
+
 .bottomDivteam {
   bottom: 2%;
   margin-bottom: 40px;
   padding-bottom: 20px;
   width: 80%;
   z-index: 5;
-  position: relative; }
+  position: relative;
+  height: unset !important; }
 
 .bottomDivteam h1 {
   margin: 0; }
@@ -10534,6 +10690,11 @@ h6,
   font-family: "PT Serif", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* General styling -------------------------- */
+.entry-header {
+  background: no-repeat top center;
+  background-size: cover;
+  padding: 14rem 0 1rem; }
+
 .n2-section-smartslider {
   top: 0;
   margin-top: -90px; }
@@ -10982,13 +11143,21 @@ h6,
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   height: unset; }
 
+.bottomDivDescription {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  position: relative;
+  height: 100px; }
+
 .bottomDivteam {
   bottom: 2%;
   margin-bottom: 40px;
   padding-bottom: 20px;
   width: 80%;
   z-index: 5;
-  position: relative; }
+  position: relative;
+  height: unset !important; }
 
 .bottomDivteam h1 {
   margin: 0; }
@@ -11410,6 +11579,11 @@ h6,
   font-family: "PT Serif", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* General styling -------------------------- */
+.entry-header {
+  background: no-repeat top center;
+  background-size: cover;
+  padding: 14rem 0 1rem; }
+
 .n2-section-smartslider {
   top: 0;
   margin-top: -90px; }
@@ -11858,13 +12032,21 @@ h6,
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   height: unset; }
 
+.bottomDivDescription {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  position: relative;
+  height: 100px; }
+
 .bottomDivteam {
   bottom: 2%;
   margin-bottom: 40px;
   padding-bottom: 20px;
   width: 80%;
   z-index: 5;
-  position: relative; }
+  position: relative;
+  height: unset !important; }
 
 .bottomDivteam h1 {
   margin: 0; }
@@ -12286,6 +12468,11 @@ h6,
   font-family: "PT Serif", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* General styling -------------------------- */
+.entry-header {
+  background: no-repeat top center;
+  background-size: cover;
+  padding: 14rem 0 1rem; }
+
 .n2-section-smartslider {
   top: 0;
   margin-top: -90px; }
@@ -12734,13 +12921,21 @@ h6,
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   height: unset; }
 
+.bottomDivDescription {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  position: relative;
+  height: 100px; }
+
 .bottomDivteam {
   bottom: 2%;
   margin-bottom: 40px;
   padding-bottom: 20px;
   width: 80%;
   z-index: 5;
-  position: relative; }
+  position: relative;
+  height: unset !important; }
 
 .bottomDivteam h1 {
   margin: 0; }
@@ -13162,6 +13357,11 @@ h6,
   font-family: "PT Serif", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* General styling -------------------------- */
+.entry-header {
+  background: no-repeat top center;
+  background-size: cover;
+  padding: 14rem 0 1rem; }
+
 .n2-section-smartslider {
   top: 0;
   margin-top: -90px; }
@@ -13610,13 +13810,21 @@ h6,
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   height: unset; }
 
+.bottomDivDescription {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  position: relative;
+  height: 100px; }
+
 .bottomDivteam {
   bottom: 2%;
   margin-bottom: 40px;
   padding-bottom: 20px;
   width: 80%;
   z-index: 5;
-  position: relative; }
+  position: relative;
+  height: unset !important; }
 
 .bottomDivteam h1 {
   margin: 0; }

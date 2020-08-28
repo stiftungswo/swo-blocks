@@ -115,13 +115,14 @@ registerBlockType( 'swo-pages/area-page', {
 							/>
 						</div>
 						<div>
-							<p>Beschreibung / Zusammenfassung / Kurzer Ausschnitt:</p>
+							<p>Beschreibung / Zusammenfassung / Kurzer Ausschnitt (Keine Zeilenumbrüche!):</p>
 							<RichText
 								onChange={ newContent => { props.setAttributes({postDescription: newContent})} }
 								value={ props.attributes.postDescription }
 								placeholder="Diese Beschreibung wird auf Kärtchen angezeigt.."
 								keepPlaceholderOnFocus={true}
 								allowedFormats={'none'}
+								tagName="p"
 							/>
 							<p>Bereichsfarbe aus SWO Farben auswählen:</p>
 							<SelectControl
