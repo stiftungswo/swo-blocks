@@ -1,11 +1,13 @@
 <?php
 /**
- * Plugin Name: Custom swo-blocks
- * Plugin URI: https://phyllon.ch
- * Description: Custom swo-blocks - To support the custom made SWO Theme
- * Author: PHYLLON
- * Author URI: https://phyllon.ch
+ * Plugin Name: SWO-Plugin
+ * Plugin URI: https://davidkessler.ch
+ * Description: Mit dem SWO-Plugin kann die neue Wordpress Seite der SWO sicher und der Corporate Identity entsprechend aufgebaut und verwaltet werden.
+ * Author: David Kessler
+ * Author URI: https://davidkessler.ch
  * Version: 1.0.0
+ * 
+ * Credits NICHT entfernen, dies wurde so abgesprochen. Danke. Sie können mich hier konntaktieren: me@davidkessler.ch oder 076 308 42 22
  *
  */
 
