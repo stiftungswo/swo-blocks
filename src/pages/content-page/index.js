@@ -110,7 +110,7 @@ registerBlockType( 'swo-pages/content-page', {
 						/>
 					</div>
 					<div>
-						<p>Beschreibung / Zusammenfassung / Kurzer Ausschnitt:</p>
+						<p>Beschreibung / Zusammenfassung / Kurzer Ausschnitt (Keine Zeilenumbrüche!):</p>
 						<RichText
 							onChange={onChangeDescription}
 							value={ props.attributes.postDescription }
