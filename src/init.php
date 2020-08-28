@@ -66,6 +66,13 @@ add_filter( 'rest_page_query', 'swo_adding_meta', 10, 2);
 
 
 
+include(plugin_dir_path(__FILE__).'admin-page.php');
+include(plugin_dir_path(__FILE__).'blocks/recent-projects-block/index.php');
+include(plugin_dir_path(__FILE__).'blocks/all-projects-block/index.php');
+include(plugin_dir_path(__FILE__).'blocks/all-pages-block/index.php');
+
+
+
 function swo_blocks_cgb_block_assets() { // phpcs:ignore
 	// Register block styles for both frontend + backend.
 	wp_register_style(
@@ -127,10 +134,6 @@ function swo_blocks_cgb_block_assets() { // phpcs:ignore
 
 // Hook: Block assets.
 add_action( 'init', 'swo_blocks_cgb_block_assets' );
-
-include(plugin_dir_path(__FILE__).'blocks/recent-projects-block/index.php');
-include(plugin_dir_path(__FILE__).'blocks/all-projects-block/index.php');
-include(plugin_dir_path(__FILE__).'blocks/all-pages-block/index.php');
 
 //adding meta-fields of different blocks
 function gutenberg_my_block_init() {

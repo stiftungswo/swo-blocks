@@ -156,7 +156,7 @@ registerBlockType( 'swo-pages/content-page', {
 					}
 				</div>
 				<div className="limit-content-width">
-					<InnerBlocks allowedBlocks={ [ 'swo-blocks/content-block', 'swo-blocks/employee-block', 'swo-blocks/title-text-block', 'core/heading', 'core/paragraph', 'swo-blocks/recent-projects-block', 'swo-blocks/all-projects-block', 'swo-blocks/all-pages-block'  ] } />
+					<InnerBlocks allowedBlocks={ [ 'swo-blocks/content-block', 'swo-blocks/employee-block', 'core/columns', 'swo-blocks/title-text-block', 'core/heading', 'core/paragraph', 'swo-blocks/recent-projects-block', 'swo-blocks/all-projects-block', 'swo-blocks/all-pages-block'  ] }/>
 						<p className="editorOnly">Klicken Sie auf das "+" um Blöcke hinzuzufügen. (Klicken Sie <strong>hier</strong>, wenn kein "+" angezeigt wird)</p>
 				</div>
 			</div>
